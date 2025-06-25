@@ -115,6 +115,24 @@ export default function NDVIMap() {
                     mapTypeId: "satellite",
                 });
 
+                // Add GEE Loss Year overlay
+                const tileUrl = process.env
+                    .NEXT_PUBLIC_HANSEN_TILE_URL as string;
+
+                const geeLayer = new window.google.maps.ImageMapType({
+                    getTileUrl: (coord: any, zoom: number) => {
+                        return tileUrl
+                            .replace("{z}", zoom.toString())
+                            .replace("{x}", coord.x.toString())
+                            .replace("{y}", coord.y.toString());
+                    },
+                    tileSize: new window.google.maps.Size(256, 256),
+                    name: "GEE Loss Year",
+                    opacity: 0.7,
+                });
+
+                map.overlayMapTypes.insertAt(0, geeLayer);
+
                 mapInstanceRef.current = map;
                 setLoading(false);
                 console.log("NDVIMap: Map created successfully");
@@ -187,28 +205,62 @@ export default function NDVIMap() {
             {/* Map info overlay - only show when not loading and no error */}
             {!loading && !error && (
                 <>
-                    <div className="absolute top-4 left-4 bg-white/90 p-2 rounded text-xs">
-                        <p className="font-semibold">
-                            North Carolina Coastal Region
+                    <div className="absolute top-4 left-4 bg-white/90 p-3 rounded text-xs shadow-lg">
+                        <p className="font-bold mb-1 text-blue-900">
+                            Region: North Carolina Coast
                         </p>
-                        <p>Satellite view - Ghost Forest Study Area</p>
-                    </div>
-                    <div className="absolute bottom-4 right-4 bg-white/90 p-3 rounded text-xs">
-                        <p className="font-semibold text-blue-800 mb-2">
-                            Future Features:
+                        <p className="font-semibold mb-1">
+                            NDVI & Forest Loss (Hansen, 5-year bins)
                         </p>
-                        <div className="text-gray-600 space-y-1">
+                        <div className="flex flex-col space-y-1 mt-2">
                             <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-green-500 rounded"></div>
-                                <span>Tree Cover Data</span>
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#000000" }}
+                                ></span>
+                                <span>No loss</span>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-red-500 rounded"></div>
-                                <span>Forest Loss Analysis</span>
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#ffff00" }}
+                                ></span>
+                                <span>2001–05</span>
                             </div>
                             <div className="flex items-center space-x-2">
-                                <div className="w-3 h-3 bg-blue-500 rounded"></div>
-                                <span>NDVI Visualization</span>
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#ffa500" }}
+                                ></span>
+                                <span>2006–10</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#ff0000" }}
+                                ></span>
+                                <span>2011–15</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#00ffff" }}
+                                ></span>
+                                <span>2016–20</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#00ff00" }}
+                                ></span>
+                                <span>2021–24</span>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <span
+                                    className="inline-block w-4 h-4 rounded"
+                                    style={{ background: "#555555" }}
+                                ></span>
+                                <span>Water or no data</span>
                             </div>
                         </div>
                     </div>
