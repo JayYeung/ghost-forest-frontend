@@ -1,103 +1,160 @@
-import Image from "next/image";
+"use client";
+import Navigation from "@/components/Navigation";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
+            <Navigation />
+            <main className="px-4 py-8">
+                {/* Hero Section */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
+                        <h1
+                            className="text-4xl sm:text-5xl font-extrabold mb-4 text-center tracking-tight text-blue-900 drop-shadow-lg"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            Ghost Forest Digital Humanities Project
+                        </h1>
+                        <p
+                            className="text-lg sm:text-xl text-gray-700 mb-6 text-center font-medium max-w-3xl"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            Analyzing ghost forest emergence in North Carolina
+                            through NDVI satellite imagery and government
+                            spending data to understand the relationship between
+                            policy decisions and environmental outcomes.
+                        </p>
+                    </div>
+                </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                {/* NDVI Analysis Section */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            NDVI Satellite Imagery Analysis
+                        </h2>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div className="bg-gray-100 rounded-lg p-4 h-80 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-2xl">🛰️</span>
+                                    </div>
+                                    <p className="text-gray-600 font-medium">
+                                        Hansen Global Forest Change v1.12
+                                    </p>
+                                    <p className="text-sm text-gray-500 mt-2">
+                                        2000-2024 dataset showing vegetation
+                                        health decline
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-gray-100 rounded-lg p-4 h-80 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-16 h-16 bg-green-200 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                        <span className="text-2xl">📊</span>
+                                    </div>
+                                    <p className="text-gray-600 font-medium">
+                                        NDVI Trends Analysis
+                                    </p>
+                                    <p className="text-sm text-gray-500 mt-2">
+                                        Normalized Difference Vegetation Index
+                                        measurements
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Ghost Forest Map Section */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            Ghost Forest Emergence in North Carolina
+                        </h2>
+                        <div className="bg-gray-100 rounded-lg p-4 h-96 flex items-center justify-center">
+                            <div className="text-center">
+                                <div className="w-20 h-20 bg-blue-300 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                    <span className="text-3xl">🗺️</span>
+                                </div>
+                                <p className="text-gray-600 font-medium text-lg">
+                                    Coastal Saltwater Intrusion Map
+                                </p>
+                                <p className="text-sm text-gray-500 mt-2">
+                                    Visualization of ghost forest formation
+                                    through progressive saltwater intrusion
+                                </p>
+                                <div className="mt-4 flex justify-center space-x-4">
+                                    <div className="w-3 h-3 bg-red-400 rounded-full"></div>
+                                    <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Government Spending Analysis Section */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            BEA Regional API Spending Analysis
+                        </h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-12 h-12 bg-green-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <span className="text-xl">🌿</span>
+                                    </div>
+                                    <p className="text-gray-600 font-medium">
+                                        Natural Resources
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        Environmental protection funding
+                                        (2005-present)
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-12 h-12 bg-orange-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <span className="text-xl">🚒</span>
+                                    </div>
+                                    <p className="text-gray-600 font-medium">
+                                        Fire & Parks
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        Fire management and park maintenance
+                                        spending
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="bg-gray-100 rounded-lg p-4 h-48 flex items-center justify-center">
+                                <div className="text-center">
+                                    <div className="w-12 h-12 bg-yellow-200 rounded-full mx-auto mb-3 flex items-center justify-center">
+                                        <span className="text-xl">🌾</span>
+                                    </div>
+                                    <p className="text-gray-600 font-medium">
+                                        Agriculture
+                                    </p>
+                                    <p className="text-xs text-gray-500 mt-1">
+                                        Agricultural funding trends and impacts
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
