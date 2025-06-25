@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import type ncGeoJsonType from "./nc.json";
 
 declare global {
     interface Window {
@@ -133,6 +134,51 @@ export default function NDVIMap() {
 
                 map.overlayMapTypes.insertAt(0, geeLayer);
 
+                // Dynamically import the GeoJSON
+                const ncGeoJson = (await import("./nc.json"))
+                    .default as typeof ncGeoJsonType;
+                if (
+                    ncGeoJson &&
+                    ncGeoJson.geometry &&
+                    ncGeoJson.geometry.coordinates
+                ) {
+                    // Google Maps expects [lat, lng], GeoJSON is [lng, lat]
+                    const polygons = ncGeoJson.geometry.coordinates.map(
+                        (multiPoly: any) =>
+                            multiPoly[0].map((coord: number[]) => ({
+                                lat: coord[1],
+                                lng: coord[0],
+                            }))
+                    );
+                    polygons.forEach((path: any) => {
+                        new window.google.maps.Polygon({
+                            paths: path,
+                            strokeColor: "#2563eb",
+                            strokeOpacity: 0.8,
+                            strokeWeight: 2,
+                            fillColor: "#2563eb",
+                            fillOpacity: 0.08,
+                            map: map,
+                        });
+                    });
+                    // Compute centroid for label
+                    const allCoords = polygons.flat();
+                    const centroid = allCoords.reduce(
+                        (acc, cur) => ({
+                            lat: acc.lat + cur.lat,
+                            lng: acc.lng + cur.lng,
+                        }),
+                        { lat: 0, lng: 0 }
+                    );
+                    centroid.lat /= allCoords.length;
+                    centroid.lng /= allCoords.length;
+                    new window.google.maps.InfoWindow({
+                        content:
+                            '<div style="font-weight:bold;color:#2563eb;font-size:1.1rem;">North Carolina</div>',
+                        position: centroid,
+                    }).open(map);
+                }
+
                 mapInstanceRef.current = map;
                 setLoading(false);
                 console.log("NDVIMap: Map created successfully");
@@ -205,6 +251,10 @@ export default function NDVIMap() {
             {/* Map info overlay - only show when not loading and no error */}
             {!loading && !error && (
                 <>
+                    {/* Region label on the map */}
+                    <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded text-sm font-bold text-blue-900 shadow-lg pointer-events-none select-none">
+                        North Carolina Coast
+                    </div>
                     <div className="absolute top-4 left-4 bg-white/90 p-3 rounded text-xs shadow-lg">
                         <p className="font-bold mb-1 text-blue-900">
                             Region: North Carolina Coast

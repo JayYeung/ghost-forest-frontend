@@ -30,32 +30,21 @@ export default function Home() {
 
                 {/* NDVI Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
-                        <h2
-                            className="text-2xl font-bold mb-6 text-blue-900 text-center"
-                            style={{ fontFamily: "var(--font-geist-sans)" }}
-                        >
-                            NDVI Satellite Imagery Analysis
-                        </h2>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div>
-                                <NDVIMap />
-                            </div>
-                            <div className="bg-gray-100 rounded-lg p-4 h-80 flex items-center justify-center">
-                                <div className="text-center">
-                                    <div className="w-16 h-16 bg-green-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                        <span className="text-2xl">📊</span>
-                                    </div>
-                                    <p className="text-gray-600 font-medium">
-                                        NDVI Trends Analysis
-                                    </p>
-                                    <p className="text-sm text-gray-500 mt-2">
-                                        Normalized Difference Vegetation Index
-                                        measurements
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <h2
+                        className="text-3xl font-bold mb-6 text-blue-900 text-center"
+                        style={{ fontFamily: "var(--font-geist-sans)" }}
+                    >
+                        NDVI & Forest Loss Visualization
+                    </h2>
+                    <div
+                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex justify-center items-center"
+                        style={{
+                            aspectRatio: "16/9",
+                            minHeight: "28rem",
+                            maxHeight: "70vh",
+                        }}
+                    >
+                        <NDVIMap />
                     </div>
                 </section>
 
