@@ -1,5 +1,6 @@
 "use client";
 import Navigation from "@/components/Navigation";
+import NDVIMap from "@/components/NDVIMap";
 
 export default function Home() {
     return (
@@ -37,19 +38,8 @@ export default function Home() {
                             NDVI Satellite Imagery Analysis
                         </h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div className="bg-gray-100 rounded-lg p-4 h-80 flex items-center justify-center">
-                                <div className="text-center">
-                                    <div className="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                        <span className="text-2xl">🛰️</span>
-                                    </div>
-                                    <p className="text-gray-600 font-medium">
-                                        Hansen Global Forest Change v1.12
-                                    </p>
-                                    <p className="text-sm text-gray-500 mt-2">
-                                        2000-2024 dataset showing vegetation
-                                        health decline
-                                    </p>
-                                </div>
+                            <div>
+                                <NDVIMap />
                             </div>
                             <div className="bg-gray-100 rounded-lg p-4 h-80 flex items-center justify-center">
                                 <div className="text-center">
