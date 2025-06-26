@@ -1,21 +1,23 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import type { MultiPolygon, Position } from "geojson";
+import type { MultiPolygon } from "geojson";
 import ncGeoJsonData from "./nc.json";
 
 declare global {
     interface Window {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ee: any;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         google: any;
     }
 }
 
 export default function NDVIMap() {
     const mapRef = useRef<HTMLDivElement>(null);
-    const mapInstanceRef = useRef<any>(null);
-    const [loading, setLoading] = useState(true);
+    const mapInstanceRef = useRef(null);
+    const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-    const [isMounted, setIsMounted] = useState(false);
+    const [isMounted, setIsMounted] = useState<boolean>(false);
 
     // Helper function to load scripts
     const load = (src: string): Promise<void> => {
