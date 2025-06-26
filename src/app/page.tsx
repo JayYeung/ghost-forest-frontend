@@ -30,21 +30,23 @@ export default function Home() {
 
                 {/* NDVI Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <h2
-                        className="text-3xl font-bold mb-6 text-blue-900 text-center"
-                        style={{ fontFamily: "var(--font-geist-sans)" }}
-                    >
-                        NDVI & Forest Loss Visualization
-                    </h2>
-                    <div
-                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex justify-center items-center"
-                        style={{
-                            aspectRatio: "16/9",
-                            minHeight: "28rem",
-                            maxHeight: "70vh",
-                        }}
-                    >
-                        <NDVIMap />
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center justify-start min-h-[32rem] max-w-4xl mx-auto">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            NDVI & Forest Loss Visualization
+                        </h2>
+                        <div
+                            className="w-full flex-1 flex items-center justify-center"
+                            style={{
+                                aspectRatio: "3/4",
+                                minHeight: "24rem",
+                                maxHeight: "40rem",
+                            }}
+                        >
+                            <NDVIMap />
+                        </div>
                     </div>
                 </section>
 

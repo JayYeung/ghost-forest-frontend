@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import type ncGeoJsonType from "./nc.json";
+import type { MultiPolygon, Position } from "geojson";
+import ncGeoJsonData from "./nc.json";
 
 declare global {
     interface Window {
@@ -121,7 +122,10 @@ export default function NDVIMap() {
                     .NEXT_PUBLIC_HANSEN_TILE_URL as string;
 
                 const geeLayer = new window.google.maps.ImageMapType({
-                    getTileUrl: (coord: any, zoom: number) => {
+                    getTileUrl: (
+                        coord: { x: number; y: number },
+                        zoom: number
+                    ) => {
                         return tileUrl
                             .replace("{z}", zoom.toString())
                             .replace("{x}", coord.x.toString())
@@ -135,22 +139,22 @@ export default function NDVIMap() {
                 map.overlayMapTypes.insertAt(0, geeLayer);
 
                 // Dynamically import the GeoJSON
-                const ncGeoJson = (await import("./nc.json"))
-                    .default as typeof ncGeoJsonType;
+                const ncGeoJson = ncGeoJsonData as { geometry: MultiPolygon };
                 if (
                     ncGeoJson &&
                     ncGeoJson.geometry &&
                     ncGeoJson.geometry.coordinates
                 ) {
-                    // Google Maps expects [lat, lng], GeoJSON is [lng, lat]
-                    const polygons = ncGeoJson.geometry.coordinates.map(
-                        (multiPoly: any) =>
+                    const coordinates: number[][][][] = ncGeoJson.geometry
+                        .coordinates as number[][][][];
+                    const polygons: { lat: number; lng: number }[][] =
+                        coordinates.map((multiPoly: number[][][]) =>
                             multiPoly[0].map((coord: number[]) => ({
                                 lat: coord[1],
                                 lng: coord[0],
                             }))
-                    );
-                    polygons.forEach((path: any) => {
+                        );
+                    polygons.forEach((path: { lat: number; lng: number }[]) => {
                         new window.google.maps.Polygon({
                             paths: path,
                             strokeColor: "#2563eb",
@@ -162,7 +166,8 @@ export default function NDVIMap() {
                         });
                     });
                     // Compute centroid for label
-                    const allCoords = polygons.flat();
+                    const allCoords: { lat: number; lng: number }[] =
+                        polygons.flat();
                     const centroid = allCoords.reduce(
                         (acc, cur) => ({
                             lat: acc.lat + cur.lat,
@@ -182,11 +187,13 @@ export default function NDVIMap() {
                 mapInstanceRef.current = map;
                 setLoading(false);
                 console.log("NDVIMap: Map created successfully");
-            } catch (loadError: any) {
+            } catch (loadError: unknown) {
                 console.error("NDVIMap: Error loading Google Maps:", loadError);
                 setError(
                     "Failed to load Google Maps: " +
-                        (loadError?.message || "Check your API key")
+                        (loadError instanceof Error
+                            ? loadError.message
+                            : "Check your API key")
                 );
                 setLoading(false);
             }
@@ -196,7 +203,7 @@ export default function NDVIMap() {
     }, [isMounted]);
 
     return (
-        <div className="w-full h-96 bg-gray-100 rounded-lg overflow-hidden relative">
+        <div className="w-full h-full bg-gray-100 rounded-lg overflow-hidden relative">
             {/* Map container - always rendered */}
             <div ref={mapRef} className="w-full h-full" />
 
