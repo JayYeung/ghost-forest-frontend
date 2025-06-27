@@ -1,6 +1,7 @@
 "use client";
 import Navigation from "@/components/Navigation";
 import NDVIMap from "@/components/NDVIMap";
+import InteractiveTimeline from "@/components/InteractiveTimeline";
 
 export default function Home() {
     return (
@@ -48,7 +49,7 @@ export default function Home() {
                             <NDVIMap />
                         </div>
 
-                        <p className="mt-3 text-[11px] text-gray-400">
+                        <p className="mt-3 text-[14px] text-gray-400">
                             The colors in this legend were chosen for high
                             contrast and accessibility, making it easier for
                             visually impaired users to distinguish between
@@ -80,34 +81,16 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* Ghost Forest Map Section */}
+                {/* Interactive Timeline Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
                         <h2
-                            className="text-2xl font-bold mb-6 text-blue-900 text-center"
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            Ghost Forest Emergence in North Carolina
+                            Interactive Timeline
                         </h2>
-                        <div className="bg-gray-100 rounded-lg p-4 h-96 flex items-center justify-center">
-                            <div className="text-center">
-                                <div className="w-20 h-20 bg-blue-300 rounded-full mx-auto mb-4 flex items-center justify-center">
-                                    <span className="text-3xl">🗺️</span>
-                                </div>
-                                <p className="text-gray-600 font-medium text-lg">
-                                    Coastal Saltwater Intrusion Map
-                                </p>
-                                <p className="text-sm text-gray-500 mt-2">
-                                    Visualization of ghost forest formation
-                                    through progressive saltwater intrusion
-                                </p>
-                                <div className="mt-4 flex justify-center space-x-4">
-                                    <div className="w-3 h-3 bg-red-400 rounded-full"></div>
-                                    <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                                    <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-                                </div>
-                            </div>
-                        </div>
+                        <InteractiveTimeline />
                     </div>
                 </section>
 
