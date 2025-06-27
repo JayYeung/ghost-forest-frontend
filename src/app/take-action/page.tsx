@@ -1,7 +1,10 @@
 "use client";
 import Navigation from "@/components/Navigation";
+import { useRef } from "react";
+import ReadAloudControls from "@/components/ReadAloudControls";
 
 export default function TakeAction() {
+    const contentRef = useRef<HTMLDivElement>(null);
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100 flex flex-col">
             <Navigation />
@@ -13,7 +16,11 @@ export default function TakeAction() {
                     >
                         Take Action!
                     </h1>
+                    <ReadAloudControls
+                        getText={() => contentRef.current?.innerText || ""}
+                    />
                     <div
+                        ref={contentRef}
                         className="space-y-6 text-gray-700"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
