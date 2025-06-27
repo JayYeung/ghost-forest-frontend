@@ -30,7 +30,7 @@ export default function Home() {
 
                 {/* NDVI Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center justify-start min-h-[32rem] max-w-4xl mx-auto">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
                         <h2
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
@@ -47,6 +47,13 @@ export default function Home() {
                         >
                             <NDVIMap />
                         </div>
+
+                        <p className="mt-3 text-[11px] text-gray-400">
+                            The colors in this legend were chosen for high
+                            contrast and accessibility, making it easier for
+                            visually impaired users to distinguish between
+                            categories.
+                        </p>
                     </div>
                 </section>
 
