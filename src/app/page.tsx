@@ -50,6 +50,29 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Annotated Video Block */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            Annotated Video
+                        </h2>
+                        <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/fnC0RktFbuA"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Ghost Forest Map Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">

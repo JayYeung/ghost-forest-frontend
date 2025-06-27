@@ -114,8 +114,8 @@ export default function NDVIMap() {
                 // Create the map
                 console.log("NDVIMap: Creating map instance...");
                 const map = new window.google.maps.Map(mapRef.current, {
-                    center: { lat: 35, lng: -80 }, // North Carolina center
-                    zoom: 7,
+                    center: { lat: 35.6, lng: -75.0 }, // North Carolina coast, more to the right
+                    zoom: 8,
                     mapTypeId: "satellite",
                 });
 
