@@ -26,25 +26,33 @@ export default function AnnotatedBibliography() {
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
                         <p className="text-lg leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
+                            <strong>Lorem Ipsum Dolor:</strong>{" "}
+                            <em>Consectetur adipiscing elit</em>. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <p className="text-lg leading-relaxed">
+                            For more information, visit{" "}
+                            <a
+                                href="https://example.com"
+                                className="text-blue-700 underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                this resource
+                            </a>
+                            .
+                        </p>
+                        <p
+                            className="text-lg leading-relaxed"
+                            style={{ textIndent: "2em" }}
+                        >
                             Duis aute irure dolor in reprehenderit in voluptate
                             velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
                         </p>
                         <p className="text-lg leading-relaxed">
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore
-                            veritatis et quasi architecto beatae vitae dicta
-                            sunt explicabo.
+                            <b>Excepteur sint occaecat</b> cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
                         </p>
                     </div>
                 </section>
