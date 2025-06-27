@@ -1,19 +1,7 @@
 "use client";
 import Navigation from "@/components/Navigation";
-import { useRef } from "react";
 
-export default function AnnotatedBibliography() {
-    const contentRef = useRef<HTMLDivElement>(null);
-
-    const handleReadAloud = () => {
-        if (contentRef.current) {
-            const text = contentRef.current.innerText;
-            const utterance = new window.SpeechSynthesisUtterance(text);
-            window.speechSynthesis.cancel();
-            window.speechSynthesis.speak(utterance);
-        }
-    };
-
+export default function TakeAction() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100 flex flex-col">
             <Navigation />
@@ -23,17 +11,9 @@ export default function AnnotatedBibliography() {
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
-                        Annotated Bibliography
+                        Take Action!
                     </h1>
-                    <button
-                        onClick={handleReadAloud}
-                        className="mb-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        aria-label="Read content aloud"
-                    >
-                        🔊 Read Aloud
-                    </button>
                     <div
-                        ref={contentRef}
                         className="space-y-6 text-gray-700"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
