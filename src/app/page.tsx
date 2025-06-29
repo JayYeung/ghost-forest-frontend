@@ -18,13 +18,34 @@ export default function Home() {
                             Ghost Forests and Policies in North Carolina
                         </h1>
                         <p
-                            className="text-lg sm:text-xl text-gray-700 mb-6 text-center font-medium max-w-3xl"
+                            className="text-lg sm:text-xl text-gray-700 mb-6 font-medium max-w-4xl"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            Analyzing ghost forest emergence in North Carolina
-                            through NDVI satellite imagery and government
-                            actions to understand the relationship between
-                            policy decisions and environmental outcomes.
+                            <br />
+                            Since April 2025, President Donald Trump has terminated over 1,600 National Science Foundation grants,
+                            revoking over $1.5 billion in funding from research projects, many of which relate to climate change (Temple). 
+                            This action serves as one example of how the current political administration has actively undermined 
+                            the importance of climate change. By pulling federal funding from scientific research, the administration 
+                            is silencing environmental research and reducing its visibility to the public. 
+                            <br /><br />
+                            One of the clearest indicators of climate change is rising sea levels, which gives cause to a plethora of 
+                            environmental consequences &mdash; among them, the emergence of ghost forests. Ghost forests are dying coastal 
+                            forests caused by saltwater intrusion linked to sea level rise, and they provide a clear, haunting visual 
+                            for the impact of rising ocean levels (CBS News). But beyond environmental impact, ghost forests also affect 
+                            the people and communities that live near them. In places like North Carolina, these changes are especially 
+                            visible &mdash; yet both policy and public awareness have fallen short in addressing them (Allen). 
+                            <br /><br />
+                            Therefore, our project aims to address the influence of environmental policymaking on the emergence of ghost 
+                            forests in North Carolina. Our topic is rooted in the urgency of climate change and the increasing politicization 
+                            of science. The current political climate has downplayed the impact and severity of environmental issues, 
+                            which has reduced the public pressure for advocacy and systemic reform. Our project aims to counteract 
+                            this by providing digestible visualizations of ghost forest emergence and plain language summaries 
+                            of environmental policies in order to address a general audience.
+                            <br /><br />
+                            From this topic, we propose the following research question: &quot;What is the relationship between environmental 
+                            policymaking and the emergence of ghost forests in North Carolina?&quot; This question invites us to look into 
+                            different approaches for mitigating&mdash;or inadvertently forming&mdash;ghost forests in North Carolina.
+
                         </p>
                     </div>
                 </section>
@@ -36,26 +57,40 @@ export default function Home() {
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            What are the Ghost Forests?
+                            Why Ghost Forests?
                         </h2>
-                        <p className="mb-4 text-gray-800 px-8">
+                        <p
+                            className="text-lg sm:text-xl text-gray-700 mb-6 font-medium max-w-4xl"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            We recognize the limitations of our project, especially given the scope of our data and the fact 
+                            that ghost forest formation is heavily influenced by extreme weather conditions. 
+                            We chose to focus our project on ghost forests as they are not widely known by the public, 
+                            yet they provide a striking visual image of climate transformation: lush forests reduced to 
+                            skeletal stumps emerging from floodwater. These landscapes are not only an effect of rising seas, 
+                            but also closely linked to government policy, land use, and regulation. Therefore, this topic fits 
+                            well within the framework of Digital Humanities, focusing on the interaction between policy and the environment.
+
+                        </p>
+                        <p className="mb-4 text-gray-700 max-w-3xl">
                             In the last 10 to 15 years, the once-lush forests surrounding the eastern coast of North Carolina
-                            died out, forming an eerie and inanimate scene known as the &quot;ghost forest&quot;. Scientists stated that
-                            the trees either died from seawater drowning or inland drought that forced them to intake extra salinity.
+                            died out, forming an eerie and inanimate scene known as the &quot;ghost forest&quot; (The Weather Channel). 
+                            Scientists stated that the trees either died from seawater drowning or inland drought that 
+                            forced them to intake extra salinity (The Weather Channel).
                          </p>
-                         <p className="mb-4 text-gray-800 px-8">
+                         <p className="mb-4 text-gray-700 max-w-3xl">
                             North Carolinians lost their natural buffer that protects them from storms and tsunamis;
                             same as millions of other coastal residents who lost their homelands from the rising sea level. 
                             Although people are suffering and scientists are preventing it,  the local and federal governments 
                             are still cutting research funds, ignoring human and environmental trauma, 
                             and blocking the executions of climate actions.
                          </p>
-                         <p className="mb-4 text-gray-800 px-8">
+                         <p className="mb-4 text-gray-700 max-w-3xl">
                             The rise of ghost forests in North Carolina is not an environmental issue that happened by chance.
                             It is a socio-political problem deeply intertwined with power dynamics, economic interests, 
                             and societal inequities.
                          </p>
-                         <p className="mb-4 text-gray-800 px-8">
+                         <p className="mb-4 text-gray-700 max-w-3xl">
                             Watch the video to learn more about what&apos;s going on.
                          </p>
                         <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
@@ -122,6 +157,21 @@ export default function Home() {
                         >
                             Government Policies that Influenced Ghost Forest Emergence
                         </h2>
+                         <div className="max-w-3xl mb-6 text-gray-800 text-base leading-7 px-4">
+                            <p className="mb-4">
+                                Our topic is rooted in the urgency of climate change and the increasing politicization of science. 
+                                The current political climate has downplayed the impact and severity of environmental issues, 
+                                which has reduced the public pressure for advocacy and systemic reform. Our project aims to counteract 
+                                this by providing digestible visualizations of ghost forest emergence and plain language summaries 
+                                of environmental policies in order to address a general audience.
+                            </p>
+                            <p className="mb-4">
+                                Key policies, such as the Hardison Amendments, have restricted North Carolina’s ability to enact environmental regulations that are stricter than federal standards. This has limited the state’s capacity to respond proactively to local ecological threats, including saltwater intrusion and rising sea levels. In recent years, additional legislation has further weakened protections for wetlands, making it more difficult to safeguard these critical ecosystems.
+                            </p>
+                            <p className="mb-4">
+                                The timeline below highlights significant policy changes and legislative events that have influenced the fate of North Carolina’s coastal forests. By understanding the historical and political context, we can better appreciate the complex relationship between government action and environmental outcomes.
+                            </p>
+                        </div>
                         <InteractiveTimeline />
                     </div>
                 </section>
