@@ -29,6 +29,49 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* Annotated Video Block */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            What are the Ghost Forests?
+                        </h2>
+                        <p className="mb-4 text-gray-800 px-8">
+                            In the last 10 to 15 years, the once-lush forests surrounding the eastern coast of North Carolina
+                            died out, forming an eerie and inanimate scene known as the "ghost forest". Scientists stated that
+                            the trees either died from seawater drowning or inland drought that forced them to intake extra salinity.
+                         </p>
+                         <p className="mb-4 text-gray-800 px-8">
+                            North Carolinians lost their natural buffer that protects them from storms and tsunamis;
+                            same as millions of other coastal residents who lost their homelands from the rising sea level. 
+                            Although people are suffering and scientists are preventing it,  the local and federal governments 
+                            are still cutting research funds, ignoring human and environmental trauma, 
+                            and blocking the executions of climate actions.
+                         </p>
+                         <p className="mb-4 text-gray-800 px-8">
+                            The rise of ghost forests in North Carolina is not an environmental issue that happened by chance.
+                            It is a socio-political problem deeply intertwined with power dynamics, economic interests, 
+                            and societal inequities.
+                         </p>
+                         <p className="mb-4 text-gray-800 px-8">
+                            Watch the video to learn more about what's going on.
+                         </p>
+                        <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
+                            <iframe
+                                width="100%"
+                                height="100%"
+                                src="https://www.youtube.com/embed/fnC0RktFbuA"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+
                 {/* NDVI Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
@@ -36,7 +79,7 @@ export default function Home() {
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            NDVI & Forest Loss Visualization
+                            Forest Loss in North Carolina from 2001 to 2024
                         </h2>
                         <div
                             className="w-full flex-1 flex items-center justify-center"
@@ -49,35 +92,23 @@ export default function Home() {
                             <NDVIMap />
                         </div>
 
-                        <p className="mt-3 text-[14px] text-gray-400">
+                        <p className="mt-3 text-[14px] text-gray-500">
+                            This map focuses on the eastern coast of North 
+                            Carolina and visualizes the forest loss from 
+                            2001 to 2024. It utilizes NDVI (Normalized
+                            Difference Vegetation Index) satellite imagery
+                            queried from Google Earth Engine to highlight
+                            areas of significant vegetation change, particularly
+                            the emergence of ghost forests.
+                        <p className="mt-3 text-[14px] text-gray-500"></p>
                             The colors in this legend were chosen for high
                             contrast and accessibility, making it easier for
                             visually impaired users to distinguish between
-                            categories.
+                            categories. The interactive feature allows users
+                            to explore the map in detail, zooming in on specific
+                            areas to analyze the extent of forest loss and
+                            ghost forest emergence over time.
                         </p>
-                    </div>
-                </section>
-
-                {/* Annotated Video Block */}
-                <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
-                        <h2
-                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
-                            style={{ fontFamily: "var(--font-geist-sans)" }}
-                        >
-                            Annotated Video
-                        </h2>
-                        <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
-                            <iframe
-                                width="100%"
-                                height="100%"
-                                src="https://www.youtube.com/embed/fnC0RktFbuA"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
                     </div>
                 </section>
 
