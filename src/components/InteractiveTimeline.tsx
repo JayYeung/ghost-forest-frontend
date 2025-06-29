@@ -3,7 +3,7 @@ import React from "react";
 
 export default function InteractiveTimeline() {
     const years = [1973, 1995, 2011, 2014, 2023, 2025];
-    const [selected, setSelected] = React.useState(2020);
+    const [selected, setSelected] = React.useState(1973);
     return (
         <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
             <div className="w-full flex items-center justify-between mb-6 relative">

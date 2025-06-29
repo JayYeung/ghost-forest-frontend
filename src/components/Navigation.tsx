@@ -4,10 +4,10 @@ import { usePathname } from "next/navigation";
 
 const tabs = [
     { name: "Main Page", href: "/" },
-    { name: "Annotated Bibliography", href: "/annotated-bibliography" },
     { name: "Narrative", href: "/narrative" },
-    { name: "About Page", href: "/about" },
     { name: "Data Critique", href: "/data-critique" },
+    { name: "Annotated Bibliography", href: "/annotated-bibliography" },
+    { name: "About Page", href: "/about" },
     { name: "Take Action!", href: "/take-action" },
 ];
 
