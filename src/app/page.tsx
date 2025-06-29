@@ -40,7 +40,7 @@ export default function Home() {
                         </h2>
                         <p className="mb-4 text-gray-800 px-8">
                             In the last 10 to 15 years, the once-lush forests surrounding the eastern coast of North Carolina
-                            died out, forming an eerie and inanimate scene known as the "ghost forest". Scientists stated that
+                            died out, forming an eerie and inanimate scene known as the &quot;ghost forest&quot;. Scientists stated that
                             the trees either died from seawater drowning or inland drought that forced them to intake extra salinity.
                          </p>
                          <p className="mb-4 text-gray-800 px-8">
@@ -56,7 +56,7 @@ export default function Home() {
                             and societal inequities.
                          </p>
                          <p className="mb-4 text-gray-800 px-8">
-                            Watch the video to learn more about what's going on.
+                            Watch the video to learn more about what&apos;s going on.
                          </p>
                         <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden shadow-lg border border-gray-200">
                             <iframe

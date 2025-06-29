@@ -48,7 +48,7 @@ export default function InteractiveTimeline() {
                         )}
                     {selected === 1995 &&
                         "The democratically controlled legislatures repealed the Hardison amendments, \
-                        allowing North Carolina to enact more stringent regulations than the federal government’s."}
+                        allowing North Carolina to enact more stringent regulations than the federal governments."}
                     {selected === 2011 &&
                         "With the return of a Republican majority to both legislative chambers for the first time since 1870, \
                         the legislature reinstated the Hardison amendments."}
@@ -58,8 +58,8 @@ export default function InteractiveTimeline() {
                     {selected === 2023 && (
                     <>
                         In May, the waters of the United States under the Clean Water Act were defined to
-                        only include “wetlands with a continuous surface connection”. In June, the NC Farm Act of 2023, Senate Bill 582,
-                        prevented North Carolina from protecting its wetlands that are not “navigable waters of the United States”.
+                        only include &quot;wetlands with a continuous surface connection&quot;. In June, the NC Farm Act of 2023, Senate Bill 582,
+                        prevented North Carolina from protecting its wetlands that are not &quot;navigable waters of the United States&quot;.
                         <br /><br />
                         The N.C. Department of Environmental Quality estimates that nearly half of the wetlands in
                         North Carolina, as much as 2.5 million acres, are no longer under the protection of the Clean Water Act.
@@ -75,7 +75,7 @@ export default function InteractiveTimeline() {
                         <br /><br />
                         At the National Oceanic and Atmospheric Administration (NOAA),
                         it is cutting at least $1.5 billion, with $1.31 billion of that reduction coming from
-                        “climate-dominated research, data, and grant programs”.
+                        &quot;climate-dominated research, data, and grant programs&quot;.
                         </>
                     )}
                 </p>
