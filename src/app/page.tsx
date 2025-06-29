@@ -15,7 +15,7 @@ export default function Home() {
                             className="text-4xl sm:text-5xl font-extrabold mb-4 text-center tracking-tight text-blue-900 drop-shadow-lg"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            Ghost Forest Digital Humanities Project
+                            Ghost Forests and Policies in North Carolina
                         </h1>
                         <p
                             className="text-lg sm:text-xl text-gray-700 mb-6 text-center font-medium max-w-3xl"
@@ -23,7 +23,7 @@ export default function Home() {
                         >
                             Analyzing ghost forest emergence in North Carolina
                             through NDVI satellite imagery and government
-                            spending data to understand the relationship between
+                            actions to understand the relationship between
                             policy decisions and environmental outcomes.
                         </p>
                     </div>
@@ -100,7 +100,8 @@ export default function Home() {
                             queried from Google Earth Engine to highlight
                             areas of significant vegetation change, particularly
                             the emergence of ghost forests.
-                        <p className="mt-3 text-[14px] text-gray-500"></p>
+                        </p>
+                        <p className="mt-3 text-[14px] text-gray-500">
                             The colors in this legend were chosen for high
                             contrast and accessibility, making it easier for
                             visually impaired users to distinguish between
@@ -119,7 +120,7 @@ export default function Home() {
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            Political Events that Influenced Ghost Forest Emergence
+                            Government Policies that Influenced Ghost Forest Emergence
                         </h2>
                         <InteractiveTimeline />
                     </div>
