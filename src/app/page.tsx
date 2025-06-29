@@ -2,15 +2,25 @@
 import Navigation from "@/components/Navigation";
 import NDVIMap from "@/components/NDVIMap";
 import InteractiveTimeline from "@/components/InteractiveTimeline";
+import { useRef } from "react";
+import ReadAloudControls from "@/components/ReadAloudControls";
 
 export default function Home() {
+    const contentRef = useRef<HTMLDivElement>(null);
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
                 {/* Hero Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
+                    <ReadAloudControls
+                        getText={() => contentRef.current?.innerText || ""}
+                    />
+                    <div 
+                        ref={contentRef}
+                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100"
+                    >
                         <h1
                             className="text-4xl sm:text-5xl font-extrabold mb-4 text-center tracking-tight text-blue-900 drop-shadow-lg"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
@@ -52,7 +62,13 @@ export default function Home() {
 
                 {/* Annotated Video Block */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
+                    <ReadAloudControls
+                        getText={() => contentRef.current?.innerText || ""}
+                    />
+                    <div 
+                        ref={contentRef}
+                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center"
+                    >
                         <h2
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
@@ -107,6 +123,40 @@ export default function Home() {
                     </div>
                 </section>
 
+
+                {/* Interactive Timeline Section */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <ReadAloudControls
+                        getText={() => contentRef.current?.innerText || ""}
+                    />
+                    <div 
+                        ref={contentRef}
+                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center"
+                    >
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            How Has Government Policies Influenced Ghost Forest Emergence Over Time?
+                        </h2>
+                        <p
+                            className="text-lg sm:text-xl text-gray-700 mb-6 font-medium max-w-4xl"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            While we do not aim to prove causation, we do hope to highlight meaningful correlations between different 
+                            policy decisions and ghost forest emergence over time. This allows for us to compare differences in proposed policy, 
+                            enforcement, and implementation, and we hope to identify patterns and measure the effect of policy decisions 
+                            on shaping ghost forest formation. 
+                        </p>
+                        <p className="mb-4 text-gray-700 max-w-3xl">
+                            Click through the timeline to learn more about how each policy act affected the formation of ghost forests.
+                            <br/><br/>
+                         </p>
+                        <InteractiveTimeline />
+                    </div>
+                </section>
+
+
                 {/* NDVI Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
@@ -145,34 +195,6 @@ export default function Home() {
                             areas to analyze the extent of forest loss and
                             ghost forest emergence over time.
                         </p>
-                    </div>
-                </section>
-
-                {/* Interactive Timeline Section */}
-                <section className="w-full max-w-6xl mx-auto mb-16">
-                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center">
-                        <h2
-                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
-                            style={{ fontFamily: "var(--font-geist-sans)" }}
-                        >
-                            Government Policies that Influenced Ghost Forest Emergence
-                        </h2>
-                         <div className="max-w-3xl mb-6 text-gray-800 text-base leading-7 px-4">
-                            <p className="mb-4">
-                                Our topic is rooted in the urgency of climate change and the increasing politicization of science. 
-                                The current political climate has downplayed the impact and severity of environmental issues, 
-                                which has reduced the public pressure for advocacy and systemic reform. Our project aims to counteract 
-                                this by providing digestible visualizations of ghost forest emergence and plain language summaries 
-                                of environmental policies in order to address a general audience.
-                            </p>
-                            <p className="mb-4">
-                                Key policies, such as the Hardison Amendments, have restricted North Carolina’s ability to enact environmental regulations that are stricter than federal standards. This has limited the state’s capacity to respond proactively to local ecological threats, including saltwater intrusion and rising sea levels. In recent years, additional legislation has further weakened protections for wetlands, making it more difficult to safeguard these critical ecosystems.
-                            </p>
-                            <p className="mb-4">
-                                The timeline below highlights significant policy changes and legislative events that have influenced the fate of North Carolina’s coastal forests. By understanding the historical and political context, we can better appreciate the complex relationship between government action and environmental outcomes.
-                            </p>
-                        </div>
-                        <InteractiveTimeline />
                     </div>
                 </section>
 

@@ -15,7 +15,7 @@ export default function Narrative() {
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
-                        Narrative
+                        Methodology
                     </h1>
                     <ReadAloudControls
                         getText={() => contentRef.current?.innerText || ""}
