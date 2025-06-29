@@ -2,7 +2,7 @@
 import React from "react";
 
 export default function InteractiveTimeline() {
-    const years = [2000, 2005, 2010, 2015, 2020, 2024];
+    const years = [1973, 1995, 2011, 2014, 2023, 2025];
     const [selected, setSelected] = React.useState(2020);
     return (
         <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
@@ -28,21 +28,56 @@ export default function InteractiveTimeline() {
                 ))}
             </div>
             <div className="w-full bg-blue-50 rounded-lg p-6 text-center text-blue-900 shadow-inner min-h-[80px]">
-                <p className="font-semibold text-lg mb-2">Year: {selected}</p>
-                <p className="text-sm text-gray-700">
+                <p className="font-semibold text-xl mb-3">
+                    {selected === 1973 && "1973: The Hardison Amendment"}
+                    {selected === 1995 && "1995: Repeal of the Hardison Amendment"}
+                    {selected === 2011 && "2011: Return of the Republican Party"}
+                    {selected === 2014 && "2014: Stricter Environmental Rules under Review"}
+                    {selected === 2023 && "2023: The North Carolina Farm Act of 2023"}
+                    {selected === 2025 && "2025: Nationwide Research Funding Cut"}
+                </p>
+                <p className="text-base text-gray-800 px-4 text-left leading-7">
                     {/* Placeholder content for each year */}
-                    {selected === 2000 &&
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero."}
-                    {selected === 2005 &&
-                        "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."}
-                    {selected === 2010 &&
-                        "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta."}
-                    {selected === 2015 &&
-                        "Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora."}
-                    {selected === 2020 &&
-                        "Torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero."}
-                    {selected === 2024 &&
-                        "Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam."}
+                    {selected === 1973 && (
+                        <>
+                        First enacted in 1973, the Hardison amendments are a series of laws
+                        that restrict state agencies from establishing environmental regulations stricter than federal regulations.
+                        It disabled North Carolina from independently setting stricter pollution standards
+                        or environmental protections than those mandated by the federal government.
+                        </>
+                        )}
+                    {selected === 1995 &&
+                        "The democratically controlled legislatures repealed the Hardison amendments, \
+                        allowing North Carolina to enact more stringent regulations than the federal government’s."}
+                    {selected === 2011 &&
+                        "With the return of a Republican majority to both legislative chambers for the first time since 1870, \
+                        the legislature reinstated the Hardison amendments."}
+                    {selected === 2014 &&
+                        "The legislature expanded the Hardison amendments to enforce \
+                        all rules stricter than the federal minimum standards to automatically fall under legislative review."}
+                    {selected === 2023 && (
+                    <>
+                        In May, the waters of the United States under the Clean Water Act were defined to
+                        only include “wetlands with a continuous surface connection”. In June, the NC Farm Act of 2023, Senate Bill 582,
+                        prevented North Carolina from protecting its wetlands that are not “navigable waters of the United States”.
+                        <br /><br />
+                        The N.C. Department of Environmental Quality estimates that nearly half of the wetlands in
+                        North Carolina, as much as 2.5 million acres, are no longer under the protection of the Clean Water Act.
+                        The devastating impacts of flooding, without the natural protection from wetlands,
+                        will be multiplied for communities of color and lower wealth in rural North Carolina.
+                    </>
+                    )}
+                    {selected === 2025 && (
+                        <>
+                        For the 2026 fiscal year that starts July 1, 2025, President Donald Trump cuts $18 billion
+                        of funding at the National Institutes of Health (NIH) and more than half at the National
+                        Science Foundation (NSF) and NASA. 
+                        <br /><br />
+                        At the National Oceanic and Atmospheric Administration (NOAA),
+                        it is cutting at least $1.5 billion, with $1.31 billion of that reduction coming from
+                        “climate-dominated research, data, and grant programs”.
+                        </>
+                    )}
                 </p>
             </div>
         </div>

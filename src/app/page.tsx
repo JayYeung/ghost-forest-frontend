@@ -119,7 +119,7 @@ export default function Home() {
                             className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            Interactive Timeline
+                            Political Events that Influenced Ghost Forest Emergence
                         </h2>
                         <InteractiveTimeline />
                     </div>
