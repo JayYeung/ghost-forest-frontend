@@ -295,6 +295,15 @@ export default function Narrative() {
                                 ghost forest crisis is framed and which
                                 perspectives are left out.
                             </p>
+                            <div style={{ width: '100%', height: '700px' }}>
+                              <iframe
+                                src="/graph.html"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 'none' }}
+                                title="Environmental Spending vs Forest Loss"
+                              ></iframe>
+                            </div>
                             <p className="mb-4">
                                 Alongside the NDVI-based analysis used in this
                                 study, future work could also incorporate
