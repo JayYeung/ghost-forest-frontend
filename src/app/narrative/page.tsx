@@ -230,6 +230,14 @@ export default function Narrative() {
                                     (Jay & Arlen)
                                 </span>
                             </h2>
+                            <div className="relative w-full" style={{ paddingTop: '133%' /* 3:4 ratio */ }}>
+                                <iframe
+                                    src="graph.html"
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    style={{ border: 'none' }}
+                                    title="NC Environmental Spending and Forest Loss Graph"
+                              ></iframe>
+                            </div>
                             <p className="mb-4">
                                 To produce our visualizations, our project draws
                                 from an interdisciplinary digital humanities
@@ -295,15 +303,7 @@ export default function Narrative() {
                                 ghost forest crisis is framed and which
                                 perspectives are left out.
                             </p>
-                            <div style={{ width: '100%', height: '700px' }}>
-                              <iframe
-                                src="/graph.html"
-                                width="100%"
-                                height="100%"
-                                style={{ border: 'none' }}
-                                title="Environmental Spending vs Forest Loss"
-                              ></iframe>
-                            </div>
+                           
                             <p className="mb-4">
                                 Alongside the NDVI-based analysis used in this
                                 study, future work could also incorporate
