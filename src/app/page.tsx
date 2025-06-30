@@ -263,6 +263,63 @@ export default function Home() {
                         </p>
                     </div>
                 </section>
+                {/* Government Spending and Timeline with Forest Loss  */}
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
+                        <div className="w-full flex justify-start mb-4">
+                            <ReadAloudControls
+                                getText={() =>
+                                    contentRef.current?.innerText || ""
+                                }
+                            />
+                        </div>
+                        <h2
+                            className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            When Budgets Fall, Forests Follow: NC Spending and Forest Loss Over Time
+                        </h2>
+                        <div
+                            className="w-full flex-1 flex items-center justify-center"
+                            style={{
+                                aspectRatio: "3/4",
+                                minHeight: "24rem",
+                                maxHeight: "40rem",
+                            }}
+                        >
+                            <iframe src="graph.html" width="100%" height="700" style="border:none;"></iframe>
+                        </div>
+
+                        <p className="mt-3 text-[14px] text-gray-500">
+                            This graph shows how environmental spending in North Carolina compares to forest 
+                            loss between 2003 and 2023, with major policy changes marked along the timeline. 
+                            The blue line represents how much money the state spent on environmental programs each year,
+                            while the green line shows how much forest was lost. Around 2013, spending peaked but then 
+                            started to decline, even as forest loss continued to rise. The red labels along the bottom highlight 
+                            key events and laws—like the 2011 Regulatory Reform Act, the 2017 repeal of the Stormwater Rule, and 
+                            the 2023 NC Farm Act—that weakened environmental protections. Natural disasters like Hurricane Florence (2018)
+                            and the Sackett v. EPA decision (2023), which narrowed federal wetland protections, also appear to have influenced
+                            forest loss. Overall, the graph suggests that as environmental protections were rolled back and funding decreased,
+                            North Carolina experienced more forest loss.
+                        </p>
+                        <p className="mt-3 text-[14px] text-gray-500">
+                            I made the graph accessible by using clear color contrast, labeled axes with units, readable policy annotations,
+                            descriptive titles, and source citations to ensure it’s easy to understand for a wide audience.
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
+
+                        </p>
+                    </div>
+                </section>
+
 
                 {/* Government Spending Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
