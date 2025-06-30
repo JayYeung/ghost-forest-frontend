@@ -123,18 +123,31 @@ export default function About() {
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
-                                                    Team Member 3
+                                                    Arlen
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Short bio and background
+                                                    
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
+                                                        <ul>
+                                                              <li>Created data visualizations, including an interactive map using Hansen et al.’s Global Forest Change dataset.</li>
+                                                              <li>Developed a time-series graph comparing forest loss with North Carolina’s environmental spending, using data from OSBM.</li>
+                                                              <li>Contributed to the data critique by analyzing limitations in both the forest and budget datasets, such as the use of projections and lack of causal detail.</li>
+                                                              <li>Used QGIS and Python to map and analyze 20 years of tree population change in coastal wetland areas.</li>
+                                                              <li>Helped shape the project narrative by connecting environmental data with policy decisions and structural drivers.</li>
+                                                              <li>Worked on designing and building the final website, with a focus on accessibility and integrating visuals with clear explanations.</li>
+                                                        </ul>
                                                     </strong>{" "}
-                                                    Web development, UI/UX
-                                                    design, accessibility
-                                                    features
+                                                    For this project, I’ve been involved in both the technical work and shaping the overall narrative. 
+                                                    I helped create the visualizations, including an interactive map using Hansen et al.’s forest loss data
+                                                    and a graph that compares that loss to environmental spending in North Carolina. I pulled in budget data from the OSBM,
+                                                    though I also noted in our critique that some of their numbers are just projections and not actual spending—which is important 
+                                                    for how we interpret the trends. I also pointed out how the satellite data shows where forest loss happens, but not why, which helped 
+                                                    us think more critically about how we present the story. On the technical side, I used QGIS and Python to map the data and track tree 
+                                                    population changes over the past 20 years.  I’m currently working on building our final website and making sure it’s not only
+                                                    clear and informative, but accessible too.
                                                 </p>
                                             </div>
                                         </div>
