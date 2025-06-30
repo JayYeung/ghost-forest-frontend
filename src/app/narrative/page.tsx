@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import { useRef } from "react";
 import ReadAloudControls from "@/components/ReadAloudControls";
+import NDVIMap from "@/components/NDVIMap";
 
 export default function Narrative() {
     const contentRef = useRef<HTMLDivElement>(null);
@@ -10,7 +11,7 @@ export default function Narrative() {
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100 flex flex-col">
             <Navigation />
             <main className="flex-1 flex items-center justify-center px-4 py-8">
-                <section className="w-full max-w-4xl bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 border border-gray-100">
+                <section className="w-full max-w-5xl bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 border border-gray-100">
                     <div className="w-full flex justify-start mb-4">
                         <ReadAloudControls
                             getText={() => contentRef.current?.innerText || ""}
@@ -230,13 +231,16 @@ export default function Narrative() {
                                     (Jay & Arlen)
                                 </span>
                             </h2>
-                            <div className="relative w-full" style={{ paddingTop: '133%' /* 3:4 ratio */ }}>
+                            <div
+                                className="relative w-full"
+                                style={{ paddingTop: "133%" /* 3:4 ratio */ }}
+                            >
                                 <iframe
                                     src="graph.html"
                                     className="absolute top-0 left-0 w-full h-full"
-                                    style={{ border: 'none' }}
+                                    style={{ border: "none" }}
                                     title="NC Environmental Spending and Forest Loss Graph"
-                              ></iframe>
+                                ></iframe>
                             </div>
                             <p className="mb-4">
                                 To produce our visualizations, our project draws
@@ -303,7 +307,74 @@ export default function Narrative() {
                                 ghost forest crisis is framed and which
                                 perspectives are left out.
                             </p>
-                           
+                            <section className="w-full max-w-6xl mx-auto mb-16">
+                                <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
+                                    <div className="w-full flex justify-start mb-4">
+                                        <ReadAloudControls
+                                            getText={() =>
+                                                contentRef.current?.innerText ||
+                                                ""
+                                            }
+                                        />
+                                    </div>
+                                    <h2
+                                        className="text-2xl font-bold mb-6 text-blue-900 text-center w-full"
+                                        style={{
+                                            fontFamily:
+                                                "var(--font-geist-sans)",
+                                        }}
+                                    >
+                                        Forest Loss in North Carolina from 2001
+                                        to 2024
+                                    </h2>
+                                    <div
+                                        className="w-full flex-1 flex items-center justify-center"
+                                        style={{
+                                            aspectRatio: "3/4",
+                                            minHeight: "24rem",
+                                            maxHeight: "40rem",
+                                        }}
+                                    >
+                                        <NDVIMap />
+                                    </div>
+                                    <p className="mt-3 text-[14px] text-gray-500">
+                                        This map focuses on the eastern coast of
+                                        North Carolina and visualizes the forest
+                                        loss from 2001 to 2024. It utilizes NDVI
+                                        (Normalized Difference Vegetation Index)
+                                        satellite imagery queried from Google
+                                        Earth Engine to highlight areas of
+                                        significant vegetation change,
+                                        particularly the emergence of ghost
+                                        forests.
+                                    </p>
+                                    <p className="mt-3 text-[14px] text-gray-500">
+                                        The colors in this legend were chosen
+                                        for high contrast and accessibility,
+                                        making it easier for visually impaired
+                                        users to distinguish between categories.
+                                        The interactive feature allows users to
+                                        explore the map in detail, zooming in on
+                                        specific areas to analyze the extent of
+                                        forest loss and ghost forest emergence
+                                        over time.
+                                    </p>
+                                    <p className="mt-3 text-[14px] text-gray-500">
+                                        <strong>Source:</strong> Hansen, Matthew
+                                        C., et al. &quot;Global Forest Change
+                                        v1.12 (2000–2024).&quot; Google Earth
+                                        Engine Data Catalog, Google, 2024,{" "}
+                                        <a
+                                            href="https://developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-blue-700 underline"
+                                        >
+                                            developers.google.com/earth-engine/datasets/catalog/UMD_hansen_global_forest_change_2024_v1_12
+                                        </a>
+                                    </p>
+                                </div>
+                            </section>
                             <p className="mb-4">
                                 Alongside the NDVI-based analysis used in this
                                 study, future work could also incorporate
