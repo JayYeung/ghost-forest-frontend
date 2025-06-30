@@ -100,14 +100,14 @@ export default function Narrative() {
                                 From this topic, we propose the following
                                 research question:{" "}
                                 <strong>
-                                    "What is the relationship between
+                                    &quot;What is the relationship between
                                     environmental policymaking and the emergence
-                                    of ghost forests in North Carolina?"
+                                    of ghost forests in North Carolina?&quot;
                                 </strong>{" "}
                                 This question invites us to look into different
-                                approaches for mitigating—or inadvertently
-                                forming—ghost forests in North Carolina. We
-                                recognize the limitations of our project,
+                                approaches for mitigating&mdash;or inadvertently
+                                forming&mdash;ghost forests in North Carolina.
+                                We recognize the limitations of our project,
                                 especially given the scope of our data and the
                                 fact that ghost forest formation is heavily
                                 influenced by extreme weather conditions. While
@@ -126,11 +126,12 @@ export default function Narrative() {
                                 contribute positive change. Therefore, we hope
                                 to not only map the creation of ghost forests
                                 and repeat these calls for action, but we also
-                                hope to highlight ongoing efforts — such as
-                                North Carolina State University students
+                                hope to highlight ongoing efforts &mdash; such
+                                as North Carolina State University students
                                 developing and presenting ghost forest lesson
-                                plans in local schools — and offer a story that
-                                balances urgency with hope (Collins et al.).
+                                plans in local schools &mdash; and offer a story
+                                that balances urgency with hope (Collins et
+                                al.).
                             </p>
                         </div>
                         <div>
@@ -142,19 +143,20 @@ export default function Narrative() {
                             </h2>
                             <p className="mb-4">
                                 The emergence of ghost forests along North
-                                Carolina's coast isn't just the result of
-                                sea-level rise or natural climate shifts, but it
-                                is the result of decades of political and
-                                economic decisions that prioritized short-term
-                                developments over long-term ecological health.
-                                Starting from the early to mid-20th century, a
-                                number of state-funded projects and policies
-                                transformed multitudes of acres of wetlands into
-                                farmland and real estate, mostly to benefit
+                                Carolina&rsquo;s coast isn&rsquo;t just the
+                                result of sea-level rise or natural climate
+                                shifts, but it is the result of decades of
+                                political and economic decisions that
+                                prioritized short-term developments over
+                                long-term ecological health. Starting from the
+                                early to mid-20th century, a number of
+                                state-funded projects and policies transformed
+                                multitudes of acres of wetlands into farmland
+                                and real estate, mostly to benefit
                                 industrial-scale agriculture and land
                                 development. These modifications completely
-                                changed the region's ecology, making it more
-                                susceptible to environmentally harmful
+                                changed the region&rsquo;s ecology, making it
+                                more susceptible to environmentally harmful
                                 processes, such as salinization and flooding.
                             </p>
                             <p className="mb-4">
@@ -237,11 +239,11 @@ export default function Narrative() {
                                 not neutral, which reflects on political,
                                 economic, and social value. The view is shaped
                                 by a theoretical framework from critical data
-                                studies. In Hepworth and Church's article, they
-                                mentioned how data/tools reveal the structural
-                                inequality. And this view guides us to reveal
-                                the real fact of ghost forests, and to think
-                                critically about the reasons behind ghost
+                                studies. In Hepworth and Church&rsquo;s article,
+                                they mentioned how data/tools reveal the
+                                structural inequality. And this view guides us
+                                to reveal the real fact of ghost forests, and to
+                                think critically about the reasons behind ghost
                                 forests.
                             </p>
                             <p className="mb-4">
@@ -275,7 +277,7 @@ export default function Narrative() {
                                 and visualize ghost forest data in ways that
                                 reveal environmental inequality and ensure the
                                 project remains accessible and reproducible. We
-                                use satellite imagery from Hansen et al.'s
+                                use satellite imagery from Hansen et al.&rsquo;s
                                 Global Forest Change dataset to track the
                                 expansion of ghost forests, particularly in
                                 vulnerable areas of the Albemarle-Pamlico region
@@ -298,23 +300,24 @@ export default function Narrative() {
                                 study, future work could also incorporate
                                 broader datasets available through platforms
                                 like Google Earth Engine. Building on methods
-                                demonstrated in Peck's thesis on ghost forests
-                                in Down East, North Carolina, combining local
-                                NDVI analysis with large-scale satellite data
-                                can offer deeper context for understanding
+                                demonstrated in Peck&rsquo;s thesis on ghost
+                                forests in Down East, North Carolina, combining
+                                local NDVI analysis with large-scale satellite
+                                data can offer deeper context for understanding
                                 long-term patterns of forest loss (Peck).
                                 Integrating these global datasets with
                                 site-specific measurements would allow for
                                 comparison between changes observed in North
-                                Carolina's coastal forests and broader regional
-                                or global trends. It could also provide more
-                                insight into how human-driven factors—such as
-                                drainage systems and land-use decisions—interact
-                                with natural pressures like sea-level rise and
-                                saltwater intrusion. Together, these combined
-                                approaches would strengthen understanding of how
-                                ghost forests are forming and expanding across
-                                North Carolina's vulnerable coastal landscapes.
+                                Carolina&rsquo;s coastal forests and broader
+                                regional or global trends. It could also provide
+                                more insight into how human-driven factors—such
+                                as drainage systems and land-use
+                                decisions—interact with natural pressures like
+                                sea-level rise and saltwater intrusion.
+                                Together, these combined approaches would
+                                strengthen understanding of how ghost forests
+                                are forming and expanding across North
+                                Carolina&rsquo;s vulnerable coastal landscapes.
                             </p>
                             <p className="mb-4">
                                 The methodology and theoretical framework we
@@ -360,25 +363,25 @@ export default function Narrative() {
                                 blind safe. GeoPandas also allows us to create
                                 map visualizations with different spatial
                                 textures (in addition to color) (GeoPandas).
-                                We'll also store any of our intermediate outputs
-                                as GeoPackage layers or in GeoPandas Dataframes
-                                on a public GitHub Repository so that our work
-                                can be reproduced, modified, and rerun by future
-                                researchers when tools evolve.
+                                We&rsquo;ll also store any of our intermediate
+                                outputs as GeoPackage layers or in GeoPandas
+                                Dataframes on a public GitHub Repository so that
+                                our work can be reproduced, modified, and rerun
+                                by future researchers when tools evolve.
                             </p>
                             <p className="mb-4">
-                                Our methodology directly supports the project's
-                                central thesis: that the rise of ghost forests
-                                in North Carolina is not simply an ecological
-                                consequence, but is shaped by political and
-                                corporate corruption that drives environmental
-                                degradation and disproportionately impacts
-                                marginalized communities. By combining critical
-                                data studies with tools like QGIS, Python, and
-                                satellite imagery, we aim to make visible the
-                                corrupt policy decisions and power structures
-                                that have allowed wetland destruction to
-                                accelerate. Analyzing zoning laws, permitting
+                                Our methodology directly supports the
+                                project&rsquo;s central thesis: that the rise of
+                                ghost forests in North Carolina is not simply an
+                                ecological consequence, but is shaped by
+                                political and corporate corruption that drives
+                                environmental degradation and disproportionately
+                                impacts marginalized communities. By combining
+                                critical data studies with tools like QGIS,
+                                Python, and satellite imagery, we aim to make
+                                visible the corrupt policy decisions and power
+                                structures that have allowed wetland destruction
+                                to accelerate. Analyzing zoning laws, permitting
                                 records, and key legislation such as the Sackett
                                 v. EPA helps us trace how deregulation,
                                 lobbying, and development priorities contribute
@@ -389,8 +392,8 @@ export default function Narrative() {
                                 approach allows us to argue that ghost forests
                                 are not inevitable results of climate change,
                                 but outcomes of political corruption and
-                                neglect—reinforcing our central claim about
-                                environmental injustice.
+                                neglect&mdash;reinforcing our central claim
+                                about environmental injustice.
                             </p>
                         </div>
                         <div>
@@ -426,9 +429,10 @@ export default function Narrative() {
                                 both data feminist theory and ethical
                                 visualization frameworks, offering a space for
                                 reflection, action, and an understanding that
-                                change is possible — even at the individual
-                                level. In balancing awareness with advocacy, we
-                                hope to promote dialogue, research, and action.
+                                change is possible &mdash; even at the
+                                individual level. In balancing awareness with
+                                advocacy, we hope to promote dialogue, research,
+                                and action.
                             </p>
                         </div>
                         <div>
@@ -443,9 +447,10 @@ export default function Narrative() {
                                 }}
                             >
                                 <p>
-                                    Allen, Jennifer. “Ghost Forest Education
-                                    Focal Point of Public Science Project.”{" "}
-                                    <em>Coastal Review</em>, 13 July 2023,{" "}
+                                    Allen, Jennifer. &quot;Ghost Forest
+                                    Education Focal Point of Public Science
+                                    Project.&quot; <em>Coastal Review</em>, 13
+                                    July 2023,{" "}
                                     <a
                                         href="https://coastalreview.org/2023/07/ghost-forest-education-focal-point-of-public-science-project"
                                         className="text-blue-700 underline"
@@ -457,9 +462,9 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Castagno, Peter. “Not Paying Attention to
-                                    History: Environmentalists Concerned over
-                                    Loosened Wetlands Rules.”{" "}
+                                    Castagno, Peter. &quot;Not Paying Attention
+                                    to History: Environmentalists Concerned over
+                                    Loosened Wetlands Rules.&quot;{" "}
                                     <em>Port City Daily</em>, 2 Oct. 2023,{" "}
                                     <a
                                         href="https://portcitydaily.com/local-news/2023/10/02/not-paying-attention-to-history-environmentalists-concerned-over-loosened-wetlands-rules"
@@ -472,9 +477,11 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    “‘Ghost Forests’: What They Are and Why
-                                    They’re Becoming More Common.”{" "}
-                                    <em>CBS News</em>, Aug. 2017,{" "}
+                                    &quot;
+                                    <span>&lsquo;Ghost Forests&rsquo;</span>:
+                                    What They Are and Why They&rsquo;re Becoming
+                                    More Common.&quot; <em>CBS News</em>, Aug.
+                                    2017,{" "}
                                     <a
                                         href="https://www.cbsnews.com/news/ghost-forests-what-they-are-why-theyre-becoming-more-common"
                                         className="text-blue-700 underline"
@@ -486,8 +493,8 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Collins, John, et al. “Forest Wetland Loss
-                                    on the Coastal Plain.”{" "}
+                                    Collins, John, et al. &quot;Forest Wetland
+                                    Loss on the Coastal Plain.&quot;{" "}
                                     <em>
                                         Albemarle-Pamlico National Estuary
                                         Partnership
@@ -504,9 +511,10 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Democracy North Carolina. “Political
-                                    Donations Decide NC’s Environmental Future.”{" "}
-                                    <em>Democracy NC</em>, July 1995,{" "}
+                                    Democracy North Carolina. &quot;Political
+                                    Donations Decide NC&rsquo;s Environmental
+                                    Future.&quot; <em>Democracy NC</em>, July
+                                    1995,{" "}
                                     <a
                                         href="https://democracync.org/research/political-donations-decide-ncs-environmental-future"
                                         className="text-blue-700 underline"
@@ -518,7 +526,7 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    “Mapping and Plotting Tools.”{" "}
+                                    &quot;Mapping and Plotting Tools.&quot;{" "}
                                     <em>GeoPandas Documentation</em>,{" "}
                                     <a
                                         href="https://geopandas.org/en/stable/docs/user_guide/mapping.html"
@@ -543,11 +551,11 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Hansen, Matthew C., et al. “High-Resolution
-                                    Global Maps of 21st-Century Forest Cover
-                                    Change.” <em>Science</em>, vol. 342, no.
-                                    6160, 15 Nov. 2013, pp. 850–53. Google Earth
-                                    Engine,{" "}
+                                    Hansen, Matthew C., et al.
+                                    &quot;High-Resolution Global Maps of
+                                    21st-Century Forest Cover Change.&quot;{" "}
+                                    <em>Science</em>, vol. 342, no. 6160, 15
+                                    Nov. 2013, pp. 850–53. Google Earth Engine,{" "}
                                     <a
                                         href="https://glad.earthengine.app/view/global-forest-change"
                                         className="text-blue-700 underline"
@@ -559,9 +567,9 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Natural Resources Defense Council. “What You
-                                    Need to Know about Sackett v. EPA.”{" "}
-                                    <em>NRDC</em>, 5 June 2023,{" "}
+                                    Natural Resources Defense Council.
+                                    &quot;What You Need to Know about Sackett v.
+                                    EPA.&quot; <em>NRDC</em>, 5 June 2023,{" "}
                                     <a
                                         href="https://www.nrdc.org/stories/what-you-need-know-about-sackett-v-epa"
                                         className="text-blue-700 underline"
@@ -574,11 +582,11 @@ export default function Narrative() {
                                 </p>
                                 <p>
                                     Peck, Kaitlin G. Measuring the Emergence of
-                                    “Ghost Forests” from 1986 to 2016 and Their
-                                    Enviro-Cultural Impacts on the Communities
-                                    of Down East, North Carolina, USA. Senior
-                                    Honors Thesis, University of North Carolina
-                                    at Chapel Hill, Apr. 2023.
+                                    &quot;Ghost Forests&quot; from 1986 to 2016
+                                    and Their Enviro-Cultural Impacts on the
+                                    Communities of Down East, North Carolina,
+                                    USA. Senior Honors Thesis, University of
+                                    North Carolina at Chapel Hill, Apr. 2023.
                                 </p>
                                 <p>
                                     QGIS. QGIS Project,{" "}
@@ -593,8 +601,8 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Talton, Trista. “Analysis: Farm Act Strips
-                                    Wetland Safeguards, Mitigation.”{" "}
+                                    Talton, Trista. &quot;Analysis: Farm Act
+                                    Strips Wetland Safeguards, Mitigation.&quot;{" "}
                                     <em>Coastal Review</em>, 20 July 2023,{" "}
                                     <a
                                         href="https://coastalreview.org/2023/07/analysis-farm-act-strips-wetland-safeguards-mitigation"
@@ -607,8 +615,9 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Temple, James. “The Trump Administration Has
-                                    Shut down More than 100 Climate Studies.”{" "}
+                                    Temple, James. &quot;The Trump
+                                    Administration Has Shut down More than 100
+                                    Climate Studies.&quot;{" "}
                                     <em>MIT Technology Review</em>, 2 June 2025,{" "}
                                     <a
                                         href="https://www.technologyreview.com/2025/06/02/1117653/the-trump-administration-has-shut-down-more-than-100-climate-studies"
@@ -622,8 +631,8 @@ export default function Narrative() {
                                 </p>
                                 <p>
                                     United States Environmental Protection
-                                    Agency. “History of the Clean Water Act.”{" "}
-                                    <em>U.S. EPA</em>, 2023,{" "}
+                                    Agency. &quot;History of the Clean Water
+                                    Act.&quot; <em>U.S. EPA</em>, 2023,{" "}
                                     <a
                                         href="https://www.epa.gov/laws-regulations/history-clean-water-act"
                                         className="text-blue-700 underline"
@@ -635,8 +644,8 @@ export default function Narrative() {
                                     .
                                 </p>
                                 <p>
-                                    Washington University in St. Louis. “Explore
-                                    Mapping LGBTQ St. Louis.”{" "}
+                                    Washington University in St. Louis.
+                                    &quot;Explore Mapping LGBTQ St. Louis.&quot;{" "}
                                     <em>ArcGIS StoryMaps</em>, 23 June 2023,{" "}
                                     <a
                                         href="https://storymaps.arcgis.com/stories/9675a82d3d564c80b950361e709dff5e"

@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import { useRef } from "react";
 import ReadAloudControls from "@/components/ReadAloudControls";
+import Image from "next/image";
 
 export default function About() {
     const contentRef = useRef<HTMLDivElement>(null);
@@ -39,10 +40,12 @@ export default function About() {
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
                                             <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                                <img
+                                                <Image
                                                     src="/images/jay-yeung.jpg"
                                                     alt="Jay Yeung"
-                                                    className="object-cover w-full h-full"
+                                                    width={64}
+                                                    height={64}
+                                                    className="object-cover w-full h-full rounded-full"
                                                 />
                                             </div>
                                             <div className="flex-1">
