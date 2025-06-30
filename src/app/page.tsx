@@ -287,7 +287,7 @@ export default function Home() {
                                 maxHeight: "40rem",
                             }}
                         >
-                            <iframe src="graph.html" width="100%" height="700" style="border:none;"></iframe>
+                            <iframe src="graph.html" width="100%" height="700" style={{ border: 'none' }}></iframe>
                         </div>
 
                         <p className="mt-3 text-[14px] text-gray-500">
