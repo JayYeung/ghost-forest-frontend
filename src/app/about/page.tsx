@@ -116,38 +116,64 @@ export default function About() {
                                     </div>
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
-                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
-                                                <span className="text-gray-600 text-sm">
-                                                     <Image
+                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                                <Image
                                                     src="/images/IMG_0922.jpg"
                                                     alt="Arlen"
                                                     width={64}
                                                     height={64}
                                                     className="object-cover w-full h-full rounded-full"
                                                 />
-                                                </span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
                                                     Arlen
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Front End, Data Critique, Annotated Biliography, 
-                                                    Narrative, Graph Visualization, Narrative
-                                                    
+                                                    Front End, Data Critique,
+                                                    Annotated Biliography,
+                                                    Narrative, Graph
+                                                    Visualization, Narrative
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    For this project, I’ve been involved in both the technical work and shaping the overall narrative. 
-                                                    I helped create the visualizations, including an interactive map using Hansen et al.’s forest loss data
-                                                    and a graph that compares that loss to environmental spending in North Carolina. I pulled in budget data from the OSBM,
-                                                    though I also noted in our critique that some of their numbers are just projections and not actual spending—which is important 
-                                                    for how we interpret the trends. I also pointed out how the satellite data shows where forest loss happens, but not why, which helped 
-                                                    us think more critically about how we present the story. On the technical side, I used QGIS and Python to map the data and track tree 
-                                                    population changes over the past 20 years.  I’m currently working on building our final website and making sure it’s not only
-                                                    clear and informative, but accessible too.
+                                                    For this project, I've been
+                                                    involved in both the
+                                                    technical work and shaping
+                                                    the overall narrative. I
+                                                    helped create the
+                                                    visualizations, including an
+                                                    interactive map using Hansen
+                                                    et al.'s forest loss data
+                                                    and a graph that compares
+                                                    that loss to environmental
+                                                    spending in North Carolina.
+                                                    I pulled in budget data from
+                                                    the OSBM, though I also
+                                                    noted in our critique that
+                                                    some of their numbers are
+                                                    just projections and not
+                                                    actual spending—which is
+                                                    important for how we
+                                                    interpret the trends. I also
+                                                    pointed out how the
+                                                    satellite data shows where
+                                                    forest loss happens, but not
+                                                    why, which helped us think
+                                                    more critically about how we
+                                                    present the story. On the
+                                                    technical side, I used QGIS
+                                                    and Python to map the data
+                                                    and track tree population
+                                                    changes over the past 20
+                                                    years. I'm currently working
+                                                    on building our final
+                                                    website and making sure it's
+                                                    not only clear and
+                                                    informative, but accessible
+                                                    too.
                                                 </p>
                                             </div>
                                         </div>
