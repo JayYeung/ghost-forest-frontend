@@ -78,25 +78,38 @@ export default function About() {
                                     </div>
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
-                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
-                                                <span className="text-gray-600 text-sm">
-                                                    Photo
-                                                </span>
+                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                                <Image
+                                                    src="/images/daphne.jpg"
+                                                    alt="Daphne"
+                                                    width={64}
+                                                    height={64}
+                                                    className="object-cover w-full h-full rounded-full"
+                                                />
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
-                                                    Team Member 2
+                                                    Daphne
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Short bio and background
+                                                    Political Events Timeline,
+                                                    Frontend, Data Critique,
+                                                    Video Annotation, and
+                                                    Visualization Caption
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    Policy research, timeline
-                                                    development, narrative
-                                                    writing
+                                                    I wrote the political
+                                                    policies events that
+                                                    influenced the formation of
+                                                    ghost forests in North
+                                                    Carolina. I also helped
+                                                    editing the narrative,
+                                                    especially the topic and
+                                                    thesis. I also helped build
+                                                    the frontend.
                                                 </p>
                                             </div>
                                         </div>
