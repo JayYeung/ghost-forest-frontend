@@ -132,19 +132,13 @@ export default function About() {
                                                     Arlen
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
+                                                    Front End, Data Critique, Annotated Biliography, 
+                                                    Narrative, Graph Visualization, Narrative
                                                     
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
-                                                        <ul>
-                                                              <li>Created data visualizations, including an interactive map using Hansen et al.’s Global Forest Change dataset.</li>
-                                                              <li>Developed a time-series graph comparing forest loss with North Carolina’s environmental spending, using data from OSBM.</li>
-                                                              <li>Contributed to the data critique by analyzing limitations in both the forest and budget datasets, such as the use of projections and lack of causal detail.</li>
-                                                              <li>Used QGIS and Python to map and analyze 20 years of tree population change in coastal wetland areas.</li>
-                                                              <li>Helped shape the project narrative by connecting environmental data with policy decisions and structural drivers.</li>
-                                                              <li>Worked on designing and building the final website, with a focus on accessibility and integrating visuals with clear explanations.</li>
-                                                        </ul>
                                                     </strong>{" "}
                                                     For this project, I’ve been involved in both the technical work and shaping the overall narrative. 
                                                     I helped create the visualizations, including an interactive map using Hansen et al.’s forest loss data
