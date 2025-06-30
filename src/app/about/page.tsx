@@ -139,38 +139,39 @@ export default function About() {
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    For this project, I've been
-                                                    involved in both the
+                                                    For this project, I&apos;ve
+                                                    been involved in both the
                                                     technical work and shaping
                                                     the overall narrative. I
                                                     helped create the
                                                     visualizations, including an
                                                     interactive map using Hansen
-                                                    et al.'s forest loss data
-                                                    and a graph that compares
-                                                    that loss to environmental
-                                                    spending in North Carolina.
-                                                    I pulled in budget data from
-                                                    the OSBM, though I also
-                                                    noted in our critique that
-                                                    some of their numbers are
-                                                    just projections and not
-                                                    actual spending—which is
-                                                    important for how we
-                                                    interpret the trends. I also
-                                                    pointed out how the
-                                                    satellite data shows where
-                                                    forest loss happens, but not
-                                                    why, which helped us think
-                                                    more critically about how we
-                                                    present the story. On the
-                                                    technical side, I used QGIS
-                                                    and Python to map the data
-                                                    and track tree population
-                                                    changes over the past 20
-                                                    years. I'm currently working
-                                                    on building our final
-                                                    website and making sure it's
+                                                    et al.&apos;s forest loss
+                                                    data and a graph that
+                                                    compares that loss to
+                                                    environmental spending in
+                                                    North Carolina. I pulled in
+                                                    budget data from the OSBM,
+                                                    though I also noted in our
+                                                    critique that some of their
+                                                    numbers are just projections
+                                                    and not actual
+                                                    spending—which is important
+                                                    for how we interpret the
+                                                    trends. I also pointed out
+                                                    how the satellite data shows
+                                                    where forest loss happens,
+                                                    but not why, which helped us
+                                                    think more critically about
+                                                    how we present the story. On
+                                                    the technical side, I used
+                                                    QGIS and Python to map the
+                                                    data and track tree
+                                                    population changes over the
+                                                    past 20 years. I&apos;m
+                                                    currently working on
+                                                    building our final website
+                                                    and making sure it&apos;s
                                                     not only clear and
                                                     informative, but accessible
                                                     too.
