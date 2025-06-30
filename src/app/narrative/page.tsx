@@ -11,15 +11,17 @@ export default function Narrative() {
             <Navigation />
             <main className="flex-1 flex items-center justify-center px-4 py-8">
                 <section className="w-full max-w-4xl bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 border border-gray-100">
+                    <div className="w-full flex justify-start mb-4">
+                        <ReadAloudControls
+                            getText={() => contentRef.current?.innerText || ""}
+                        />
+                    </div>
                     <h1
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
                         Methodology
                     </h1>
-                    <ReadAloudControls
-                        getText={() => contentRef.current?.innerText || ""}
-                    />
                     <div
                         ref={contentRef}
                         className="space-y-6 text-gray-700"
