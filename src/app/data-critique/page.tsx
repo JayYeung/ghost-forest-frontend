@@ -28,16 +28,25 @@ export default function DataCritique() {
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
                         <p className="text-lg leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer nec odio. Praesent libero. Sed cursus
-                            ante dapibus diam. Sed nisi. Nulla quis sem at nibh
-                            elementum imperdiet. Duis sagittis ipsum.
+                            The interactive map draws from the University of Maryland’s Global Forest Change 2000–2024 dataset, 
+                            which uses satellite imagery to track global tree cover loss at a 30-meter resolution. 
+                            It’s especially useful for observing the expansion of ghost forests and saltwater intrusion in vulnerable wetland areas.
+                            The map offers a clear, year-by-year view of deforestation trends that would be hard to grasp from tables or reports alone.
+                            However, the map also comes with important limitations. While it’s visually powerful, it doesn’t explain why forests are disappearing. 
+                            The data doesn’t distinguish between natural events (like hurricanes), ecological stress (like salinization), 
+                            or human actions (like logging or zoning changes). Without added context, users might interpret the changes as neutral or inevitable.
+                            As digital humanities scholars like Hepworth and Church point out, visualizations like these often present data as objective truth, 
+                            when in fact they reflect what’s chosen to be shown—and what’s left out. In this case, the map omits any mention of policies, land ownership,
+                            or community impact.
+
                         </p>
                         <p className="text-lg leading-relaxed">
-                            Praesent mauris. Fusce nec tellus sed augue semper
-                            porta. Mauris massa. Vestibulum lacinia arcu eget
-                            nulla. Class aptent taciti sociosqu ad litora
-                            torquent per conubia nostra, per inceptos himenaeos.
+                            To fill in those gaps, we paired the map with a custom time-series graph that overlays annual forest loss data with state and federal environmental spending from 2003 to 2023, 
+                            alongside legislative markers such as the Regulatory Reform Act (2011), and the NC Farm Act (2023). This graph shifts the focus from “what happened” to “why it may have happened.”
+                            It reveals moments when spending dropped or protections were weakened, followed by visible upticks in forest loss. By putting ecological data in conversation with policy and money,
+                            the graph invites a more critical reading of environmental change as something shaped by governance and power—not just nature.
+                            The OSBM environmental spending data includes projections for recent years, meaning not all values reflect actual expenditures. 
+                            Additionally, shifting budget categories and inconsistent definitions over time make direct year-to-year comparisons somewhat unreliable.
                         </p>
                         <p className="text-lg leading-relaxed">
                             Curabitur sodales ligula in libero. Sed dignissim
