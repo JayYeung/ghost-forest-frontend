@@ -118,7 +118,13 @@ export default function About() {
                                         <div className="flex items-start space-x-4">
                                             <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
                                                 <span className="text-gray-600 text-sm">
-                                                    Photo
+                                                     <Image
+                                                    src="/images/IMG_0922.jpg"
+                                                    alt="Arlen"
+                                                    width={64}
+                                                    height={64}
+                                                    className="object-cover w-full h-full rounded-full"
+                                                />
                                                 </span>
                                             </div>
                                             <div className="flex-1">
