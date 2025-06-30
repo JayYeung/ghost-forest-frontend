@@ -264,20 +264,6 @@ export default function Home() {
                     </div>
                 </section>
 
-
-
-
-
-
-
-
-
-
-                        </p>
-                    </div>
-                </section>
-
-
                 {/* Government Spending Analysis Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100">
