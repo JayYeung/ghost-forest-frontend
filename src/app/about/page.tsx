@@ -71,7 +71,16 @@ export default function About() {
                                                     audio playback, and wrote
                                                     the methods and data
                                                     sections. Built much of the
-                                                    UI and backend.
+                                                    UI and backend. As an avid
+                                                    environmentalist with a
+                                                    background in studying
+                                                    ecosystems and forests in
+                                                    high school, I find this
+                                                    project especially
+                                                    meaningful. Analyzing
+                                                    real-world data on forest
+                                                    change is both fascinating
+                                                    and rewarding to me.
                                                 </p>
                                             </div>
                                         </div>
@@ -181,14 +190,20 @@ export default function About() {
                                     </div>
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
-                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
+                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
                                                 <span className="text-gray-600 text-sm">
-                                                    Photo
+                                                    <Image
+                                                        src="/images/IMG_0922.jpg"
+                                                        alt="Hailey"
+                                                        width={64}
+                                                        height={64}
+                                                        className="object-cover w-full h-full rounded-full"
+                                                    />
                                                 </span>
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
-                                                    Team Member 4
+                                                    Hailey
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
                                                     Short bio and background
