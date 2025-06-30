@@ -344,7 +344,17 @@ export default function About() {
                                         </h3>
                                         <ul className="text-sm space-y-2">
                                             <li>
-                                                <strong>Something</strong> ...
+                                                <strong>We used Jupyter Notebook to combine code, visualizations, 
+                                                    and commentary in one place, making it easier to collaborate and revise. 
+                                                    For visualizations, we used Matplotlib for quick static plots and Plotly to
+                                                    create interactive graphs—most clearly seen in our environmental spending vs.
+                                                    forest loss timeline with hoverable policy markers. We chose tools that allowed
+                                                    us to highlight patterns without oversimplifying the data. Instead of filling in
+                                                    missing values, we preserved gaps to reflect real-world inconsistencies in 
+                                                    environmental reporting.
+
+
+                                              </strong> 
                                             </li>
                                         </ul>
                                     </div>
