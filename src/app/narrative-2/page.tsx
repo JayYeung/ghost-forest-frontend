@@ -164,6 +164,10 @@ export default function Narrative2() {
                             <div>
                                 <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                     Centering People in the Data
+                                    <span className="font-normal text-base">
+                                        {" "}
+                                        (Daphne, Hailey)
+                                    </span>
                                 </h2>
                                 <p className="mb-4">
                                     Guided by the principles of data feminism
@@ -218,6 +222,10 @@ export default function Narrative2() {
                             <div>
                                 <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                     Community Impact
+                                    <span className="font-normal text-base">
+                                        {" "}
+                                        (Hailey, Jay)
+                                    </span>
                                 </h2>
                                 <div className="mb-4 flex gap-4 items-start">
                                     <Image
