@@ -244,7 +244,8 @@ export default function About() {
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
                                                     Narrative, Data Critique,
-                                                    Political Events Timeline
+                                                    Political Events Timeline,
+                                                    Oral Histories
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
