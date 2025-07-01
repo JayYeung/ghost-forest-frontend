@@ -319,7 +319,12 @@ export default function Narrative2() {
                                             be the start of a conversation about
                                             climate change impacts.&quot; (Allen)
                                         </p>
-                                         <p className="mb-4">
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <p className="mb-4">
                                             Guided by the principles of data feminism and ethical visualization, 
                                              our third visualization focuses on the people most affected by ghost 
                                              forest emergence (Rezai; Hepworth and Church). Drawing on U.S. Census data,
@@ -339,12 +344,7 @@ export default function Narrative2() {
                                             Rather than flattening these experiences into data points, our visualization together with
                                               oral histories aims to highlight the people behind the numbers, displaying how ghost forests 
                                               affect not only ecosystems but also the lives and histories of those who inhabit them.
-
                                         </p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         {/* Conclusion */}
                         <div>
