@@ -346,7 +346,7 @@ export default function Narrative2() {
                                                 local communities, then the
                                                 better chance we have of
                                                 adapting to these changes moving
-                                                forward&quot;(Allen).
+                                                forward&quot; (Allen).
                                             </p>
                                         </div>
                                     </div>
@@ -541,6 +541,18 @@ export default function Narrative2() {
                                     .
                                 </p>
                                 <p>
+                                    Data USA. &quot;North Carolina.&quot; <em>Data USA</em>, 2023,{" "}
+                                    <a
+                                        href="https://datausa.io/profile/geo/north-carolina"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        datausa.io/profile/geo/north-carolina
+                                    </a>
+                                    .
+                                </p>
+                                <p>
                                     Democracy North Carolina. &quot;Political
                                     Donations Decide NC&apos;s Environmental
                                     Future.&quot; <em>Democracy NC</em>, July
@@ -607,6 +619,30 @@ export default function Narrative2() {
                                         rel="noopener noreferrer"
                                     >
                                         nrdc.org/stories/what-you-need-know-about-sackett-v-epa
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    North Carolina Office of State Archaeology. &quot;Outer Coastal Plain | NC Archaeology.&quot; <em>North Carolina Office of State Archaeology</em>, 2022,{" "}
+                                    <a
+                                        href="https://archaeology.ncdcr.gov/programs/education/climatechange/risks/outercoastal"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        archaeology.ncdcr.gov/programs/education/climatechange/risks/outercoastal
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    North Carolina Office of State Budget and Management, State Demographer. &quot;Population by Age, Race, Sex (LINC).&quot; <em>North Carolina Office of State Budget and Management</em>, 27 Jan. 2025,{" "}
+                                    <a
+                                        href="https://linc.osbm.nc.gov/explore/dataset/population-by-age-race-sex-linc/information"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        linc.osbm.nc.gov/explore/dataset/population-by-age-race-sex-linc/information
                                     </a>
                                     .
                                 </p>
