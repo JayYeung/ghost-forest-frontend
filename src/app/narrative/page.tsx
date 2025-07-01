@@ -139,9 +139,40 @@ export default function Narrative() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Historical Context{" "}
                                 <span className="font-normal text-base">
-                                    (Brayden)
+                                    (Brayden/Arlen)
                                 </span>
                             </h2>
+                            <div
+                                className="relative w-full"
+                                style={{ paddingTop: "75%" }}
+                            >
+                                <iframe
+                                    src="graph.html"
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    style={{ border: "none" }}
+                                    title="NC Environmental Spending and Forest Loss Graph"
+                                    scrolling="no"
+                                ></iframe>
+                            </div>
+
+                            <p className="mb-4 text-[14px] text-gray-500">
+                                This interactive graph compares North Carolina's
+                                environmental spending with forest loss from
+                                2003 to 2023. The blue line represents annual
+                                spending on environmental programs, which peaked
+                                around 2013 before dropping sharply. Meanwhile,
+                                the green line shows forest loss steadily
+                                rising, especially after 2015. Key policy
+                                changes—such as the 2011 Regulatory Reform Act,
+                                the 2013 Stormwater Rule Repeal, and the 2023 NC
+                                Farm Act— reduced protections for wetlands and
+                                forests, making land development easier. Natural
+                                disasters and court decisions like Sackett v.
+                                EPA also contributed to accelerating forest
+                                loss. The graph highlights how weakened policies
+                                and decreased funding are closely linked to
+                                increased deforestation in North Carolina.
+                            </p>
                             <p className="mb-4">
                                 The emergence of ghost forests along North
                                 Carolina&rsquo;s coast isn&rsquo;t just the
@@ -231,37 +262,7 @@ export default function Narrative() {
                                     (Jay & Arlen)
                                 </span>
                             </h2>
-                            <div
-                                className="relative w-full"
-                                style={{ paddingTop: "75%" }}
-                            >
-                                <iframe
-                                    src="graph.html"
-                                    className="absolute top-0 left-0 w-full h-full"
-                                    style={{ border: "none" }}
-                                    title="NC Environmental Spending and Forest Loss Graph"
-                                    scrolling="no"
-                                ></iframe>
-                            </div>
-
-                            <p className="mb-4 text-[14px] text-gray-500">
-                                This interactive graph compares North Carolina's
-                                environmental spending with forest loss from
-                                2003 to 2023. The blue line represents annual
-                                spending on environmental programs, which peaked
-                                around 2013 before dropping sharply. Meanwhile,
-                                the green line shows forest loss steadily
-                                rising, especially after 2015. Key policy
-                                changes—such as the 2011 Regulatory Reform Act,
-                                the 2013 Stormwater Rule Repeal, and the 2023 NC
-                                Farm Act— reduced protections for wetlands and
-                                forests, making land development easier. Natural
-                                disasters and court decisions like Sackett v.
-                                EPA also contributed to accelerating forest
-                                loss. The graph highlights how weakened policies
-                                and decreased funding are closely linked to
-                                increased deforestation in North Carolina.
-                            </p>
+                            
 
                             <div
                                 className="relative w-full"
