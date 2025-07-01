@@ -4,11 +4,11 @@ import { usePathname } from "next/navigation";
 
 const tabs = [
     { name: "Homepage", href: "/" },
-    { name: "Bibliography", href: "/annotated-bibliography" },
     { name: "Our Research", href: "/narrative-1" },
     { name: "Stories & Final Thoughts", href: "/narrative-2" },
-    { name: "About", href: "/about" },
+    { name: "Bibliography", href: "/annotated-bibliography" },
     { name: "Data Critique", href: "/data-critique" },
+    { name: "About", href: "/about" }
 ];
 
 export default function Navigation() {
