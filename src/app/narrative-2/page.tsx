@@ -100,7 +100,7 @@ export default function Narrative2() {
                                             stories and knowledge offers an
                                             ethical, thoughtful, and respectful
                                             way to move forward and drive
-                                            change.
+                                            change. (Igelman)
                                         </p>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@ export default function Narrative2() {
                                             she knows these trees may not
                                             survive long, the act of planting
                                             offers a sense of comfort, agency,
-                                            and purpose.
+                                            and purpose.(Igelman)
                                         </p>
                                     </div>
                                 </div>
@@ -217,7 +217,7 @@ export default function Narrative2() {
                                             has deep ties to the land, so it is
                                             important to create educational
                                             materials on climate change that
-                                            inspire curiosity and not fear&quot;
+                                            inspire curiosity and not fear&quot;(Allen)
                                         </p>
                                     </div>
                                 </div>
@@ -249,7 +249,7 @@ export default function Narrative2() {
                                             that we get from local communities,
                                             then the better chance we have of
                                             adapting to these changes moving
-                                            forward&quot;
+                                            forward&quot;(Allen)
                                         </p>
                                     </div>
                                 </div>
@@ -284,7 +284,7 @@ export default function Narrative2() {
                                             our coastal forests could end up as
                                             these two factors continue to impact
                                             the NC coast in the coming
-                                            years&quot;
+                                            years&quot; (Allen)
                                         </p>
                                     </div>
                                 </div>
@@ -317,7 +317,7 @@ export default function Narrative2() {
                                             frequently by residents and I hope
                                             that our project can, at the least,
                                             be the start of a conversation about
-                                            climate change impacts.&quot;
+                                            climate change impacts.&quot; (Allen)
                                         </p>
                                          <p className="mb-4">
                                             Guided by the principles of data feminism and ethical visualization, 
