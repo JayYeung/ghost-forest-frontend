@@ -41,22 +41,25 @@ export default function InteractiveTimeline() {
                     {/* Placeholder content for each year */}
                     {selected === 1973 && (
                         <>
-                        First enacted in 1973, the Hardison amendments are a series of laws
-                        that restrict state agencies from establishing environmental regulations stricter than federal regulations.
-                        It disabled North Carolina from independently setting stricter pollution standards
-                        or environmental protections than those mandated by the federal government.
-                        
-                        <div className="w-full flex justify-center mt-4">
-                            <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                                <Image
-                                    src="/images/hardison.jpg"
-                                    alt="Hardison Amendment"
-                                    width={200}
-                                    height={200}
-                                    className="object-cover w-full h-full"
-                                />
+                            First enacted in 1973, the Hardison amendments are a series of laws
+                            that restrict state agencies from establishing environmental regulations stricter than federal regulations.
+                            It disabled North Carolina from independently setting stricter pollution standards
+                            or environmental protections than those mandated by the federal government.
+
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/hardison.jpg"
+                                        alt="Hardison Amendment"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
                             </div>
-                        </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">Source: Bruce N. Cameron</span>
+                            </div>
                         </>
                     )}
                     {selected === 1995 && (
@@ -66,13 +69,16 @@ export default function InteractiveTimeline() {
                             <div className="w-full flex justify-center mt-4">
                                 <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                                     <Image
-                                    src="/images/lobbying.png"
-                                    alt="Lobbying"
-                                    width={200}
-                                    height={200}
-                                    className="object-cover w-full h-full"
-                                />
+                                        src="/images/lobbying.png"
+                                        alt="Lobbying"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
                                 </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">Source: Transparency International</span>
                             </div>
                         </>
                     )}
@@ -83,32 +89,39 @@ export default function InteractiveTimeline() {
                             <div className="w-full flex justify-center mt-4">
                                 <div className="w-50 h-50 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                                     <Image
-                                    src="/images/Republican_takeover.webp"
-                                    alt="Republican Takeover"
-                                    width={50}
-                                    height={50}
-                                    className="object-cover w-full h-full"
-                                />
-                                </div>
-                            </div>
-                        </>
-                    )}
-                       {selected === 2014 && (
-                        <>
-                            The legislature expanded the Hardison amendments to enforce 
-                            all rules stricter than the federal minimum standards to automatically fall under legislative review.
-                            <div className="w-full flex justify-center mt-4">
-                                <div className="w-200 h-100 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                                    <Image
-                                        src="/images/stricter_ruls.jpg"
-                                        alt="Stricter Environmental Rules"
-                                        width={200}
-                                        height={200}
+                                        src="/images/Republican_takeover.webp"
+                                        alt="Republican Takeover"
+                                        width={50}
+                                        height={50}
                                         className="object-cover w-full h-full"
                                     />
                                 </div>
                             </div>
-                            Source: General Assembly, UNC School of Government, Campbell University School of Law
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">Source: Brittanica</span>
+                            </div>
+                        </>
+                    )}
+                    {selected === 2014 && (
+                        <>
+                            The legislature expanded the Hardison amendments to enforce 
+                            all rules stricter than the federal minimum standards to automatically fall under legislative review.
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-126 h-90 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 overflow-hidden">
+                                    <Image
+                                        src="/images/stricter_ruls.jpg"
+                                        alt="Stricter Environmental Rules"
+                                        width={320}
+                                        height={256}
+                                        className="object-contain w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: General Assembly, UNC School of Government, Campbell University School of Law
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2023 && (
@@ -122,7 +135,7 @@ export default function InteractiveTimeline() {
                         The devastating impacts of flooding, without the natural protection from wetlands,
                         will be multiplied for communities of color and lower wealth in rural North Carolina.
                         <div className="w-full flex justify-center mt-4">
-                            <div className="w-200 h-100 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                            <div className="bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                                 <Image
                                     src="/images/wetland_loss.jpeg"
                                     alt="Loss of Wetlands"
@@ -132,28 +145,34 @@ export default function InteractiveTimeline() {
                                 />
                             </div>
                         </div>
+                        <div className="w-full flex justify-center">
+                            <span className="text-xs text-gray-500 mt-2 text-center">Source: N.C. Department of Environmental Quality</span>
+                        </div>
                     </>
                     )}
                     {selected === 2025 && (
                         <>
-                        For the 2026 fiscal year that starts July 1, 2025, President Donald Trump cuts $18 billion
-                        of funding at the National Institutes of Health (NIH) and more than half at the National
-                        Science Foundation (NSF) and NASA. 
-                        <br /><br />
-                        At the National Oceanic and Atmospheric Administration (NOAA),
-                        it is cutting at least $1.5 billion, with $1.31 billion of that reduction coming from
-                        &quot;climate-dominated research, data, and grant programs&quot;.
-                        <div className="w-full flex justify-center mt-4">
-                            <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
-                                <Image
-                                    src="/images/funding_cuts.jpg"
-                                    alt="Loss of Wetlands"
-                                    width={200}
-                                    height={200}
-                                    className="object-cover w-full h-full"
-                                />
+                            For the 2026 fiscal year that starts July 1, 2025, President Donald Trump cuts $18 billion
+                            of funding at the National Institutes of Health (NIH) and more than half at the National
+                            Science Foundation (NSF) and NASA. 
+                            <br /><br />
+                            At the National Oceanic and Atmospheric Administration (NOAA),
+                            it is cutting at least $1.5 billion, with $1.31 billion of that reduction coming from
+                            &quot;climate-dominated research, data, and grant programs&quot;.
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 overflow-hidden">
+                                    <Image
+                                        src="/images/funding_cuts.jpg"
+                                        alt="Loss of Wetlands"
+                                        width={256}
+                                        height={256}
+                                        className="object-contain w-full h-full"
+                                    />
+                                </div>
                             </div>
-                        </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">Source: Getty Images</span>
+                            </div>
                         </>
                     )}
                 </p>
