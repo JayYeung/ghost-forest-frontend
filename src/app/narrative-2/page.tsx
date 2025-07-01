@@ -40,6 +40,34 @@ export default function Narrative2() {
                                 of those experiencing these ghost forests, but also to discuss what the community
                                 is doing to address the topic. 
                             </p>
+                            <div className="mb-4">
+                              <div className="person flex gap-4 items-start">
+                                <img
+                                  src="human1.png"
+                                  alt="Ryan Emanuel"
+                                  className="w-36 h-auto rounded"
+                                />
+                                <div>
+                                  <h2 className="text-lg font-semibold">Ryan Emanuel</h2>
+                                  <p className="italic">
+                                    Citizen of the Lumbee Tribe & Professor in the Department of Forestry and Environmental Resources at NC State
+                                  </p>
+                                  <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                    “Even though we may not speak our ancestral languages, speaking for myself and a lot of other Lumbee people, 
+                                    we draw comfort from the fact that we can go out to these places and look at the same landscapes and the same riverscapes 
+                                    and know that our ancestors stood in the same spot and looked at the same views.”
+                                  </p>
+                                  <p>
+                                    From his work with the Lumbee Tribe, Emanuel witnessed how climate change was not only altering the physical landscape, 
+                                    but also affecting cultural ties rooted to the land. As ghost forests began to emerge across familiar territory, 
+                                    the transformation extended beyond just biodiversity — it was also reshaping the tribe’s sense of place and belonging. 
+                                    In response, Emanuel has worked to amplify Indigenous voices in climate conversations, recognizing that protecting the land 
+                                    also means preserving the cultural identities woven into it. While developing solutions may be complex, centering the community’s 
+                                    stories and knowledge offers an ethical, thoughtful, and respectful way to move forward and drive change.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                              
                             
                         </div>
