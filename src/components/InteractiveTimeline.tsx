@@ -111,19 +111,21 @@ export default function InteractiveTimeline() {
                             enact more stringent regulations than the federal
                             government&apos;s (Sorg).
                             <div className="w-full flex justify-center mt-4">
-                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                <div className="w-126 h-90 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 overflow-hidden">
                                     <Image
-                                        src="/images/lobbying.png"
-                                        alt="Lobbying"
-                                        width={200}
-                                        height={200}
-                                        className="object-cover w-full h-full"
+                                        src="/images/stricter_ruls.jpg"
+                                        alt="Stricter Environmental Rules"
+                                        width={320}
+                                        height={256}
+                                        className="object-contain w-full h-full"
                                     />
                                 </div>
                             </div>
                             <div className="w-full flex justify-center">
                                 <span className="text-xs text-gray-500 mt-2 text-center">
-                                    Source: Transparency International
+                                    Source: General Assembly, UNC School of
+                                    Government, Campbell University School of
+                                    Law
                                 </span>
                             </div>
                         </>
