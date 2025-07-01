@@ -233,25 +233,59 @@ export default function Narrative() {
                             </h2>
                             <div
                                 className="relative w-full"
-                                style={{ paddingTop: "133%" }} 
+                                style={{ paddingTop: "75%" }}
                             >
                                 <iframe
                                     src="graph.html"
                                     className="absolute top-0 left-0 w-full h-full"
                                     style={{ border: "none" }}
                                     title="NC Environmental Spending and Forest Loss Graph"
+                                    scrolling="no"
                                 ></iframe>
                             </div>
-                            
+
                             <p className="mb-4 text-[14px] text-gray-500">
-                                This interactive graph compares North Carolina’s environmental spending with forest loss from 2003 to 2023.
-                                The blue line represents annual spending on environmental programs, which peaked around 2013 before dropping sharply.
-                                Meanwhile, the green line shows forest loss steadily rising, especially after 2015.
-                                Key policy changes—such as the 2011 Regulatory Reform Act, the 2013 Stormwater Rule Repeal, and the 2023 NC Farm Act—
-                                reduced protections for wetlands and forests, making land development easier.
-                                Natural disasters and court decisions like Sackett v. EPA also contributed to accelerating forest loss.
-                                The graph highlights how weakened policies and decreased funding are closely linked to increased deforestation in North Carolina.
+                                This interactive graph compares North Carolina's
+                                environmental spending with forest loss from
+                                2003 to 2023. The blue line represents annual
+                                spending on environmental programs, which peaked
+                                around 2013 before dropping sharply. Meanwhile,
+                                the green line shows forest loss steadily
+                                rising, especially after 2015. Key policy
+                                changes—such as the 2011 Regulatory Reform Act,
+                                the 2013 Stormwater Rule Repeal, and the 2023 NC
+                                Farm Act— reduced protections for wetlands and
+                                forests, making land development easier. Natural
+                                disasters and court decisions like Sackett v.
+                                EPA also contributed to accelerating forest
+                                loss. The graph highlights how weakened policies
+                                and decreased funding are closely linked to
+                                increased deforestation in North Carolina.
                             </p>
+
+                            <div
+                                className="relative w-full"
+                                style={{ paddingTop: "75%" }}
+                            >
+                                <iframe
+                                    src="pop_in_age_group.html"
+                                    className="absolute top-0 left-0 w-full h-full"
+                                    style={{ border: "none" }}
+                                    title="Population by Age Group in North Carolina"
+                                    scrolling="no"
+                                ></iframe>
+                            </div>
+
+                            <p className="mb-4 text-[14px] text-gray-500">
+                                This visualization shows the demographic
+                                distribution of North Carolina's population by
+                                age groups over time. Understanding the
+                                demographic context is crucial for analyzing how
+                                different age groups may be affected by
+                                environmental changes and policy decisions
+                                related to ghost forest formation.
+                            </p>
+
                             <p className="mb-4">
                                 To produce our visualizations, our project draws
                                 from an interdisciplinary digital humanities
@@ -268,6 +302,7 @@ export default function Narrative() {
                                 think critically about the reasons behind ghost
                                 forests.
                             </p>
+
                             <p className="mb-4">
                                 To contextualize our analysis of policy-driven
                                 environmental change, we also examine how
@@ -292,6 +327,7 @@ export default function Narrative() {
                                 development policy while other groups bear the
                                 costs.
                             </p>
+
                             <p className="mb-4">
                                 Methodologically, our project combines critical
                                 data sets with tools like Google Earth Engine,
@@ -317,6 +353,7 @@ export default function Narrative() {
                                 ghost forest crisis is framed and which
                                 perspectives are left out.
                             </p>
+
                             <section className="w-full max-w-6xl mx-auto mb-16">
                                 <div className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100">
                                     <div className="w-full flex justify-start mb-4">

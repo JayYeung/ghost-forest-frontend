@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Environmental Spending vs. Forest Loss in North Carolina</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-</head>
-<body>
-  <div id="graph" style="width: 100%; height: 650px;"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Environmental Spending vs. Forest Loss in North Carolina</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <div id="graph" style="width: 100%; height: 100%"></div>
 
-  <script>
-    const years = [2005, 2008, 2011, 2014, 2017, 2018, 2020, 2023, 2024];
-    const spending = [48, 50, 53, 49, 47, 46, 52, 46, 45];  // in millions
-    const forestLoss = [1.2, 1.8, 2.1, 2.6, 3.2, 3.6, 3.8, 4.5, 5.1];  // %
+        <script>
+            const years = [
+                2005, 2008, 2011, 2014, 2017, 2018, 2020, 2023, 2024,
+            ];
+            const spending = [48, 50, 53, 49, 47, 46, 52, 46, 45]; // in millions
+            const forestLoss = [1.2, 1.8, 2.1, 2.6, 3.2, 3.6, 3.8, 4.5, 5.1]; // %
 
-    const traceSpending = {
-      x: years,
-      y: spending,
-      name: 'Environmental Spending (in millions)',
-      yaxis: 'y1',
-      type: 'scatter',
-      mode: 'lines+markers',
-      hovertemplate: 'Year: %{x}<br>Spending: %{y}M'
-    };
+            const traceSpending = {
+                x: years,
+                y: spending,
+                name: "Environmental Spending (in millions)",
+                yaxis: "y1",
+                type: "scatter",
+                mode: "lines+markers",
+                hovertemplate: "Year: %{x}<br>Spending: %{y}M",
+            };
 
-    const traceForestLoss = {
-      x: years,
-      y: forestLoss,
-      name: 'Forest Loss (%)',
-      yaxis: 'y2',
-      type: 'scatter',
-      mode: 'lines+markers',
-      hovertemplate: 'Year: %{x}<br>Forest Loss: %{y}%'
-    };
+            const traceForestLoss = {
+                x: years,
+                y: forestLoss,
+                name: "Forest Loss (%)",
+                yaxis: "y2",
+                type: "scatter",
+                mode: "lines+markers",
+                hovertemplate: "Year: %{x}<br>Forest Loss: %{y}%",
+            };
 
-    const policyEvents = [
-      { x: 2015, label: 'HB 760 (2015)', y: 49 },
-      { x: 2018, label: 'Farm Bill + Hurricane Florence (2018)', y: 46 },
-      { x: 2019, label: 'Stormwater Rule Rollback (2019)', y: 47 },
-      { x: 2023, label: 'NC Farm Act (2023)', y: 46 },
-      { x: 2024, label: 'Sackett v. EPA + Wetland Scope Narrowed (2024)', y: 45 }
-    ];
+            const policyEvents = [
+                { x: 2015, label: "HB 760 (2015)", y: 49 },
+                {
+                    x: 2018,
+                    label: "Farm Bill + Hurricane Florence (2018)",
+                    y: 46,
+                },
+                { x: 2019, label: "Stormwater Rule Rollback (2019)", y: 47 },
+                { x: 2023, label: "NC Farm Act (2023)", y: 46 },
+                {
+                    x: 2024,
+                    label: "Sackett v. EPA + Wetland Scope Narrowed (2024)",
+                    y: 45,
+                },
+            ];
 
-    // Invisible markers to show hover text for policies
-    const tracePolicyHover = {
-      x: policyEvents.map(e => e.x),
-      y: policyEvents.map(e => e.y),
-      mode: 'markers',
-      type: 'scatter',
-      yaxis: 'y1',
-      name: 'Policy Events',
-      marker: { size: 8, color: 'rgba(255,0,0,0)', line: { width: 0 } },
-      hoverinfo: 'text',
-      hovertext: policyEvents.map(e => e.label),
-      showlegend: false
-    };
+            // Invisible markers to show hover text for policies
+            const tracePolicyHover = {
+                x: policyEvents.map((e) => e.x),
+                y: policyEvents.map((e) => e.y),
+                mode: "markers",
+                type: "scatter",
+                yaxis: "y1",
+                name: "Policy Events",
+                marker: {
+                    size: 8,
+                    color: "rgba(255,0,0,0)",
+                    line: { width: 0 },
+                },
+                hoverinfo: "text",
+                hovertext: policyEvents.map((e) => e.label),
+                showlegend: false,
+            };
 
-    const shapes = policyEvents.map(e => ({
-      type: 'line',
-      x0: e.x,
-      x1: e.x,
-      yref: 'paper',
-      y0: 0,
-      y1: 1,
-      line: { color: 'red', width: 1.5, dash: 'dot' }
-    }));
+            const shapes = policyEvents.map((e) => ({
+                type: "line",
+                x0: e.x,
+                x1: e.x,
+                yref: "paper",
+                y0: 0,
+                y1: 1,
+                line: { color: "red", width: 1.5, dash: "dot" },
+            }));
 
-    const annotations = policyEvents.map((e, i) => ({
-      x: e.x,
-      y: i % 2 === 0 ? 50 : 4.8,
-      yref: i % 2 === 0 ? 'y1' : 'y2',
-      text: e.label.split(" ")[0], // short text
-      showarrow: true,
-      arrowhead: 5,
-      ax: (i % 2 === 0 ? -30 : 30),
-      ay: -35,
-      font: { size: 9, color: 'red' }
-    }));
+            const annotations = policyEvents.map((e, i) => ({
+                x: e.x,
+                y: i % 2 === 0 ? 50 : 4.8,
+                yref: i % 2 === 0 ? "y1" : "y2",
+                text: e.label.split(" ")[0], // short text
+                showarrow: true,
+                arrowhead: 5,
+                ax: i % 2 === 0 ? -30 : 30,
+                ay: -35,
+                font: { size: 9, color: "red" },
+            }));
 
-    const layout = {
-      title: 'Environmental Spending vs. Forest Loss in North Carolina',
-      xaxis: { title: 'Year', tickmode: 'linear' },
-      yaxis: {
-        title: 'Spending (Millions USD)',
-        side: 'left',
-        showgrid: false
-      },
-      yaxis2: {
-        title: 'Forest Loss (%)',
-        overlaying: 'y',
-        side: 'right'
-      },
-      shapes: shapes,
-      annotations: annotations,
-      legend: { orientation: 'h' },
-      margin: { t: 60, b: 80, l: 60, r: 60 }
-    };
+            const layout = {
+                title: "Environmental Spending vs. Forest Loss in North Carolina",
+                xaxis: { title: "Year", tickmode: "linear" },
+                yaxis: {
+                    title: "Spending (Millions USD)",
+                    side: "left",
+                    showgrid: false,
+                },
+                yaxis2: {
+                    title: "Forest Loss (%)",
+                    overlaying: "y",
+                    side: "right",
+                },
+                shapes: shapes,
+                annotations: annotations,
+                legend: { orientation: "h" },
+                margin: { t: 60, b: 80, l: 60, r: 60 },
+            };
 
-    Plotly.newPlot('graph', [traceSpending, traceForestLoss, tracePolicyHover], layout);
-  </script>
+            Plotly.newPlot(
+                "graph",
+                [traceSpending, traceForestLoss, tracePolicyHover],
+                layout
+            );
+        </script>
 
-  <div style="font-size: 12px; padding: 15px; max-width: 800px;">
-    <strong>Sources:</strong><br>
-    Hansen et al. "Global Forest Change 2000–2024," University of Maryland. <br>
-    NC Office of State Budget and Management. <i>State Budget Data: Environmental Programs (1990–2023)</i>, 2024. <a href="https://www.osbm.nc.gov" target="_blank">osbm.nc.gov</a><br>
-    NCGA. <i>HB 760 (2015)</i>, <i>SL 2023-63 (NC Farm Act)</i><br>
-    EPA. <i>Stormwater Rule Changes (2019)</i><br>
-    SCOTUS. <i>Sackett v. EPA (2024)</i><br>
-    NOAA. <i>Hurricane Florence (2018)</i>
-  </div>
-</body>
+        <div style="font-size: 12px; padding: 15px; max-width: 800px">
+            <strong>Sources:</strong><br />
+            Hansen et al. "Global Forest Change 2000–2024," University of
+            Maryland. <br />
+            NC Office of State Budget and Management.
+            <i>State Budget Data: Environmental Programs (1990–2023)</i>, 2024.
+            <a href="https://www.osbm.nc.gov" target="_blank">osbm.nc.gov</a
+            ><br />
+            NCGA. <i>HB 760 (2015)</i>, <i>SL 2023-63 (NC Farm Act)</i><br />
+            EPA. <i>Stormwater Rule Changes (2019)</i><br />
+            SCOTUS. <i>Sackett v. EPA (2024)</i><br />
+            NOAA. <i>Hurricane Florence (2018)</i>
+        </div>
+    </body>
 </html>
