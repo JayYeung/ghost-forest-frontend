@@ -3,10 +3,7 @@ import React from "react";
 import Image from "next/image";
 
 export default function InteractiveTimeline() {
-    const years = [
-        1973, 1994, 1995, 2011, 2014, 2015, 2018, 20181, 2023, 20232, 2025,
-    ];
-    // 2018 = Farm Bill, 20181 = Hurricane Florence, 2023 = Farm Act, 20232 = Sackett v. EPA
+    const years = [1973, 1994, 1995, 2011, 2014, 2015, 2018, 2023, 2025];
     const [selected, setSelected] = React.useState(1973);
     return (
         <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
@@ -42,12 +39,9 @@ export default function InteractiveTimeline() {
                     {selected === 2014 &&
                         "2014: Stricter Environmental Rules under Review"}
                     {selected === 2015 && "2015: House Bill 760"}
-                    {selected === 2018 && "2018: Farm Bill"}
-                    {selected === 20181 && "2018: Hurricane Florence"}
-                    {selected === 2023 &&
-                        "2023: The North Carolina Farm Act of 2023"}
-                    {selected === 20232 &&
-                        "2023: Sackett v. EPA + Wetland Scope Narrowed"}
+                    {selected === 2018 &&
+                        "2018: Farm Bill & Hurricane Florence"}
+                    {selected === 2023 && "2023: NC Farm Act & Sackett v. EPA"}
                     {selected === 2025 && "2025: Research Funding Cut"}
                 </p>
                 <p className="text-base text-gray-800 px-4 text-left leading-7">
@@ -62,6 +56,22 @@ export default function InteractiveTimeline() {
                             pollution standards or environmental protections
                             than those mandated by the federal government
                             (Wagner).
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/hardison.jpg"
+                                        alt="Hardison Amendment"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: Bruce N. Cameron
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 1994 && (
@@ -76,6 +86,22 @@ export default function InteractiveTimeline() {
                             bills making it more difficult for state agencies to
                             issue rules on housing density in watersheds
                             (Democracy North Carolina).
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/lobbying.png"
+                                        alt="Lobbying Contributions"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: Transparency International
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 1995 && (
@@ -84,6 +110,22 @@ export default function InteractiveTimeline() {
                             the Hardison amendments, allowing North Carolina to
                             enact more stringent regulations than the federal
                             government&apos;s (Sorg).
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/lobbying.png"
+                                        alt="Lobbying"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: Transparency International
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2011 && (
@@ -92,6 +134,22 @@ export default function InteractiveTimeline() {
                             legislative chambers for the first time since 1870,
                             the legislature reinstated the Hardison amendments
                             (Wagner).
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-50 h-50 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/Republican_takeover.webp"
+                                        alt="Republican Takeover"
+                                        width={50}
+                                        height={50}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: Brittanica
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2014 && (
@@ -100,6 +158,24 @@ export default function InteractiveTimeline() {
                             enforce all rules stricter than the federal minimum
                             standards to automatically fall under legislative
                             review (Sorg).
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-126 h-90 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 overflow-hidden">
+                                    <Image
+                                        src="/images/stricter_ruls.jpg"
+                                        alt="Stricter Environmental Rules"
+                                        width={320}
+                                        height={256}
+                                        className="object-contain w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">
+                                <span className="text-xs text-gray-500 mt-2 text-center">
+                                    Source: General Assembly, UNC School of
+                                    Government, Campbell University School of
+                                    Law
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2015 && (
@@ -127,105 +203,122 @@ export default function InteractiveTimeline() {
                     )}
                     {selected === 2018 && (
                         <>
-                            <Image
-                                src="/images/hist2.png"
-                                alt="Farm Bill 2018"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
-                            Introduced various changes to agricultural laws in
-                            the state that weakened protections against
-                            environmental harms caused by large-scale farming.
-                            It limited agricultural nuisance lawsuits and eased
-                            agricultural runoff, reducing accountability for
-                            pollution. This indirectly accelerated soil
-                            degradation and water contamination — two factors
-                            that contribute to ghost forest emergence.
-                            <br />
-                            <span className="text-xs">
-                                Source: North Carolina Farm Bureau
-                            </span>
-                        </>
-                    )}
-                    {selected === 20181 && (
-                        <>
-                            <Image
-                                src="/images/hist3.png"
-                                alt="Hurricane Florence"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
-                            Although it made landfall as a Category 1 storm on
-                            September 14, 2018, Hurricane Florence caused
-                            extensive damage and prolonged flooding to eastern
-                            North Carolina. The storm&apos;s impact saturated
-                            soils, pushed saltwater further inland, and uprooted
-                            trees across coastal wetlands — accelerating
-                            salinization and die-off patterns associated with
-                            ghost forests.
-                            <br />
-                            <span className="text-xs">
-                                Source: Travis Long/The News &amp; Observer via
-                                AP
-                            </span>
+                            <div>
+                                <h4 className="font-semibold text-lg mt-2 mb-1">
+                                    Farm Bill 2018
+                                </h4>
+                                <Image
+                                    src="/images/hist2.png"
+                                    alt="Farm Bill 2018"
+                                    className="my-2 rounded shadow max-w-md"
+                                    width={600}
+                                    height={400}
+                                />
+                                Introduced various changes to agricultural laws
+                                in the state that weakened protections against
+                                environmental harms caused by large-scale
+                                farming. It limited agricultural nuisance
+                                lawsuits and eased agricultural runoff, reducing
+                                accountability for pollution. This indirectly
+                                accelerated soil degradation and water
+                                contamination — two factors that contribute to
+                                ghost forest emergence.
+                                <br />
+                                <span className="text-xs">
+                                    Source: North Carolina Farm Bureau
+                                </span>
+                            </div>
+                            <hr className="my-4" />
+                            <div>
+                                <h4 className="font-semibold text-lg mt-2 mb-1">
+                                    Hurricane Florence
+                                </h4>
+                                <Image
+                                    src="/images/hist3.png"
+                                    alt="Hurricane Florence"
+                                    className="my-2 rounded shadow max-w-md"
+                                    width={600}
+                                    height={400}
+                                />
+                                Although it made landfall as a Category 1 storm
+                                on September 14, 2018, Hurricane Florence caused
+                                extensive damage and prolonged flooding to
+                                eastern North Carolina. The storm&apos;s impact
+                                saturated soils, pushed saltwater further
+                                inland, and uprooted trees across coastal
+                                wetlands — accelerating salinization and die-off
+                                patterns associated with ghost forests.
+                                <br />
+                                <span className="text-xs">
+                                    Source: Travis Long/The News & Observer via
+                                    AP
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2023 && (
                         <>
-                            <Image
-                                src="/images/2023hist.png"
-                                alt="NC Farm Act of 2023"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
-                            In May, the waters of the United States under the
-                            Clean Water Act were defined to only include
-                            &quot;wetlands with a continuous surface
-                            connection&quot; (Livingston). In June, the NC Farm
-                            Act of 2023, Senate Bill 582, prevented North
-                            Carolina from protecting its wetlands that are not
-                            &quot;navigable waters of the United States&quot;
-                            (Livingston).
-                            <br />
-                            <br />
-                            The N.C. Department of Environmental Quality
-                            estimates that nearly half of the wetlands in North
-                            Carolina, as much as 2.5 million acres, are no
-                            longer under the protection of the Clean Water Act
-                            (Livingston). The devastating impacts of flooding,
-                            without the natural protection from wetlands, will
-                            be multiplied for communities of color and lower
-                            wealth in rural North Carolina (Livingston).
-                        </>
-                    )}
-                    {selected === 20232 && (
-                        <>
-                            <Image
-                                src="/images/hist4.png"
-                                alt="Sackett v. EPA"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
-                            In May 2023, the U.S. Supreme Court narrowed the
-                            Clean Water Act&apos;s scope, ruling that only
-                            wetlands or water bodies with a continuous surface
-                            connection to &quot;traditional interstate navigable
-                            waters&quot; qualify as federally protected
-                            &quot;waters of the United States&quot;. As a
-                            result, many North Carolina wetlands — especially
-                            those buffering saltwater intrusion — lost federal
-                            safeguards. This regulatory gap increases the risk
-                            of unchecked development and pollution, accelerating
-                            wetland degradation and the spread of ghost forests
-                            along the coast.
-                            <br />
-                            <span className="text-xs">
-                                Source: E&amp;E News
-                            </span>
+                            <div>
+                                <h4 className="font-semibold text-lg mt-2 mb-1">
+                                    NC Farm Act of 2023
+                                </h4>
+                                <Image
+                                    src="/images/2023hist.png"
+                                    alt="NC Farm Act of 2023"
+                                    className="my-2 rounded shadow max-w-md"
+                                    width={600}
+                                    height={400}
+                                />
+                                In May, the waters of the United States under
+                                the Clean Water Act were defined to only include
+                                &quot;wetlands with a continuous surface
+                                connection&quot; (Livingston). In June, the NC
+                                Farm Act of 2023, Senate Bill 582, prevented
+                                North Carolina from protecting its wetlands that
+                                are not &quot;navigable waters of the United
+                                States&quot; (Livingston).
+                                <br />
+                                <br />
+                                The N.C. Department of Environmental Quality
+                                estimates that nearly half of the wetlands in
+                                North Carolina, as much as 2.5 million acres,
+                                are no longer under the protection of the Clean
+                                Water Act (Livingston). The devastating impacts
+                                of flooding, without the natural protection from
+                                wetlands, will be multiplied for communities of
+                                color and lower wealth in rural North Carolina
+                                (Livingston).
+                            </div>
+                            <hr className="my-4" />
+                            <div>
+                                <h4 className="font-semibold text-lg mt-2 mb-1">
+                                    Sackett v. EPA
+                                </h4>
+                                <Image
+                                    src="/images/hist4.png"
+                                    alt="Sackett v. EPA"
+                                    className="my-2 rounded shadow max-w-md"
+                                    width={600}
+                                    height={400}
+                                />
+                                In May 2023, the U.S. Supreme Court narrowed the
+                                Clean Water Act&apos;s scope, ruling that only
+                                wetlands or water bodies with a continuous
+                                surface connection to &quot;traditional
+                                interstate navigable waters&quot; qualify as
+                                federally protected &quot;waters of the United
+                                States&quot;. As a result, many North Carolina
+                                wetlands — especially those buffering saltwater
+                                intrusion — lost federal safeguards. This
+                                regulatory gap increases the risk of unchecked
+                                development and pollution, accelerating wetland
+                                degradation and the spread of ghost forests
+                                along the coast.
+                                <br />
+                                <span className="text-xs">
+                                    Source: E&E News
+                                </span>
+                            </div>
                         </>
                     )}
                     {selected === 2025 && (

@@ -244,7 +244,7 @@ export default function Narrative1() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Thesis{" "}
                                 <span className="font-normal text-base">
-                                    (Hailey, Brayden, Arlen, Daphne, Jay)
+                                    (Hailey, Brayden, Arlen, Daphne)
                                 </span>
                             </h2>
                             <p className="mb-4">
