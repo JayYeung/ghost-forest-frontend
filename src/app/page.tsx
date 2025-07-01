@@ -7,7 +7,7 @@ import ReadAloudControls from "@/components/ReadAloudControls";
 export default function Home() {
     const contentRef = useRef<HTMLDivElement>(null);
 
-    return (
+  return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
@@ -195,9 +195,9 @@ export default function Home() {
                                     <a
                                         href="https://www.science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science"
                                         className="text-blue-700 underline"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+            target="_blank"
+            rel="noopener noreferrer"
+          >
                                         science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science
                                     </a>
                                     .
@@ -210,9 +210,9 @@ export default function Home() {
                                     <a
                                         href="https://www.dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts"
                                         className="text-blue-700 underline"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+          target="_blank"
+          rel="noopener noreferrer"
+        >
                                         dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts
                                     </a>
                                     .
@@ -226,9 +226,9 @@ export default function Home() {
                                     <a
                                         href="https://ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday"
                                         className="text-blue-700 underline"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+          target="_blank"
+          rel="noopener noreferrer"
+        >
                                         ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday
                                     </a>
                                     .
@@ -242,9 +242,9 @@ export default function Home() {
                                     <a
                                         href="https://www.newsobserver.com/news/state/north-carolina/article288496757.html"
                                         className="text-blue-700 underline"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+          target="_blank"
+          rel="noopener noreferrer"
+        >
                                         newsobserver.com/news/state/north-carolina/article288496757.html
                                     </a>
                                     .
@@ -254,6 +254,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-        </div>
-    );
+    </div>
+  );
 }

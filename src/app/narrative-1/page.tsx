@@ -243,17 +243,23 @@ export default function Narrative1() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Thesis{" "}
                                 <span className="font-normal text-base">
-                                    (Brayden)
+                                    (Brayden/Arlen)
                                 </span>
                             </h2>
                             <p className="mb-4">
-                                Therefore, based on our research and through
-                                digital humanities theories and methods, our
-                                project seeks to illuminate that the rise of
-                                ghost forests — driven by lobbying, corruption,
-                                and negligence in political and corporate
-                                sectors — exacerbate environmental degradation
-                                in North Carolinian coastal communities.
+                                Our project is grounded in the ideas of data feminism and ethical storytelling.
+                                We argue that ghost forests in North Carolina aren’t just caused by climate change 
+                                — they’re also the result of deeper systemic problems, like political lobbying, weakened regulations, 
+                                and uneven environmental enforcement. By mapping forest loss and tracking environmental spending, 
+                                we show how certain policy decisions have made ghost forests worse and placed an unfair burden on 
+                                coastal communities. In many of these places, younger people have moved away — often because of job 
+                                opportunities or rising costs — leaving behind older adults who may not have the money or mobility to 
+                                leave. It’s a pattern that needs more research, but it points to a kind of quiet marginalization where 
+                                the elderly are left to deal with the impacts of environmental change on their own. Through all of this, 
+                                we try to keep the focus on people — especially those most affected. Ghost forests are more than dying trees; 
+                                they reflect bigger issues of neglect and inequality. We’re not saying policy alone causes these changes,
+                                but we hope our work helps people see how data, lived experience, and local knowledge can come together to
+                                tell a bigger story — and maybe even spark new conversations and action.
                             </p>
                         </div>
                         {/* Methodology and Tools */}
