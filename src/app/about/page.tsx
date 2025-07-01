@@ -309,14 +309,57 @@ export default function About() {
                                                     Dataset:
                                                 </strong>{" "}
                                                 Primary forest loss data from
-                                                Google Earth Engine
+                                                Google Earth Engine, tracking
+                                                expansion of ghost forests in
+                                                vulnerable areas of the
+                                                Albemarle-Pamlico region
                                             </li>
                                             <li>
                                                 <strong>
                                                     BEA Regional API:
                                                 </strong>{" "}
                                                 Government spending data for
+                                                environmental programs and
+                                                economic figures
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    NC Office of State Budget
+                                                    and Management:
+                                                </strong>{" "}
+                                                State budget data for
                                                 environmental programs
+                                                (1990-2023)
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    NOAA Sea-Level Trends:
+                                                </strong>{" "}
+                                                Sea-level data and climate
+                                                information
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    State Forestry Data:
+                                                </strong>{" "}
+                                                Local forest management and land
+                                                use information
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    Land Use Permits:
+                                                </strong>{" "}
+                                                Development and zoning
+                                                documentation
+                                            </li>
+                                            <li>
+                                                <strong>
+                                                    Policy Documents:
+                                                </strong>{" "}
+                                                NC Farm Act (SL 2023-63),
+                                                Sackett v. EPA, Clean Water Act,
+                                                and other environmental
+                                                legislation
                                             </li>
                                         </ul>
                                     </div>
@@ -391,30 +434,26 @@ export default function About() {
                                         </h3>
                                         <ul className="text-sm space-y-2">
                                             <li>
-                                                <strong>
-                                                    We used Jupyter Notebook to
-                                                    combine code,
-                                                    visualizations, and
-                                                    commentary in one place,
-                                                    making it easier to
-                                                    collaborate and revise. For
-                                                    visualizations, we used
-                                                    Matplotlib for quick static
-                                                    plots and Plotly to create
-                                                    interactive graphs—most
-                                                    clearly seen in our
-                                                    environmental spending vs.
-                                                    forest loss timeline with
-                                                    hoverable policy markers. We
-                                                    chose tools that allowed us
-                                                    to highlight patterns
-                                                    without oversimplifying the
-                                                    data. Instead of filling in
-                                                    missing values, we preserved
-                                                    gaps to reflect real-world
-                                                    inconsistencies in
-                                                    environmental reporting.
-                                                </strong>
+                                                We used Jupyter Notebook to
+                                                combine code, visualizations,
+                                                and commentary in one place,
+                                                making it easier to collaborate
+                                                and revise. For visualizations,
+                                                we used Matplotlib for quick
+                                                static plots and Plotly to
+                                                create interactive graphs—most
+                                                clearly seen in our
+                                                environmental spending vs.
+                                                forest loss timeline with
+                                                hoverable policy markers. We
+                                                chose tools that allowed us to
+                                                highlight patterns without
+                                                oversimplifying the data.
+                                                Instead of filling in missing
+                                                values, we preserved gaps to
+                                                reflect real-world
+                                                inconsistencies in environmental
+                                                reporting.
                                             </li>
                                         </ul>
                                     </div>
