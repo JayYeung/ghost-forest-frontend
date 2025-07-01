@@ -145,6 +145,21 @@ export default function About() {
                                                     timeline that influenced the
                                                     formation of ghost forests
                                                     in North Carolina.
+                                                    <br/><br/>
+                                                    Using technical tools to 
+                                                    analyze and raise awareness of
+                                                    climate issues
+                                                    is meaningful to me.
+                                                    Over the last ten years, I have
+                                                    been living in different places 
+                                                    from Asia to North America. 
+                                                    I have deeply realized how global
+                                                    warming is rising the temperature
+                                                    around the world. As an environmentalist
+                                                    at heart, I am dedicated to using my
+                                                    technical expertise and humanities knowledge
+                                                    to make a positive impact on the ongoing
+                                                    efforts about climate change.
                                                 </p>
                                             </div>
                                         </div>
