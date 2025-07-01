@@ -249,24 +249,43 @@ export default function About() {
                                     </div>
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
-                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
-                                                <span className="text-gray-600 text-sm">
-                                                    Photo
-                                                </span>
+                                            <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                                <Image
+                                                    src="/images/brayden.jpg"
+                                                    alt="Brayden"
+                                                    width={64}
+                                                    height={64}
+                                                    className="object-cover w-full h-full rounded-full"
+                                                />
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
-                                                    Team Member 5
+                                                    Brayden
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Short bio and background
+                                                    Historical Context, Thesis,
+                                                    Annotated Bibliography,
+                                                    Multimodal Elements
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    Content creation, user
-                                                    testing, documentation
+                                                    I wrote the historical
+                                                    context section, researching
+                                                    environmental legislation,
+                                                    project, and policies that
+                                                    have shifted the landscape
+                                                    of North Carolina&apos;s
+                                                    coastline. I also helped
+                                                    work on the thesis for our
+                                                    project, find and relevant
+                                                    video for our website, and
+                                                    edit and consolidate the
+                                                    annotated bibliography to
+                                                    clearly outline our
+                                                    motivations and framework in
+                                                    integrating our sources.
                                                 </p>
                                             </div>
                                         </div>
