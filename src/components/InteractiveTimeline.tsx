@@ -44,7 +44,7 @@ export default function InteractiveTimeline() {
                     {selected === 2023 && "2023: NC Farm Act & Sackett v. EPA"}
                     {selected === 2025 && "2025: Research Funding Cut"}
                 </p>
-                <p className="text-base text-gray-800 px-4 text-left leading-7">
+                <div className="text-base text-gray-800 px-4 text-left leading-7">
                     {/* Detailed content for each year */}
                     {selected === 1973 && (
                         <>
@@ -344,7 +344,7 @@ export default function InteractiveTimeline() {
                             <span className="text-xs">Source: Science.org</span>
                         </>
                     )}
-                </p>
+                </div>
             </div>
         </div>
     );
