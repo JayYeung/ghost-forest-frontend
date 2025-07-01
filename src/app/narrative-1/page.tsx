@@ -141,12 +141,12 @@ export default function Narrative1() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Historical Context{" "}
                                 <span className="font-normal text-base">
-                                    (Brayden/Arlen)
+                                    (Brayden & Arlen)
                                 </span>
                             </h2>
                             <div
                                 className="relative w-full"
-                                style={{ paddingTop: "75%" }}
+                                style={{ paddingTop: "63%" }}
                             >
                                 <iframe
                                     src="graph.html"
@@ -156,7 +156,7 @@ export default function Narrative1() {
                                     scrolling="no"
                                 ></iframe>
                             </div>
-                            <p className="mb-4 text-[14px] text-gray-500">
+                            <p className="mb-4 text-[14px] text-gray-500 text-center">
                                 This interactive graph compares North
                                 Carolina&apos;s environmental spending with
                                 forest loss from 2003 to 2023. The blue line
@@ -283,7 +283,7 @@ export default function Narrative1() {
                                     scrolling="no"
                                 ></iframe>
                             </div>
-                            <p className="mb-4 text-[14px] text-gray-500">
+                            <p className="mb-4 text-[14px] text-center text-gray-500">
                                 This visualization shows the demographic
                                 distribution of North Carolina&apos;s population
                                 by age groups over time. Understanding the
@@ -387,7 +387,7 @@ export default function Narrative1() {
                                     >
                                         <NDVIMap />
                                     </div>
-                                    <p className="mt-3 text-[14px] text-gray-500">
+                                    <p className="mt-3 text-center text-[14px] text-gray-500">
                                         This map focuses on the eastern coast of
                                         North Carolina and visualizes the forest
                                         loss from 2001 to 2024. It utilizes NDVI
@@ -398,7 +398,7 @@ export default function Narrative1() {
                                         particularly the emergence of ghost
                                         forests.
                                     </p>
-                                    <p className="mt-3 text-[14px] text-gray-500">
+                                    <p className="text-center mt-3 text-[14px] text-gray-500">
                                         The colors in this legend were chosen
                                         for high contrast and accessibility,
                                         making it easier for visually impaired
@@ -409,7 +409,7 @@ export default function Narrative1() {
                                         forest loss and ghost forest emergence
                                         over time.
                                     </p>
-                                    <p className="mt-3 text-[14px] text-gray-500">
+                                    <p className="text-center mt-3 text-[14px] text-gray-500">
                                         <strong>Source:</strong> Hansen, Matthew
                                         C., et al. &quot;Global Forest Change
                                         v1.12 (2000–2024).&quot; Google Earth
