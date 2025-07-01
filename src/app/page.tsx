@@ -7,7 +7,7 @@ import ReadAloudControls from "@/components/ReadAloudControls";
 export default function Home() {
     const contentRef = useRef<HTMLDivElement>(null);
 
-  return (
+    return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
@@ -168,92 +168,17 @@ export default function Home() {
                             measure the effect of policy decisions on shaping
                             ghost forest formation.
                         </p>
-                        <p className="mb-4 text-gray-700 max-w-3xl">
-                            Click through the timeline to learn more about how
-                            each policy act affected the formation of ghost
-                            forests.
-                            <br />
-                            <br />
+                        <p className="mb-6 text-gray-700 max-w-3xl">
+                            Click through the interactive timeline below to
+                            explore key environmental policies and extreme
+                            weather events in North Carolina from the 1970s to
+                            2025. Each year highlights a pivotal moment that
+                            shaped the conditions for ghost forest formation.
                         </p>
                         <InteractiveTimeline />
-                        <div className="mt-8 w-full max-w-3xl bg-gray-50 rounded-lg p-6 border border-gray-200 shadow">
-                            <h3 className="font-semibold text-lg text-blue-800 mb-2">
-                                Political Events Timeline Sources
-                            </h3>
-                            <div
-                                className="space-y-3 text-sm text-gray-700"
-                                style={{
-                                    textIndent: "-2em",
-                                    paddingLeft: "2em",
-                                }}
-                            >
-                                <p>
-                                    Cho, Adrian, et al. &quot;Trump&apos;s
-                                    Proposed Budget Would Mean
-                                    &lsquo;Disastrous&apos; Cuts to
-                                    Science.&quot; <em>Science</em>, 2 May 2025,{" "}
-                                    <a
-                                        href="https://www.science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science"
-                                        className="text-blue-700 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-                                        science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science
-                                    </a>
-                                    .
-                                </p>
-                                <p>
-                                    Livingston, Walker. &quot;Numerous N.C.
-                                    Wetlands Lose Protections Under Farm Act and
-                                    SCOTUS Case.&quot;{" "}
-                                    <em>The Daily Tar Heel</em>, 5 Sept. 2023,{" "}
-                                    <a
-                                        href="https://www.dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts"
-                                        className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-                                        dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts
-                                    </a>
-                                    .
-                                </p>
-                                <p>
-                                    Sorg, Lisa. &quot;Q&amp;A: Environmental
-                                    Attorney Derb Carter on DEQ&apos;s Power to
-                                    Regulate GenX (or Not); Lawmakers to Hold
-                                    Hearing Wednesday.&quot;{" "}
-                                    <em>NC Newsline</em>, 21 Aug. 2017,{" "}
-                                    <a
-                                        href="https://ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday"
-                                        className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-                                        ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday
-                                    </a>
-                                    .
-                                </p>
-                                <p>
-                                    Wagner, Adam. &quot;Year After Year, NC
-                                    Legislators Use State Budget to Weaken
-                                    Environmental Protections.&quot;{" "}
-                                    <em>Raleigh News &amp; Observer</em>, 27
-                                    Apr. 2025,{" "}
-                                    <a
-                                        href="https://www.newsobserver.com/news/state/north-carolina/article288496757.html"
-                                        className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-                                        newsobserver.com/news/state/north-carolina/article288496757.html
-                                    </a>
-                                    .
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </section>
             </main>
-    </div>
-  );
+        </div>
+    );
 }
