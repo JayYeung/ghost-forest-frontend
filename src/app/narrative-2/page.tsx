@@ -33,18 +33,19 @@ export default function Narrative2() {
                                 Oral History
                             </h2>
                             <p className="mb-4">
-                                We provide this section in order to illuminate
-                                the stories and acts of action to address ghost
-                                forest emergence in North Carolina. We aim to
-                                discuss ghost forest emergence and policymaking
-                                and its effects on the larger scale, but include
-                                this section to highlight the actions made by
-                                local communities and to share their stories and
-                                acknowledge their voices as a result of this
-                                phenomenon. To explore not only the stories and
-                                accounts of those experiencing these ghost
-                                forests, but also to discuss what the community
-                                is doing to address the topic.
+                                We include this section to illuminate the
+                                stories and acts of action emerging in response
+                                to ghost forest formation in North Carolina.
+                                While our project discusses ghost forests and
+                                policymaking on a broader scale, this section
+                                centers the voices of local communities —
+                                sharing their stories, acknowledging their lived
+                                experiences, and highlighting the steps
+                                they&apos;re taking to respond. Our goal is not
+                                only to explore how people are experiencing
+                                ghost forests firsthand, but also to show how
+                                communities are actively engaging with and
+                                addressing this ongoing issue.
                             </p>
                             {/* Ryan Emanuel */}
                             <div className="mb-4">
@@ -217,7 +218,8 @@ export default function Narrative2() {
                                             has deep ties to the land, so it is
                                             important to create educational
                                             materials on climate change that
-                                            inspire curiosity and not fear&quot;(Allen)
+                                            inspire curiosity and not
+                                            fear&quot;(Allen)
                                         </p>
                                     </div>
                                 </div>
@@ -317,34 +319,66 @@ export default function Narrative2() {
                                             frequently by residents and I hope
                                             that our project can, at the least,
                                             be the start of a conversation about
-                                            climate change impacts.&quot; (Allen)
+                                            climate change impacts.&quot;
+                                            (Allen)
                                         </p>
-                                        
-                                        
                                     </div>
                                 </div>
                             </div>
-                            <p className="mb-4">
-                                            Guided by the principles of data feminism and ethical visualization, 
-                                             our third visualization focuses on the people most affected by ghost 
-                                             forest emergence (Rezai; Hepworth and Church). Drawing on U.S. Census data,
-                                             we visualize the age composition of North Carolina’s coastal communities 
-                                             to better understand who is living at the forefront of forest loss . 
-                                        </p>
-                                        <p className="mb-4">
-                                            The data reveals two groups with notable vulnerability: young adults (ages 20–29) and older adults (60-69). 
-                                            Supplementing these numbers with oral histories, these numbers become more than demographics — they become 
-                                            entry points into understanding how ghost forests are affecting real lives . Younger residents, especially 
-                                            those employed in industries like fishing, may face increasing economic displacement due to sea level rise 
-                                            and saltwater intrusion. Older residents, many of whom have a deep connection to their environment, may be
-                                            less likely to relocate despite environmental risks. 
-
-                                        </p>
-                                          <p className="mb-4">
-                                            Rather than flattening these experiences into data points, our visualization together with
-                                              oral histories aims to highlight the people behind the numbers, displaying how ghost forests 
-                                              affect not only ecosystems but also the lives and histories of those who inhabit them.
-                                        </p>
+                            {/* Centering People in the Data */}
+                            <div>
+                                <h2 className="text-2xl font-bold mb-2 text-blue-800">
+                                    Centering People in the Data
+                                </h2>
+                                <p className="mb-4">
+                                    Guided by the principles of data feminism
+                                    and ethical visualization, our third
+                                    visualization focuses on the people most
+                                    affected by ghost forest emergence (Rezai;
+                                    Hepworth and Church). Drawing on U.S. Census
+                                    data, we visualize the age composition of
+                                    North Carolina&apos;s coastal communities to
+                                    better understand who is living at the
+                                    forefront of forest loss.
+                                </p>
+                                <div
+                                    className="relative w-full mb-4"
+                                    style={{ paddingTop: "75%" }}
+                                >
+                                    <iframe
+                                        src="pop_in_age_group.html"
+                                        className="absolute top-0 left-0 w-full h-full"
+                                        style={{ border: "none" }}
+                                        title="Population by Age Group in North Carolina"
+                                        scrolling="no"
+                                    ></iframe>
+                                </div>
+                                <p className="mb-4">
+                                    The data reveals two groups with notable
+                                    vulnerability: young adults (ages 20–29) and
+                                    older adults (60-69). Supplementing these
+                                    numbers with oral histories, these numbers
+                                    become more than demographics — they become
+                                    entry points into understanding how ghost
+                                    forests are affecting real lives. Younger
+                                    residents, especially those employed in
+                                    industries like fishing, may face increasing
+                                    economic displacement due to sea level rise
+                                    and saltwater intrusion. Older residents,
+                                    many of whom have a deep connection to their
+                                    environment, may be less likely to relocate
+                                    despite environmental risks.
+                                </p>
+                                <p className="mb-4">
+                                    Rather than flattening these experiences
+                                    into data points, our visualization together
+                                    with oral histories aims to highlight the
+                                    people behind the numbers, displaying how
+                                    ghost forests affect not only ecosystems but
+                                    also the lives and histories of those who
+                                    inhabit them.
+                                </p>
+                            </div>
                         </div>
                         {/* Conclusion */}
                         <div>

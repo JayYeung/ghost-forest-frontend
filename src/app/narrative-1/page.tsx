@@ -285,43 +285,6 @@ export default function Narrative1() {
                                     (Jay, Arlen, Daphne)
                                 </span>
                             </h2>
-                            <div
-                                className="relative w-full"
-                                style={{ paddingTop: "75%" }}
-                            >
-                                <iframe
-                                    src="pop_in_age_group.html"
-                                    className="absolute top-0 left-0 w-full h-full"
-                                    style={{ border: "none" }}
-                                    title="Population by Age Group in North Carolina"
-                                    scrolling="no"
-                                ></iframe>
-                            </div>
-                            <p className="mb-4 text-[14px] text-center text-gray-500">
-                                This visualization shows the demographic
-                                distribution of North Carolina&apos;s population
-                                by age groups over time. Understanding the
-                                demographic context is crucial for analyzing how
-                                different age groups may be affected by
-                                environmental changes and policy decisions
-                                related to ghost forest formation.
-                            </p>
-                            <p className="mb-4">
-                                To produce our visualizations, our project draws
-                                from an interdisciplinary digital humanities
-                                methodology that combines environmental data
-                                analysis and critical humanistic inquiry. The
-                                core of our approach is to realize that data is
-                                not neutral, which reflects on political,
-                                economic, and social value. The view is shaped
-                                by a theoretical framework from critical data
-                                studies. In Hepworth and Church&apos;s article,
-                                they mentioned how data/tools reveal the
-                                structural inequality. And this view guides us
-                                to reveal the real fact of ghost forests, and to
-                                think critically about the reasons behind ghost
-                                forests.
-                            </p>
                             <p className="mb-4">
                                 To contextualize our analysis of policy-driven
                                 environmental change, we also examine how
