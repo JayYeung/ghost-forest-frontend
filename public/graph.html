@@ -93,7 +93,10 @@
 
             const layout = {
                 title: "Environmental Spending vs. Forest Loss in North Carolina",
-                xaxis: { title: "Year", tickmode: "linear" },
+                xaxis: {
+                    title: { text: "Year", standoff: 60 },
+                    tickmode: "linear",
+                },
                 yaxis: {
                     title: "Spending (Millions USD)",
                     side: "left",
