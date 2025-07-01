@@ -49,10 +49,13 @@ export default function DataCritique() {
                             Additionally, shifting budget categories and inconsistent definitions over time make direct year-to-year comparisons somewhat unreliable.
                         </p>
                         <p className="text-lg leading-relaxed">
-                            Curabitur sodales ligula in libero. Sed dignissim
-                            lacinia nunc. Curabitur tortor. Pellentesque nibh.
-                            Aenean quam. In scelerisque sem at dolor. Maecenas
-                            mattis. Sed convallis tristique sem.
+                            While the visualization effectively filters and processes population data from 2001 to 2024 across North Carolina’s coastal counties, its core insight is somewhat limited. 
+                            The choice to focus on age groups provides a more ethically grounded view than the flawed racial labels in the original dataset, but the resulting interactive pie chart 
+                            doesn’t reveal any strikingly different trends from statewide or national population distributions. Most counties continue to follow a typical aging curve, with slight
+                            increases in older age groups over time—something common across the U.S., not necessarily unique to regions affected by ghost forests. Without stronger comparative analysis
+                            or evidence linking demographic change to environmental impact, the visualization risks seeming disconnected from the core narrative. While technically well-executed, 
+                            the output could be strengthened by showing how these population shifts differ from areas not experiencing forest loss or by layering in migration patterns, land use changes,
+                            or housing trends that speak more directly to the impact of ghost forests.
                         </p>
                     </div>
                 </section>
