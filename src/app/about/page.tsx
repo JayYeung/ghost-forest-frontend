@@ -144,6 +144,13 @@ export default function About() {
                                                     Narrative, Graph
                                                     Visualization, Narrative
                                                 </p>
+                                                <p className="text-sm text-gray-600 mb-2">
+                                                    <strong>Why this is meaningful to me</strong>{" "}
+                                                    Ghost forests are meaningful to me because they make the impacts of 
+                                                    climate change and policy failure visible, turning abstract data into 
+                                                    a powerful, real-world warning of environmental loss.
+                                                    
+                                                </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
