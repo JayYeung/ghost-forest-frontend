@@ -233,7 +233,7 @@ export default function Narrative() {
                             </h2>
                             <div
                                 className="relative w-full"
-                                style={{ paddingTop: "133%" }}  <!-- Maintains 3:4 aspect ratio -->
+                                style={{ paddingTop: "133%" }} 
                             >
                                 <iframe
                                     src="graph.html"
