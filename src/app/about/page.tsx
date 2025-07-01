@@ -101,24 +101,40 @@ export default function About() {
                                                     Daphne
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Political Events Timeline,
-                                                    Frontend, Data Critique,
-                                                    Video Annotation, and
-                                                    Visualization Caption
+                                                    Narrative, Frontend, Data
+                                                    Visualization,
+                                                    Data Critique, 
+                                                    Annotated Bibliography
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    I wrote the political
-                                                    policies events that
-                                                    influenced the formation of
-                                                    ghost forests in North
-                                                    Carolina. I also helped
-                                                    editing the narrative,
-                                                    especially the topic and
-                                                    thesis. I also helped build
-                                                    the frontend.
+                                                    My contribution span across 
+                                                    both the technical
+                                                    and humanities sides of the 
+                                                    project. On the technical
+                                                    side, I finalized the website
+                                                    development (deploying audio playback 
+                                                    for accessibility, adding images and 
+                                                    visualization captions, and the structuring
+                                                    of the narrative and data visualizations).
+                                                    I also created the interactive 
+                                                    visualization on the North 
+                                                    Carolinian population composition 
+                                                    by age groups for analyzing how 
+                                                    marginalization play in the impacts
+                                                    of ghost forests.
+                                                    On the humanities side, I was involved in
+                                                    various parts of our content and argumentation, 
+                                                    including writing the narrative, analyzing
+                                                    how our data visualizations pertain
+                                                    to the theories of digital humanities
+                                                    and ethical practices in the
+                                                    data critique, the video annotation, and 
+                                                    the political policy events timeline
+                                                    that influenced the formation of ghost 
+                                                    forests in North Carolina.
                                                 </p>
                                             </div>
                                         </div>
