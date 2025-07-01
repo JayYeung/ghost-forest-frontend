@@ -336,7 +336,7 @@ export default function InteractiveTimeline() {
                             research, data, and grant programs&quot; (Cho et
                             al.).
                             <br />
-                            <div className="w-full flex justify-center mt-4">Add commentMore actions
+                            <div className="w-full flex justify-center mt-4">
                                 <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                                     <Image
                                         src="/images/funding_cuts.jpg"
@@ -347,7 +347,7 @@ export default function InteractiveTimeline() {
                                     />
                                 </div>
                             </div>
-                            <div className="w-full flex justify-center">Add commentMore actions
+                            <div className="w-full flex justify-center">
                                 <span className="text-xs text-gray-500 mt-2 text-center">Source: Getty Images</span>
                             </div>
                         </>
