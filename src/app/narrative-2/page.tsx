@@ -20,7 +20,7 @@ export default function Narrative2() {
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
-                        See What We Have to Say about Ghost Forests
+                        Oral Histories & Acts of Resilience
                     </h1>
                     <div
                         ref={contentRef}
@@ -30,7 +30,10 @@ export default function Narrative2() {
                         {/* Oral History */}
                         <div>
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
-                                Oral History
+                                Oral History{" "}
+                                <span className="font-normal text-base">
+                                    (Hailey, Jay)
+                                </span>
                             </h2>
                             <p className="mb-4">
                                 We include this section to illuminate the
@@ -157,174 +160,6 @@ export default function Narrative2() {
                                     </div>
                                 </div>
                             </div>
-                            {/* Community Impact - Group Card */}
-                            <div className="mb-4">
-                                <div className="person flex gap-4 items-start">
-                                    <div className="w-36 h-auto" />
-                                    <div>
-                                        <h2 className="text-lg font-semibold">
-                                            Community Impact
-                                        </h2>
-                                        <p>
-                                            Four NC State students, in
-                                            partnership with the National Park
-                                            Service and the Core Sound Waterfowl
-                                            Museum and Heritage Center, led a
-                                            community-centered initiative to
-                                            make ghost forests visible and
-                                            meaningful to the public through
-                                            citizen science and education. They
-                                            installed a Chronolog photo station
-                                            along the Soundside Loop Trail at
-                                            Cape Lookout National Seashore,
-                                            inviting visitors to take and submit
-                                            photos of the landscape to document
-                                            the transformation of ghost forests
-                                            over time. Additionally, they
-                                            created a park brochure and a museum
-                                            exhibit explaining what ghost
-                                            forests are and why they form. In
-                                            this way, their work serves as both
-                                            a scientific monitoring tool as well
-                                            as a public education effort,
-                                            promoting awareness, engagement, and
-                                            environmental activism along the
-                                            North Carolina coast.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Rachel Dechicio */}
-                            <div className="mb-4">
-                                <div className="person flex gap-4 items-start">
-                                    <Image
-                                        src="/images/human3.png"
-                                        alt="Rachel Dechicio"
-                                        width={144}
-                                        height={144}
-                                        className="w-36 h-auto rounded"
-                                    />
-                                    <div>
-                                        <h2 className="text-lg font-semibold">
-                                            Rachel Dechicio
-                                        </h2>
-                                        <p className="italic">
-                                            Project member, former NC State
-                                            student
-                                        </p>
-                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            &quot;Harkers Island has an amazing
-                                            community that loves their home and
-                                            has deep ties to the land, so it is
-                                            important to create educational
-                                            materials on climate change that
-                                            inspire curiosity and not
-                                            fear&quot;(Allen)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Andrew Barfield */}
-                            <div className="mb-4">
-                                <div className="person flex gap-4 items-start">
-                                    <Image
-                                        src="/images/human4.png"
-                                        alt="Andrew Barfield"
-                                        width={144}
-                                        height={144}
-                                        className="w-36 h-auto rounded"
-                                    />
-                                    <div>
-                                        <h2 className="text-lg font-semibold">
-                                            Andrew Barfield
-                                        </h2>
-                                        <p className="italic">
-                                            Project member, former NC State
-                                            student
-                                        </p>
-                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            &quot;It is my hope that ghost
-                                            forests can be used as a tool to
-                                            further educate the public on the
-                                            many ways that our world around us
-                                            is changing. The more involvement
-                                            that we get from local communities,
-                                            then the better chance we have of
-                                            adapting to these changes moving
-                                            forward&quot;(Allen)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Jordan Strickland */}
-                            <div className="mb-4">
-                                <div className="person flex gap-4 items-start">
-                                    <Image
-                                        src="/images/human5.png"
-                                        alt="Jordan Strickland"
-                                        width={144}
-                                        height={144}
-                                        className="w-36 h-auto rounded"
-                                    />
-                                    <div>
-                                        <h2 className="text-lg font-semibold">
-                                            Jordan Strickland
-                                        </h2>
-                                        <p className="italic">
-                                            Project member, former NC State
-                                            student
-                                        </p>
-                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            &quot;I knew if me, as an
-                                            environmental science major,
-                                            didn&apos;t know much about ghost
-                                            forests, then that means most of the
-                                            general public doesn&apos;t as well.
-                                            Ghost forests are not only an
-                                            indication of climate change and sea
-                                            level rise, but also foreshadow how
-                                            our coastal forests could end up as
-                                            these two factors continue to impact
-                                            the NC coast in the coming
-                                            years&quot; (Allen)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Arden Lumpkin */}
-                            <div className="mb-4">
-                                <div className="person flex gap-4 items-start">
-                                    <Image
-                                        src="/images/human6.png"
-                                        alt="Arden Lumpkin"
-                                        width={144}
-                                        height={144}
-                                        className="w-36 h-auto rounded"
-                                    />
-                                    <div>
-                                        <h2 className="text-lg font-semibold">
-                                            Arden Lumpkin
-                                        </h2>
-                                        <p className="italic">
-                                            Project member, former NC State
-                                            student
-                                        </p>
-                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            &quot;My biggest hope with our
-                                            project is that it will spark
-                                            curiosity and conversation about
-                                            climate change among the community.
-                                            The Core Sound Waterfowl Museum is
-                                            such an important place visited
-                                            frequently by residents and I hope
-                                            that our project can, at the least,
-                                            be the start of a conversation about
-                                            climate change impacts.&quot;
-                                            (Allen)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
                             {/* Centering People in the Data */}
                             <div>
                                 <h2 className="text-2xl font-bold mb-2 text-blue-800">
@@ -379,13 +214,176 @@ export default function Narrative2() {
                                     inhabit them.
                                 </p>
                             </div>
+                            {/* Community Impact - now its own section */}
+                            <div>
+                                <h2 className="text-2xl font-bold mb-2 text-blue-800">
+                                    Community Impact
+                                </h2>
+                                <p>
+                                    Four NC State students, in partnership with
+                                    the National Park Service and the Core Sound
+                                    Waterfowl Museum and Heritage Center, led a
+                                    community-centered initiative to make ghost
+                                    forests visible and meaningful to the public
+                                    through citizen science and education. They
+                                    installed a Chronolog photo station along
+                                    the Soundside Loop Trail at Cape Lookout
+                                    National Seashore, inviting visitors to take
+                                    and submit photos of the landscape to
+                                    document the transformation of ghost forests
+                                    over time. Additionally, they created a park
+                                    brochure and a museum exhibit explaining
+                                    what ghost forests are and why they form. In
+                                    this way, their work serves as both a
+                                    scientific monitoring tool as well as a
+                                    public education effort, promoting
+                                    awareness, engagement, and environmental
+                                    activism along the North Carolina coast.
+                                </p>
+                                {/* Rachel Dechicio */}
+                                <div className="mb-4">
+                                    <div className="person flex gap-4 items-start">
+                                        <Image
+                                            src="/images/human3.png"
+                                            alt="Rachel Dechicio"
+                                            width={144}
+                                            height={144}
+                                            className="w-36 h-auto rounded"
+                                        />
+                                        <div>
+                                            <h2 className="text-lg font-semibold">
+                                                Rachel Dechicio
+                                            </h2>
+                                            <p className="italic">
+                                                Project member, former NC State
+                                                student
+                                            </p>
+                                            <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                                &quot;Harkers Island has an
+                                                amazing community that loves
+                                                their home and has deep ties to
+                                                the land, so it is important to
+                                                create educational materials on
+                                                climate change that inspire
+                                                curiosity and not
+                                                fear&quot;(Allen)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Andrew Barfield */}
+                                <div className="mb-4">
+                                    <div className="person flex gap-4 items-start">
+                                        <Image
+                                            src="/images/human4.png"
+                                            alt="Andrew Barfield"
+                                            width={144}
+                                            height={144}
+                                            className="w-36 h-auto rounded"
+                                        />
+                                        <div>
+                                            <h2 className="text-lg font-semibold">
+                                                Andrew Barfield
+                                            </h2>
+                                            <p className="italic">
+                                                Project member, former NC State
+                                                student
+                                            </p>
+                                            <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                                &quot;It is my hope that ghost
+                                                forests can be used as a tool to
+                                                further educate the public on
+                                                the many ways that our world
+                                                around us is changing. The more
+                                                involvement that we get from
+                                                local communities, then the
+                                                better chance we have of
+                                                adapting to these changes moving
+                                                forward&quot;(Allen)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Jordan Strickland */}
+                                <div className="mb-4">
+                                    <div className="person flex gap-4 items-start">
+                                        <Image
+                                            src="/images/human5.png"
+                                            alt="Jordan Strickland"
+                                            width={144}
+                                            height={144}
+                                            className="w-36 h-auto rounded"
+                                        />
+                                        <div>
+                                            <h2 className="text-lg font-semibold">
+                                                Jordan Strickland
+                                            </h2>
+                                            <p className="italic">
+                                                Project member, former NC State
+                                                student
+                                            </p>
+                                            <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                                &quot;I knew if me, as an
+                                                environmental science major,
+                                                didn&apos;t know much about
+                                                ghost forests, then that means
+                                                most of the general public
+                                                doesn&apos;t as well. Ghost
+                                                forests are not only an
+                                                indication of climate change and
+                                                sea level rise, but also
+                                                foreshadow how our coastal
+                                                forests could end up as these
+                                                two factors continue to impact
+                                                the NC coast in the coming
+                                                years&quot; (Allen)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {/* Arden Lumpkin */}
+                                <div className="mb-4">
+                                    <div className="person flex gap-4 items-start">
+                                        <Image
+                                            src="/images/human6.png"
+                                            alt="Arden Lumpkin"
+                                            width={144}
+                                            height={144}
+                                            className="w-36 h-auto rounded"
+                                        />
+                                        <div>
+                                            <h2 className="text-lg font-semibold">
+                                                Arden Lumpkin
+                                            </h2>
+                                            <p className="italic">
+                                                Project member, former NC State
+                                                student
+                                            </p>
+                                            <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                                &quot;My biggest hope with our
+                                                project is that it will spark
+                                                curiosity and conversation about
+                                                climate change among the
+                                                community. The Core Sound
+                                                Waterfowl Museum is such an
+                                                important place visited
+                                                frequently by residents and I
+                                                hope that our project can, at
+                                                the least, be the start of a
+                                                conversation about climate
+                                                change impacts.&quot; (Allen)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         {/* Conclusion */}
                         <div>
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Conclusion{" "}
                                 <span className="font-normal text-base">
-                                    (Hailey)
+                                    (Hailey, Jay)
                                 </span>
                             </h2>
                             <p className="mb-4">
