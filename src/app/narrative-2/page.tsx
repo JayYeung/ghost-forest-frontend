@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation";
 import { useRef } from "react";
 import ReadAloudControls from "@/components/ReadAloudControls";
+import Image from "next/image";
 
 export default function Narrative2() {
     const contentRef = useRef<HTMLDivElement>(null);
@@ -31,62 +32,292 @@ export default function Narrative2() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Oral History
                             </h2>
-                            <p className="mb-4">We provide this section in order to illuminate the stories 
-                                and acts of action to address ghost forest emergence in North Carolina. 
-                                We aim to discuss ghost forest emergence and policymaking and its effects
-                                on the larger scale, but include this section to highlight the actions made
-                                by local communities and to share their stories and acknowledge their voices 
-                                as a result of this phenomenon. To explore not only the stories and accounts
-                                of those experiencing these ghost forests, but also to discuss what the community
-                                is doing to address the topic. 
+                            <p className="mb-4">
+                                We provide this section in order to illuminate
+                                the stories and acts of action to address ghost
+                                forest emergence in North Carolina. We aim to
+                                discuss ghost forest emergence and policymaking
+                                and its effects on the larger scale, but include
+                                this section to highlight the actions made by
+                                local communities and to share their stories and
+                                acknowledge their voices as a result of this
+                                phenomenon. To explore not only the stories and
+                                accounts of those experiencing these ghost
+                                forests, but also to discuss what the community
+                                is doing to address the topic.
                             </p>
+                            {/* Ryan Emanuel */}
                             <div className="mb-4">
-                              <div className="person flex gap-4 items-start">
-                                <img src="/images/human1.png" alt="Ryan Emanuel" className="w-36 h-auto rounded" />
-                                <div>
-                                  <h2 className="text-lg font-semibold">Ryan Emanuel</h2>
-                                  <p className="italic">
-                                    Citizen of the Lumbee Tribe & Professor in the Department of Forestry and Environmental Resources at NC State
-                                  </p>
-                                  <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                    “Even though we may not speak our ancestral languages, speaking for myself and a lot of other Lumbee people, 
-                                    we draw comfort from the fact that we can go out to these places and look at the same landscapes and the same riverscapes 
-                                    and know that our ancestors stood in the same spot and looked at the same views.”
-                                  </p>
-                                  <p>
-                                    From his work with the Lumbee Tribe, Emanuel witnessed how climate change was not only altering the physical landscape, 
-                                    but also affecting cultural ties rooted to the land. As ghost forests began to emerge across familiar territory, 
-                                    the transformation extended beyond just biodiversity — it was also reshaping the tribe’s sense of place and belonging. 
-                                    In response, Emanuel has worked to amplify Indigenous voices in climate conversations, recognizing that protecting the land 
-                                    also means preserving the cultural identities woven into it. While developing solutions may be complex, centering the community’s 
-                                    stories and knowledge offers an ethical, thoughtful, and respectful way to move forward and drive change.
-                                  </p>
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human1.png"
+                                        alt="Ryan Emanuel"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Ryan Emanuel
+                                        </h2>
+                                        <p className="italic">
+                                            Citizen of the Lumbee Tribe &
+                                            Professor in the Department of
+                                            Forestry and Environmental Resources
+                                            at NC State
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “Even though we may not speak our
+                                            ancestral languages, speaking for
+                                            myself and a lot of other Lumbee
+                                            people, we draw comfort from the
+                                            fact that we can go out to these
+                                            places and look at the same
+                                            landscapes and the same riverscapes
+                                            and know that our ancestors stood in
+                                            the same spot and looked at the same
+                                            views.”
+                                        </p>
+                                        <p>
+                                            From his work with the Lumbee Tribe,
+                                            Emanuel witnessed how climate change
+                                            was not only altering the physical
+                                            landscape, but also affecting
+                                            cultural ties rooted to the land. As
+                                            ghost forests began to emerge across
+                                            familiar territory, the
+                                            transformation extended beyond just
+                                            biodiversity — it was also reshaping
+                                            the tribe's sense of place and
+                                            belonging. In response, Emanuel has
+                                            worked to amplify Indigenous voices
+                                            in climate conversations,
+                                            recognizing that protecting the land
+                                            also means preserving the cultural
+                                            identities woven into it. While
+                                            developing solutions may be complex,
+                                            centering the community's stories
+                                            and knowledge offers an ethical,
+                                            thoughtful, and respectful way to
+                                            move forward and drive change.
+                                        </p>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
+                            {/* Penny Hooper */}
                             <div className="mb-4">
-                              <div className="person flex gap-4 items-start">
-                                <img
-                                  src="/images/human2.png"
-                                  alt="Penny Hooper"
-                                  className="w-36 h-auto rounded"
-                                />
-                                <div>
-                                  <h2 className="text-lg font-semibold">Penny Hooper</h2>
-                                  <p className="italic">
-                                    Smyrna, North Carolina resident & co-owner of Hooper Family Seafood
-                                  </p>
-                                  <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                    “We’re doing the best we can to adapt, but people don’t want to call it climate change. They don’t want to use those words… and that’s so sad because there are things related to climate change they can support, such as legislation to build new infrastructure or policies to slow the pace of greenhouse gas emissions… We’re doing things we can to help our piece of property, but the big picture of legislation, people are not supporting that.”
-                                  </p>
-                                  <p>
-                                    Penny Hooper, a resident of Smyrna, North Carolina and co-owner of Hooper Family Seafood, has witnessed firsthand the impact of climate change on her land. From her property, she watched the pine trees gradually die off — and after Hurricane Florence in 2018, not a single one remained. In response, she began planting more salt-tolerant species such as oaks and cedars, knowing they might not survive long, but finding comfort in the act itself. Despite uncertainty, Hooper finds purpose in caring for her land, even as broader policy support remains elusive.
-                                  </p>
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human2.png"
+                                        alt="Penny Hooper"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Penny Hooper
+                                        </h2>
+                                        <p className="italic">
+                                            Smyrna, North Carolina resident &
+                                            co-owner of Hooper Family Seafood
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “We're doing the best we can to
+                                            adapt, but people don't want to call
+                                            it climate change. They don't want
+                                            to use those words... and that's so
+                                            sad because there are things related
+                                            to climate change they can support,
+                                            such as legislation to build new
+                                            infrastructure or policies to slow
+                                            the pace of greenhouse gas
+                                            emissions... We're doing things we
+                                            can to help our piece of property,
+                                            but the big picture of legislation,
+                                            people are not supporting that.”
+                                        </p>
+                                        <p>
+                                            From her property, Hooper watched
+                                            the number of living pine trees
+                                            dwindle year by year — and after
+                                            Hurricane Florence in 2018, all were
+                                            gone. In response to the loss, she
+                                            began to nurture more salt-tolerant
+                                            trees, like oaks and cedars. Though
+                                            she knows these trees may not
+                                            survive long, the act of planting
+                                            offers a sense of comfort, agency,
+                                            and purpose.
+                                        </p>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                                                         
-                            
+                            {/* Community Impact - Group Card */}
+                            <div className="mb-4">
+                                <div className="person flex gap-4 items-start">
+                                    <div className="w-36 h-auto" />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Community Impact
+                                        </h2>
+                                        <p>
+                                            Four NC State students, in
+                                            partnership with the National Park
+                                            Service and the Core Sound Waterfowl
+                                            Museum and Heritage Center, led a
+                                            community-centered initiative to
+                                            make ghost forests visible and
+                                            meaningful to the public through
+                                            citizen science and education. They
+                                            installed a Chronolog photo station
+                                            along the Soundside Loop Trail at
+                                            Cape Lookout National Seashore,
+                                            inviting visitors to take and submit
+                                            photos of the landscape to document
+                                            the transformation of ghost forests
+                                            over time. Additionally, they
+                                            created a park brochure and a museum
+                                            exhibit explaining what ghost
+                                            forests are and why they form. In
+                                            this way, their work serves as both
+                                            a scientific monitoring tool as well
+                                            as a public education effort,
+                                            promoting awareness, engagement, and
+                                            environmental activism along the
+                                            North Carolina coast.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Rachel Dechicio */}
+                            <div className="mb-4">
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human3.png"
+                                        alt="Rachel Dechicio"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Rachel Dechicio
+                                        </h2>
+                                        <p className="italic">
+                                            Project member, former NC State
+                                            student
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “Harkers Island has an amazing
+                                            community that loves their home and
+                                            has deep ties to the land, so it is
+                                            important to create educational
+                                            materials on climate change that
+                                            inspire curiosity and not fear”
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Andrew Barfield */}
+                            <div className="mb-4">
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human4.png"
+                                        alt="Andrew Barfield"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Andrew Barfield
+                                        </h2>
+                                        <p className="italic">
+                                            Project member, former NC State
+                                            student
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “It is my hope that ghost forests
+                                            can be used as a tool to further
+                                            educate the public on the many ways
+                                            that our world around us is
+                                            changing. The more involvement that
+                                            we get from local communities, then
+                                            the better chance we have of
+                                            adapting to these changes moving
+                                            forward”
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Jordan Strickland */}
+                            <div className="mb-4">
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human5.png"
+                                        alt="Jordan Strickland"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Jordan Strickland
+                                        </h2>
+                                        <p className="italic">
+                                            Project member, former NC State
+                                            student
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “I knew if me, as an environmental
+                                            science major, didn't know much
+                                            about ghost forests, then that means
+                                            most of the general public doesn't
+                                            as well. Ghost forests are not only
+                                            an indication of climate change and
+                                            sea level rise, but also foreshadow
+                                            how our coastal forests could end up
+                                            as these two factors continue to
+                                            impact the NC coast in the coming
+                                            years”
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* Arden Lumpkin */}
+                            <div className="mb-4">
+                                <div className="person flex gap-4 items-start">
+                                    <Image
+                                        src="/images/human6.png"
+                                        alt="Arden Lumpkin"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Arden Lumpkin
+                                        </h2>
+                                        <p className="italic">
+                                            Project member, former NC State
+                                            student
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            “My biggest hope with our project is
+                                            that it will spark curiosity and
+                                            conversation about climate change
+                                            among the community. The Core Sound
+                                            Waterfowl Museum is such an
+                                            important place visited frequently
+                                            by residents and I hope that our
+                                            project can, at the least, be the
+                                            start of a conversation about
+                                            climate change impacts.”
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         {/* Conclusion */}
                         <div>
