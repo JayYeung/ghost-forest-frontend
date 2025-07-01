@@ -242,17 +242,37 @@ export default function Narrative() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Thesis{" "}
                                 <span className="font-normal text-base">
-                                    (Brayden)
+                                    (Hailey, Brayden, Arlen, Daphne)
                                 </span>
                             </h2>
                             <p className="mb-4">
-                                Therefore, based on our research and through
-                                digital humanities theories and methods, our
-                                project seeks to illuminate that the rise of
-                                ghost forests — driven by lobbying, corruption,
-                                and negligence in political and corporate
-                                sectors — exacerbate environmental degradation
-                                in North Carolinian coastal communities.
+                                Rooted in the principles of data feminism and
+                                following an ethical visualization framework,
+                                our project argues that the emergence of ghost
+                                forests in North Carolina is not solely a
+                                byproduct of climate change, but also a
+                                consequence of deeper systemic failures, such as
+                                political lobbying, deregulation, and
+                                development policies (Rezai; Hepworth and
+                                Church). By mapping forest loss and identifying
+                                patterns of environmental spending, we reveal
+                                how environmental policymaking accelerates ghost
+                                forest emergence in North Carolina and
+                                disproportionately impacts coastal communities.
+                                Through this lens, we also center the lived
+                                experiences of affected communities by
+                                highlighting oral histories, showing how ghost
+                                forests mirror broader patterns of environmental
+                                degradation and marginalization — such as the
+                                erasure of Indigenous cultural landscapes, and
+                                the emotional and cultural displacement faced by
+                                the elderly. While we do not claim causation,
+                                our project invites users to consider how
+                                spatial data, numerical analysis, and local
+                                knowledge can reveal the impact of policy
+                                decisions on ghost forest formation — and how
+                                spotlighting environmental accountability can
+                                inspire further research, activism, and action.
                             </p>
                         </div>
                         <div>
