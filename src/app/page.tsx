@@ -7,7 +7,7 @@ import ReadAloudControls from "@/components/ReadAloudControls";
 export default function Home() {
     const contentRef = useRef<HTMLDivElement>(null);
 
-  return (
+    return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
@@ -188,64 +188,108 @@ export default function Home() {
                                 }}
                             >
                                 <p>
-                                    Cho, Adrian, et al. &quot;Trump&apos;s
-                                    Proposed Budget Would Mean
-                                    &lsquo;Disastrous&apos; Cuts to
-                                    Science.&quot; <em>Science</em>, 2 May 2025,{" "}
+                                    Cho, Adrian, et al. “Trump’s Proposed Budget
+                                    Would Mean ‘Disastrous’ Cuts to Science.”{" "}
+                                    <em>Science</em>, 2 May 2025,{" "}
                                     <a
                                         href="https://www.science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science"
                                         className="text-blue-700 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-                                        science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        www.science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science
                                     </a>
                                     .
                                 </p>
                                 <p>
-                                    Livingston, Walker. &quot;Numerous N.C.
-                                    Wetlands Lose Protections Under Farm Act and
-                                    SCOTUS Case.&quot;{" "}
-                                    <em>The Daily Tar Heel</em>, 5 Sept. 2023,{" "}
+                                    Dalban, Lauren. “New Study Shows Extreme and
+                                    Far-Reaching Impacts of Sackett Ruling on
+                                    Federal Wetland Protections - inside Climate
+                                    News.” <em>Inside Climate News</em>, 25 Mar.
+                                    2025,{" "}
+                                    <a
+                                        href="https://insideclimatenews.org/news/25032025/supreme-court-sackett-decision-threatens-wetlands-nrdc-study-finds/"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        insideclimatenews.org/news/25032025/supreme-court-sackett-decision-threatens-wetlands-nrdc-study-finds/
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Davis, Corey. “Florence after Five:
+                                    Inundated Ecosystems - North Carolina State
+                                    Climate Office.”{" "}
+                                    <em>NC State University</em>, 13 Sept. 2023,{" "}
+                                    <a
+                                        href="https://climate.ncsu.edu/blog/2023/09/florence-after-five-inundated-ecosystems/"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        climate.ncsu.edu/blog/2023/09/florence-after-five-inundated-ecosystems/
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Livingston, Walker. “Numerous N.C. Wetlands
+                                    Lose Protections Under Farm Act and SCOTUS
+                                    Case.” <em>The Daily Tar Heel</em>, 5 Sept.
+                                    2023,{" "}
                                     <a
                                         href="https://www.dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts"
                                         className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-                                        dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        www.dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts
                                     </a>
                                     .
                                 </p>
                                 <p>
-                                    Sorg, Lisa. &quot;Q&amp;A: Environmental
-                                    Attorney Derb Carter on DEQ&apos;s Power to
-                                    Regulate GenX (or Not); Lawmakers to Hold
-                                    Hearing Wednesday.&quot;{" "}
-                                    <em>NC Newsline</em>, 21 Aug. 2017,{" "}
+                                    North Carolina General Assembly. “Bill
+                                    Summary for H 760 (2015-2016) | Legislative
+                                    Reporting Service.” <em>Unc.edu</em>, 2015,{" "}
+                                    <a
+                                        href="https://lrs.sog.unc.edu/billsum/h-760-2015-2016-1"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        lrs.sog.unc.edu/billsum/h-760-2015-2016-1
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Sorg, Lisa. “Q&A: Environmental Attorney
+                                    Derb Carter on DEQ’s Power to Regulate GenX
+                                    (or Not); Lawmakers to Hold Hearing
+                                    Wednesday.” <em>NC Newsline</em>, 21 Aug.
+                                    2017,{" "}
                                     <a
                                         href="https://ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday"
                                         className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday
                                     </a>
                                     .
                                 </p>
                                 <p>
-                                    Wagner, Adam. &quot;Year After Year, NC
+                                    Wagner, Adam. “Year After Year, NC
                                     Legislators Use State Budget to Weaken
-                                    Environmental Protections.&quot;{" "}
-                                    <em>Raleigh News &amp; Observer</em>, 27
-                                    Apr. 2025,{" "}
+                                    Environmental Protections.”{" "}
+                                    <em>Raleigh News & Observer</em>, 27 Apr.
+                                    2025,{" "}
                                     <a
                                         href="https://www.newsobserver.com/news/state/north-carolina/article288496757.html"
                                         className="text-blue-700 underline"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-                                        newsobserver.com/news/state/north-carolina/article288496757.html
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        www.newsobserver.com/news/state/north-carolina/article288496757.html
                                     </a>
                                     .
                                 </p>
@@ -254,6 +298,6 @@ export default function Home() {
                     </div>
                 </section>
             </main>
-    </div>
-  );
+        </div>
+    );
 }

@@ -42,7 +42,7 @@ export default function About() {
                                             <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
                                                 <Image
                                                     src="/images/jay-yeung.jpg"
-                                                    alt="Jay Yeung"
+                                                    alt="Jay"
                                                     width={64}
                                                     height={64}
                                                     className="object-cover w-full h-full rounded-full"
@@ -50,7 +50,7 @@ export default function About() {
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
-                                                    Jay Yeung
+                                                    Jay
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
                                                     Frontend, Backend, Data
