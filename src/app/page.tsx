@@ -13,7 +13,7 @@ export default function Home() {
             <main className="px-4 py-8">
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     {/* Hero Section */}
-                    <div 
+                    <div
                         ref={contentRef}
                         className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100"
                     >
@@ -40,19 +40,18 @@ export default function Home() {
                             and flooded land. This phenomenon, driven by rising
                             sea levels and extreme weather, has left a profound
                             impact on the environment and local communities in
-                            North Carolina. Through visualizing forest loss from 
-                            satellite imagery, analyzing government spending and 
-                            legislation, and exploring the demographics of affected 
-                            areas, our project explores the intricate
+                            North Carolina. Through visualizing forest loss from
+                            satellite imagery, analyzing government spending and
+                            legislation, and exploring the demographics of
+                            affected areas, our project explores the intricate
                             relationship between ghost forests and government
                             policies, aiming to shed light on how these policies
-                            have influenced the emergence and management of ghost
-                            forests over time.
-
+                            have influenced the emergence and management of
+                            ghost forests over time.
                         </p>
                     </div>
                 </section>
-                
+
                 {/* Annotated Video Block */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div
@@ -177,6 +176,81 @@ export default function Home() {
                             <br />
                         </p>
                         <InteractiveTimeline />
+                        <div className="mt-8 w-full max-w-3xl bg-gray-50 rounded-lg p-6 border border-gray-200 shadow">
+                            <h3 className="font-semibold text-lg text-blue-800 mb-2">
+                                Political Events Timeline Sources
+                            </h3>
+                            <div
+                                className="space-y-3 text-sm text-gray-700"
+                                style={{
+                                    textIndent: "-2em",
+                                    paddingLeft: "2em",
+                                }}
+                            >
+                                <p>
+                                    Cho, Adrian, et al. &quot;Trump&apos;s
+                                    Proposed Budget Would Mean
+                                    &lsquo;Disastrous&apos; Cuts to
+                                    Science.&quot; <em>Science</em>, 2 May 2025,{" "}
+                                    <a
+                                        href="https://www.science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        science.org/content/article/trump-s-proposed-budget-would-mean-disastrous-cuts-science
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Livingston, Walker. &quot;Numerous N.C.
+                                    Wetlands Lose Protections Under Farm Act and
+                                    SCOTUS Case.&quot;{" "}
+                                    <em>The Daily Tar Heel</em>, 5 Sept. 2023,{" "}
+                                    <a
+                                        href="https://www.dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        dailytarheel.com/article/2023/09/city-north-carolina-wetlands-farm-bill-environmental-impacts
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Sorg, Lisa. &quot;Q&amp;A: Environmental
+                                    Attorney Derb Carter on DEQ&apos;s Power to
+                                    Regulate GenX (or Not); Lawmakers to Hold
+                                    Hearing Wednesday.&quot;{" "}
+                                    <em>NC Newsline</em>, 21 Aug. 2017,{" "}
+                                    <a
+                                        href="https://ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        ncnewsline.com/briefs/q-lawmakers-hold-hearing-wednesday
+                                    </a>
+                                    .
+                                </p>
+                                <p>
+                                    Wagner, Adam. &quot;Year After Year, NC
+                                    Legislators Use State Budget to Weaken
+                                    Environmental Protections.&quot;{" "}
+                                    <em>Raleigh News &amp; Observer</em>, 27
+                                    Apr. 2025,{" "}
+                                    <a
+                                        href="https://www.newsobserver.com/news/state/north-carolina/article288496757.html"
+                                        className="text-blue-700 underline"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        newsobserver.com/news/state/north-carolina/article288496757.html
+                                    </a>
+                                    .
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
