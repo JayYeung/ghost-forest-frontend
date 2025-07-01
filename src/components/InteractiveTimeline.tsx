@@ -182,13 +182,6 @@ export default function InteractiveTimeline() {
                     )}
                     {selected === 2015 && (
                         <>
-                            <Image
-                                src="/images/hist1.png"
-                                alt="Regulatory Reform Act of 2015"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
                             Also known as the &quot;Regulatory Reform Act of
                             2015,&quot; HB760 aimed to provide regulatory relief
                             to the state&apos;s citizens by implementing various
@@ -200,7 +193,14 @@ export default function InteractiveTimeline() {
                             accelerating conditions that contribute to ghost
                             forest formation in North Carolina.
                             <br />
-                            <span className="text-xs">Source: landsearch</span>
+                            <Image
+                                src="/images/hist1.png"
+                                alt="Regulatory Reform Act of 2015"
+                                className="my-2 rounded shadow max-w-md"
+                                width={600}
+                                height={400}
+                            />
+                            <span className="text-xs text-center">Source: landsearch</span>
                         </>
                     )}
                     {selected === 2018 && (
@@ -325,13 +325,6 @@ export default function InteractiveTimeline() {
                     )}
                     {selected === 2025 && (
                         <>
-                            <Image
-                                src="/images/hist5.jpg"
-                                alt="Research Funding Cut"
-                                className="my-2 rounded shadow max-w-md"
-                                width={600}
-                                height={400}
-                            />
                             For the 2026 fiscal year that starts July 1, 2025,
                             President Donald Trump cuts $18 billion of funding
                             at the National Institutes of Health (NIH) and more
@@ -343,7 +336,20 @@ export default function InteractiveTimeline() {
                             research, data, and grant programs&quot; (Cho et
                             al.).
                             <br />
-                            <span className="text-xs">Source: Science.org</span>
+                            <div className="w-full flex justify-center mt-4">Add commentMore actions
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/funding_cuts.jpg"
+                                        alt="Loss of Wetlands"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            <div className="w-full flex justify-center">Add commentMore actions
+                                <span className="text-xs text-gray-500 mt-2 text-center">Source: Getty Images</span>
+                            </div>
                         </>
                     )}
                 </div>
