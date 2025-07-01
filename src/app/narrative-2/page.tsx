@@ -219,10 +219,49 @@ export default function Narrative2() {
                                 <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                     Community Impact
                                 </h2>
-                                <p>
-                                    Four NC State students, in partnership with
-                                    the National Park Service and the Core Sound
-                                    Waterfowl Museum and Heritage Center, led a
+                                <div className="mb-4 flex gap-4 items-start">
+                                    <Image
+                                        src="/images/barbara.png"
+                                        alt="Barbara Garrity-Blake"
+                                        width={144}
+                                        height={144}
+                                        className="w-36 h-auto rounded"
+                                    />
+                                    <div>
+                                        <h2 className="text-lg font-semibold">
+                                            Barbara Garrity-Blake
+                                        </h2>
+                                        <p className="italic">
+                                            Gloucester, North Carolina resident
+                                            &amp; cultural anthropologist
+                                        </p>
+                                        <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                            &quot;Right now, we have problems
+                                            that are too big for any one person
+                                            or community to deal with
+                                            alone&quot; (Igelman).
+                                        </p>
+                                    </div>
+                                </div>
+                                <p className="mb-4">
+                                    In response to ghost forest emergence, we
+                                    end this section by spotlighting ways local
+                                    communities are taking action. As
+                                    Garrity-Blake notes, collective effort is
+                                    essential — and communities along the North
+                                    Carolina coast are responding in powerful,
+                                    creative ways. This section highlights those
+                                    efforts, acting as a reminder that while
+                                    ghost forests may feel like an overwhelming
+                                    issue, there are still meaningful ways to
+                                    foster awareness, encourage engagement, and
+                                    drive change.
+                                </p>
+                                <p className="mb-4">
+                                    One example comes from four NC State
+                                    students, in partnership with the National
+                                    Park Service and the Core Sound Waterfowl
+                                    Museum and Heritage Center, who led a
                                     community-centered initiative to make ghost
                                     forests visible and meaningful to the public
                                     through citizen science and education. They
@@ -233,10 +272,10 @@ export default function Narrative2() {
                                     document the transformation of ghost forests
                                     over time. Additionally, they created a park
                                     brochure and a museum exhibit explaining
-                                    what ghost forests are and why they form. In
-                                    this way, their work serves as both a
-                                    scientific monitoring tool as well as a
-                                    public education effort, promoting
+                                    what ghost forests are and why they form
+                                    (Allen). In this way, their work serves as
+                                    both a scientific monitoring tool as well as
+                                    a public education effort, promoting
                                     awareness, engagement, and environmental
                                     activism along the North Carolina coast.
                                 </p>
