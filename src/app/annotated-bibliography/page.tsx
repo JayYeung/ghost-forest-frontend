@@ -5,6 +5,7 @@ import ReadAloudControls from "@/components/ReadAloudControls";
 
 export default function AnnotatedBibliography() {
     const contentRef = useRef<HTMLDivElement>(null);
+    const synthesisRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100 flex flex-col">
@@ -516,6 +517,214 @@ export default function AnnotatedBibliography() {
                     </div>
                 </section>
             </main>
+
+            {/* Synthesis Section in its own box */}
+            <section className="w-full max-w-4xl mx-auto mt-8 mb-12 bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 border border-gray-100">
+                <div className="w-full flex justify-start mb-4">
+                    <ReadAloudControls
+                        getText={() => synthesisRef.current?.innerText || ""}
+                    />
+                </div>
+                <h2 className="text-2xl font-bold mb-4 text-blue-800">
+                    Synthesis
+                </h2>
+                <div
+                    ref={synthesisRef}
+                    className="space-y-6 text-gray-700"
+                    style={{
+                        fontFamily: "var(--font-geist-sans)",
+                        textIndent: "2em",
+                    }}
+                >
+                    <p>
+                        <strong>Castagno, NRDC:</strong> Together, the Castagno
+                        article from Port City Daily and the NRDC&apos;s
+                        analysis of Sackett v. EPA provide a layered and
+                        meaningful perspective on the political and legal shifts
+                        that have made North Carolina&apos;s wetlands more
+                        vulnerable, making these sources essential to our
+                        project&apos;s central thesis. Castagno&apos;s reporting
+                        provides more intimate context, capturing how the 2023
+                        NC Farm Act changed state-level protections and caused
+                        concern among environmentalists and the surrounding
+                        community. His article emphasizes the local consequences
+                        of this legislation, showing how policy changes can
+                        morph into real ecological risk. In contrast, the NRDC
+                        article acts as a much larger lens, explaining how the
+                        Supreme Court&apos;s Sackett ruling restricted federal
+                        wetland protections and created openings for
+                        exploitation. Together, these sources help us outline
+                        cause and effect from federal rollback to state
+                        lawmaking to the accelerated formation of ghost forests.
+                        The Castagno article strengthens the narrative and
+                        ethical framing of our project, while the NRDC article
+                        provides additional political and legal context that
+                        supports our policy analysis and development,
+                        simultaneously enriching our data interpretation by
+                        revealing how environmental loss is produced through
+                        systems of power.
+                    </p>
+                    <p>
+                        <strong>
+                            Gverdtsiteli and Kukutschka, Igelman, Peck:
+                        </strong>{" "}
+                        Collectively, these sources powerfully inform our
+                        project by providing a rich blend of empirical evidence
+                        of forest loss and saltwater intrusion, macroscopic
+                        analysis on the correlation between political corruption
+                        and environmental health, and community-centered
+                        narratives. Peck&apos;s rigorous remote-sensing analysis
+                        quantitatively establishes the dramatic ecological
+                        changes occurring in North Carolina&apos;s Down East
+                        region, being an important reference for our
+                        project&apos;s ghost forest emergence visualization
+                        methodologies. Gverdtsiteli and Kukutschka&apos;s report
+                        complements this by elucidating the broader structural
+                        issues of corruption influencing environmental
+                        governance, aligning closely with our project&apos;s
+                        thesis on the role of political and corporate
+                        malfeasance. Lastly, Igelman&apos;s narrative bridges
+                        these analytical perspectives with a human-centered
+                        approach, offering vital qualitative insights into the
+                        lived realities of affected communities in North
+                        Carolina. This triangulation of sources will enhance the
+                        project&apos;s narrative by demonstrating how ghost
+                        forest formation is not merely an environmental issue
+                        but a socio-political crisis shaped significantly by
+                        corruption and policy neglect. The synthesis of these
+                        dimensions equips the project with comprehensive
+                        analytical depth, supporting our thesis while
+                        facilitating both public engagement and informed
+                        policymaking advocacy. Further investigation and data
+                        collection is required for solidifying the connection
+                        between environmental policy failures—specifically
+                        behind-the-scenes lobbying, corruption, and negligence
+                        in political and corporate sectors—and the rise of ghost
+                        forests in North Carolina.
+                    </p>
+                    <p>
+                        <strong>Peck, Hibbs:</strong> Although Peck&apos;s
+                        thesis and Hibbs&apos; article fit into different
+                        disciplinary spaces, they show the deeply intertwined
+                        nature of the ecological and legal aspects of ghost
+                        forests in North Carolina. Peck quantifies her change
+                        through her 30-year NDVI analysis shows that nearly
+                        four-fifths of Down East forest has already slipped
+                        toward ghost-forest status, with hurricanes and
+                        saltwater intrusion accelerating the trend. Hibbs, by
+                        contrast, reveals how the policy arena can either
+                        constrain or enable that ecological trajectory. Judge
+                        Boyle&apos;s refusal to block new Clean Water Act rules
+                        signals that, for now, federal jurisdiction still
+                        safeguards many wetlands, the very buffers that slow
+                        salt intrusion and tree mortality in Peck&apos;s
+                        hotspots. The lawsuit itself, backed by property-rights
+                        advocates, highlights the tensions between these
+                        protections and the continued legal challenges.
+                        Together, the sources suggest a feedback loop:
+                        escalating forest die-off heightens the stakes of
+                        wetland regulation, while shifting legal definitions of
+                        &quot;waters of the United States&quot; will shape the
+                        pace and pattern of future ghost-forest formation. For
+                        our project, Peck supplies the evidence needed to map
+                        where conservation efforts matter most, while Hibbs
+                        flags the legal implications that could modify existing
+                        protection overnight. Integrating these perspectives
+                        will let us narrate ghost forests not just as an
+                        ecological indicator of sea-level rise but also as an
+                        evolving environmental governance.
+                    </p>
+                    <p>
+                        <strong>Allen, Moore:</strong> Based on our research,
+                        understanding ghost forest emergence requires looking
+                        beyond just one perspective. These two sources work
+                        together to develop a deeper, multi-faceted
+                        understanding of our topic, combining environmental
+                        science research with community-driven initiatives.
+                        Together, they create a cohesive narrative informed by
+                        both research and the individual voices of community
+                        members, allowing our project to stay grounded in both
+                        context and impact. Andrew Moore&apos;s article from NC
+                        State provides a strong scientific foundation, aiding
+                        our project&apos;s understanding of the processes behind
+                        ghost forest formation as well as the role environmental
+                        policies might play. Additionally, Jennifer Allen&apos;s
+                        news article incorporates the community perspective,
+                        emphasizing how local institutions and individuals are
+                        stepping in to raise awareness and take action — often
+                        in ways that policy does not. Together, these sources
+                        add value to different parts of our project:
+                        Moore&apos;s article supports an ethical, data feminist
+                        approach to crafting our narrative — amplifying
+                        individual voices and local efforts — while Allen&apos;s
+                        article informs our narrative&apos;s environmental
+                        framing and overall significance. Therefore, by using
+                        these sources, we hope to reinforce that we are not just
+                        presenting data in our project — we&apos;re building a
+                        story, and these sources help ensure that our story is
+                        both research-driven and human-centered.
+                    </p>
+                    <p>
+                        <strong>Hansen, Democracy North Carolina:</strong>{" "}
+                        Together, these two sources allow us to approach the
+                        ghost forest issue from both a political and
+                        environmental angle. Hansen et al.&apos;s satellite
+                        imagery provides powerful visual evidence of forest
+                        loss, which helps us map the physical extent of the
+                        problem over time. The Democracy NC report, meanwhile,
+                        gives us insight into how corporate interests and
+                        political decisions have helped create conditions that
+                        allowed this loss to occur. Together, they let us argue
+                        that ghost forests are not only a result of climate
+                        forces, but also the product of long-standing policy
+                        decisions influenced by lobbying and deregulation. This
+                        blended approach strengthens our project&apos;s
+                        narrative and ensures that our visualizations are
+                        grounded in a critical understanding of environmental
+                        justice. Our use of Google Earth Engine, QGIS, and
+                        Python libraries such as Pandas and GeoPandas will allow
+                        us to present this argument clearly — combining
+                        satellite data with legal and political context to show
+                        how human decisions continue to shape North
+                        Carolina&apos;s changing landscapes.
+                    </p>
+                    <p>
+                        <strong>
+                            Political Events Timeline: Cho, Adrian, et al.;
+                            Livingston, Walker; Sorg, Lisa; Wagner, Adam:
+                        </strong>{" "}
+                        Together, these four sources construct a layered and
+                        politically grounded narrative that directly supports
+                        the goals of our interactive timeline and broader group
+                        project. Cho&apos;s reporting on the Trump
+                        administration&apos;s 2025 proposed science budget
+                        exposes how climate research and environmental
+                        monitoring were defunded at the federal level, creating
+                        large gaps in our ability to track wetland loss and
+                        ghost forest formation. This lack of research support is
+                        directly related to Livingston&apos;s article, which
+                        documents the 2023 correspondence of the Sackett v. EPA
+                        decision and the NC Farm Act, together removing
+                        protections from thousands of isolated wetlands. These
+                        sources complement one another by connecting federal
+                        deregulation to state-level environmental rollbacks.
+                        Sorg&apos;s interview with an environmental attorney
+                        further reveals how legal limitations on the North
+                        Carolina Department of Environmental Quality (NCDEQ)
+                        prevent effective means of enforcement, highlighting how
+                        agencies have been stifled from legislative attacks.
+                        Wagner&apos;s reporting covers the largest time period,
+                        showing how North Carolina legislators have repeatedly
+                        used the state budget as a tool to weaken environmental
+                        protections year after year. These sources provide
+                        anchor points for our interactive timeline by exposing
+                        the political mechanisms that have enabled ecological
+                        degradation. Together, they deepen our argument that
+                        ghost forests are the cumulative result of political
+                        neglect and strategic deregulation.
+                    </p>
+                </div>
+            </section>
         </div>
     );
 }
