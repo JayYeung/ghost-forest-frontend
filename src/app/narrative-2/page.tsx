@@ -20,7 +20,7 @@ export default function Narrative2() {
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
-                        Project Narrative 2
+                        See What We Have to Say about Ghost Forests
                     </h1>
                     <div
                         ref={contentRef}

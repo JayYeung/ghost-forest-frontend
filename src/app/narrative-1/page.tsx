@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import { useRef } from "react";
 import ReadAloudControls from "@/components/ReadAloudControls";
 import NDVIMap from "@/components/NDVIMap";
+import Link from "next/link";
 
 export default function Narrative1() {
     const contentRef = useRef<HTMLDivElement>(null);
@@ -20,7 +21,7 @@ export default function Narrative1() {
                         className="text-3xl font-bold mb-6 text-blue-900 text-center"
                         style={{ fontFamily: "var(--font-geist-sans)" }}
                     >
-                        Project Narrative 1
+                        Our Research
                     </h1>
                     <div
                         ref={contentRef}
@@ -243,7 +244,7 @@ export default function Narrative1() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Thesis{" "}
                                 <span className="font-normal text-base">
-                                    (Brayden/Arlen)
+                                    (Brayden, Arlen, Daphne)
                                 </span>
                             </h2>
                             <p className="mb-4">
@@ -267,7 +268,7 @@ export default function Narrative1() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Methodology and Tools{" "}
                                 <span className="font-normal text-base">
-                                    (Jay & Arlen)
+                                    (Jay, Arlen, Daphne)
                                 </span>
                             </h2>
                             <div
@@ -568,6 +569,17 @@ export default function Narrative1() {
                                 about environmental injustice.
                             </p>
                         </div>
+                    </div>
+                    {/* Button to navigate to narrative-2 */}
+                    <div className="w-full flex justify-center mt-12">
+                        <Link href="/narrative-2">
+                            <button
+                                className="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-200"
+                                type="button"
+                            >
+                                Next: Oral History & Conclusion &rarr;
+                            </button>
+                        </Link>
                     </div>
                 </section>
             </main>
