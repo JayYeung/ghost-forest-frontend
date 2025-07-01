@@ -157,7 +157,48 @@ export default function DataCritique() {
                                 trends that speak more directly to the impact of
                                 ghost forests.
                             </p>
-                        </section>
+
+                            <p>
+                              Our project draws on three main datasets to examine how ghost forests reflect both ecological change and deeper structural inequalities: 
+                              (1) satellite-based forest loss data from <em>Hansen et al.’s Global Forest Change</em> database (2000–2023), 
+                              (2) state-level environmental spending records from the <em>North Carolina Office of State Budget and Management (OSBM)</em> (2003–2023), and 
+                              (3) population composition data from the <em>State Demographer of North Carolina</em>, titled “Population by Age, Race, Sex” (2001–2024). 
+                              Each dataset offers a different lens on the problem — and each comes with its own limitations.
+                            </p>
+                        
+                            <p>
+                              The forest loss data provides annual changes in tree cover across eastern North Carolina. It helps identify areas of significant ecological 
+                              transformation, particularly in wetland zones. However, it does not differentiate between causes of canopy loss (e.g., sea-level rise vs. timber 
+                              harvesting vs. development), so local context is needed to make accurate interpretations. Similarly, the OSBM environmental spending dataset 
+                              allows us to explore the relationship between state policy and ecological outcomes, but its data is presented in broad categories, with no regional 
+                              breakdowns. This limits our ability to tie specific spending decisions to local environmental impacts. Furthermore, recent years include projected 
+                              (rather than actual) figures, which adds uncertainty to budgetary trend analysis. Both datasets were preexisting and required standard cleaning: 
+                              we aligned their timelines, georeferenced relevant areas, and created comparative visual layers, though our conclusions remain correlational, not causal.
+                            </p>
+                        
+                            <p>
+                              To support our oral history work with demographic context, we also analyzed population composition across North Carolina’s coastal counties using 
+                              the “Population by Age, Race, Sex” dataset. We filtered this dataset to focus on years 2001–2024 and selected 20 counties from the outer coastal plain — 
+                              those most affected by ghost forest emergence. We then rebinned the age groups into consistent ten-year intervals and visualized them using interactive 
+                              pie charts. However, this dataset raised serious concerns around data ethics and representation. The racial categories were collapsed into just “White” 
+                              and “Other,” which erases the presence of African American, Native, and Hispanic populations — all of whom have historical and ongoing ties to the region. 
+                              In response, we chose to exclude race as a variable in our visualizations and instead focused on age groups, which were more inclusive and less distorted. 
+                              Even so, this dataset remains limited in its ability to show how age intersects with race, income, or mobility, all of which matter when assessing climate vulnerability.
+                            </p>
+                        
+                            <p>
+                              Another limitation is that our demographic analysis does not compare these coastal trends to national or statewide patterns. Without a broader benchmark, 
+                              we can’t definitively say whether aging populations in coastal counties are unique or part of a larger rural trend. That said, our preliminary findings — 
+                              that younger people are moving out while older residents remain — are supported by qualitative testimony and align with patterns of rural depopulation 
+                              documented elsewhere. This makes the need for further research even more pressing.
+                            </p>
+                        
+                            <p>
+                              Ultimately, while our datasets are imperfect, they still offer valuable insight when used critically. By layering quantitative data with oral histories 
+                              and ethical visualization practices, our project works to uncover how ghost forests are not just about climate — they’re also about power, policy, 
+                              and who gets left behind.
+                            </p>
+                                                </section>
                     </div>
                 </section>
             </main>
