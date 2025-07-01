@@ -64,7 +64,28 @@ export default function Narrative2() {
                                 </div>
                               </div>
                             </div>
-                             
+                            <div className="mb-4">
+                              <div className="person flex gap-4 items-start">
+                                <img
+                                  src="/images/human2.png"
+                                  alt="Penny Hooper"
+                                  className="w-36 h-auto rounded"
+                                />
+                                <div>
+                                  <h2 className="text-lg font-semibold">Penny Hooper</h2>
+                                  <p className="italic">
+                                    Smyrna, North Carolina resident & co-owner of Hooper Family Seafood
+                                  </p>
+                                  <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
+                                    “We’re doing the best we can to adapt, but people don’t want to call it climate change. They don’t want to use those words… and that’s so sad because there are things related to climate change they can support, such as legislation to build new infrastructure or policies to slow the pace of greenhouse gas emissions… We’re doing things we can to help our piece of property, but the big picture of legislation, people are not supporting that.”
+                                  </p>
+                                  <p>
+                                    Penny Hooper, a resident of Smyrna, North Carolina and co-owner of Hooper Family Seafood, has witnessed firsthand the impact of climate change on her land. From her property, she watched the pine trees gradually die off — and after Hurricane Florence in 2018, not a single one remained. In response, she began planting more salt-tolerant species such as oaks and cedars, knowing they might not survive long, but finding comfort in the act itself. Despite uncertainty, Hooper finds purpose in caring for her land, even as broader policy support remains elusive.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                                                         
                             
                         </div>
                         {/* Conclusion */}
