@@ -67,16 +67,16 @@ export default function Narrative2() {
                                             at NC State
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “Even though we may not speak our
-                                            ancestral languages, speaking for
-                                            myself and a lot of other Lumbee
+                                            &quot;Even though we may not speak
+                                            our ancestral languages, speaking
+                                            for myself and a lot of other Lumbee
                                             people, we draw comfort from the
                                             fact that we can go out to these
                                             places and look at the same
                                             landscapes and the same riverscapes
                                             and know that our ancestors stood in
                                             the same spot and looked at the same
-                                            views.”
+                                            views.&quot;
                                         </p>
                                         <p>
                                             From his work with the Lumbee Tribe,
@@ -88,7 +88,7 @@ export default function Narrative2() {
                                             familiar territory, the
                                             transformation extended beyond just
                                             biodiversity — it was also reshaping
-                                            the tribe's sense of place and
+                                            the tribe&apos;s sense of place and
                                             belonging. In response, Emanuel has
                                             worked to amplify Indigenous voices
                                             in climate conversations,
@@ -96,10 +96,11 @@ export default function Narrative2() {
                                             also means preserving the cultural
                                             identities woven into it. While
                                             developing solutions may be complex,
-                                            centering the community's stories
-                                            and knowledge offers an ethical,
-                                            thoughtful, and respectful way to
-                                            move forward and drive change.
+                                            centering the community&apos;s
+                                            stories and knowledge offers an
+                                            ethical, thoughtful, and respectful
+                                            way to move forward and drive
+                                            change.
                                         </p>
                                     </div>
                                 </div>
@@ -123,19 +124,21 @@ export default function Narrative2() {
                                             co-owner of Hooper Family Seafood
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “We're doing the best we can to
-                                            adapt, but people don't want to call
-                                            it climate change. They don't want
-                                            to use those words... and that's so
-                                            sad because there are things related
-                                            to climate change they can support,
+                                            &quot;We&apos;re doing the best we
+                                            can to adapt, but people don&apos;t
+                                            want to call it climate change. They
+                                            don&apos;t want to use those
+                                            words... and that&apos;s so sad
+                                            because there are things related to
+                                            climate change they can support,
                                             such as legislation to build new
                                             infrastructure or policies to slow
                                             the pace of greenhouse gas
-                                            emissions... We're doing things we
-                                            can to help our piece of property,
-                                            but the big picture of legislation,
-                                            people are not supporting that.”
+                                            emissions... We&apos;re doing things
+                                            we can to help our piece of
+                                            property, but the big picture of
+                                            legislation, people are not
+                                            supporting that.&quot;
                                         </p>
                                         <p>
                                             From her property, Hooper watched
@@ -209,12 +212,12 @@ export default function Narrative2() {
                                             student
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “Harkers Island has an amazing
+                                            &quot;Harkers Island has an amazing
                                             community that loves their home and
                                             has deep ties to the land, so it is
                                             important to create educational
                                             materials on climate change that
-                                            inspire curiosity and not fear”
+                                            inspire curiosity and not fear&quot;
                                         </p>
                                     </div>
                                 </div>
@@ -238,15 +241,15 @@ export default function Narrative2() {
                                             student
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “It is my hope that ghost forests
-                                            can be used as a tool to further
-                                            educate the public on the many ways
-                                            that our world around us is
-                                            changing. The more involvement that
-                                            we get from local communities, then
-                                            the better chance we have of
+                                            &quot;It is my hope that ghost
+                                            forests can be used as a tool to
+                                            further educate the public on the
+                                            many ways that our world around us
+                                            is changing. The more involvement
+                                            that we get from local communities,
+                                            then the better chance we have of
                                             adapting to these changes moving
-                                            forward”
+                                            forward&quot;
                                         </p>
                                     </div>
                                 </div>
@@ -270,17 +273,18 @@ export default function Narrative2() {
                                             student
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “I knew if me, as an environmental
-                                            science major, didn't know much
-                                            about ghost forests, then that means
-                                            most of the general public doesn't
-                                            as well. Ghost forests are not only
-                                            an indication of climate change and
-                                            sea level rise, but also foreshadow
-                                            how our coastal forests could end up
-                                            as these two factors continue to
-                                            impact the NC coast in the coming
-                                            years”
+                                            &quot;I knew if me, as an
+                                            environmental science major,
+                                            didn&apos;t know much about ghost
+                                            forests, then that means most of the
+                                            general public doesn&apos;t as well.
+                                            Ghost forests are not only an
+                                            indication of climate change and sea
+                                            level rise, but also foreshadow how
+                                            our coastal forests could end up as
+                                            these two factors continue to impact
+                                            the NC coast in the coming
+                                            years&quot;
                                         </p>
                                     </div>
                                 </div>
@@ -304,16 +308,16 @@ export default function Narrative2() {
                                             student
                                         </p>
                                         <p className="italic bg-gray-100 border-l-4 border-gray-500 p-3 my-2">
-                                            “My biggest hope with our project is
-                                            that it will spark curiosity and
-                                            conversation about climate change
-                                            among the community. The Core Sound
-                                            Waterfowl Museum is such an
-                                            important place visited frequently
-                                            by residents and I hope that our
-                                            project can, at the least, be the
-                                            start of a conversation about
-                                            climate change impacts.”
+                                            &quot;My biggest hope with our
+                                            project is that it will spark
+                                            curiosity and conversation about
+                                            climate change among the community.
+                                            The Core Sound Waterfowl Museum is
+                                            such an important place visited
+                                            frequently by residents and I hope
+                                            that our project can, at the least,
+                                            be the start of a conversation about
+                                            climate change impacts.&quot;
                                         </p>
                                     </div>
                                 </div>
@@ -403,10 +407,9 @@ export default function Narrative2() {
                                 </p>
                                 <p>
                                     &quot;
-                                    <span>&lsquo;Ghost Forests&rsquo;</span>:
-                                    What They Are and Why They&rsquo;re Becoming
-                                    More Common.&quot; <em>CBS News</em>, Aug.
-                                    2017,{" "}
+                                    <span>&apos;Ghost Forests&apos;</span>: What
+                                    They Are and Why They&apos;re Becoming More
+                                    Common.&quot; <em>CBS News</em>, Aug. 2017,{" "}
                                     <a
                                         href="https://www.cbsnews.com/news/ghost-forests-what-they-are-why-theyre-becoming-more-common"
                                         className="text-blue-700 underline"
@@ -437,7 +440,7 @@ export default function Narrative2() {
                                 </p>
                                 <p>
                                     Democracy North Carolina. &quot;Political
-                                    Donations Decide NC&rsquo;s Environmental
+                                    Donations Decide NC&apos;s Environmental
                                     Future.&quot; <em>Democracy NC</em>, July
                                     1995,{" "}
                                     <a
