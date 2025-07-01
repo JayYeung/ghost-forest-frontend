@@ -191,30 +191,44 @@ export default function About() {
                                     <div className="bg-gray-50 rounded-lg p-4">
                                         <div className="flex items-start space-x-4">
                                             <div className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                                <span className="text-gray-600 text-sm">
-                                                    <Image
-                                                        src="/images/IMG_0922.jpg"
-                                                        alt="Hailey"
-                                                        width={64}
-                                                        height={64}
-                                                        className="object-cover w-full h-full rounded-full"
-                                                    />
-                                                </span>
+                                                <Image
+                                                    src="/images/hailey.jpg"
+                                                    alt="Hailey"
+                                                    width={64}
+                                                    height={64}
+                                                    className="object-cover w-full h-full rounded-full"
+                                                />
                                             </div>
                                             <div className="flex-1">
                                                 <h3 className="font-semibold text-lg text-blue-700">
                                                     Hailey
                                                 </h3>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    Short bio and background
+                                                    Narrative, Data Critique,
+                                                    Political Events Timeline
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
                                                         Responsibilities:
                                                     </strong>{" "}
-                                                    Research coordination, data
-                                                    validation, project
-                                                    management
+                                                    Hi! My name is Hailey
+                                                    Tsuchiya, and I'm a rising
+                                                    junior studying Economics
+                                                    and Data Science! Fun fact:
+                                                    I had a brief stint as a
+                                                    Sustainable Environmental
+                                                    Design major, so the topic
+                                                    of environmental
+                                                    policymaking is super
+                                                    interesting and close to me.
+                                                    On this project, I worked on
+                                                    building our narrative —
+                                                    focusing on introducing the
+                                                    topic, research question,
+                                                    and thesis. Additionally, I
+                                                    aided with the data critique
+                                                    and building the policy
+                                                    timeline.
                                                 </p>
                                             </div>
                                         </div>
@@ -344,17 +358,30 @@ export default function About() {
                                         </h3>
                                         <ul className="text-sm space-y-2">
                                             <li>
-                                                <strong>We used Jupyter Notebook to combine code, visualizations, 
-                                                    and commentary in one place, making it easier to collaborate and revise. 
-                                                    For visualizations, we used Matplotlib for quick static plots and Plotly to
-                                                    create interactive graphs—most clearly seen in our environmental spending vs.
-                                                    forest loss timeline with hoverable policy markers. We chose tools that allowed
-                                                    us to highlight patterns without oversimplifying the data. Instead of filling in
-                                                    missing values, we preserved gaps to reflect real-world inconsistencies in 
+                                                <strong>
+                                                    We used Jupyter Notebook to
+                                                    combine code,
+                                                    visualizations, and
+                                                    commentary in one place,
+                                                    making it easier to
+                                                    collaborate and revise. For
+                                                    visualizations, we used
+                                                    Matplotlib for quick static
+                                                    plots and Plotly to create
+                                                    interactive graphs—most
+                                                    clearly seen in our
+                                                    environmental spending vs.
+                                                    forest loss timeline with
+                                                    hoverable policy markers. We
+                                                    chose tools that allowed us
+                                                    to highlight patterns
+                                                    without oversimplifying the
+                                                    data. Instead of filling in
+                                                    missing values, we preserved
+                                                    gaps to reflect real-world
+                                                    inconsistencies in
                                                     environmental reporting.
-
-
-                                              </strong> 
+                                                </strong>
                                             </li>
                                         </ul>
                                     </div>
