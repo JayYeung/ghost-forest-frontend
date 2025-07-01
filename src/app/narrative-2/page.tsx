@@ -319,6 +319,29 @@ export default function Narrative2() {
                                             be the start of a conversation about
                                             climate change impacts.&quot;
                                         </p>
+                                         <p className="mb-4">
+                                            Guided by the principles of data feminism and ethical visualization, 
+                                             our third visualization focuses on the people most affected by ghost 
+                                             forest emergence (Rezai; Hepworth and Church). Drawing on U.S. Census data,
+                                             we visualize the age composition of North Carolina’s coastal communities 
+                                             to better understand who is living at the forefront of forest loss . 
+                                        </p>
+                                        <p className="mb-4">
+                                            The data reveals two groups with notable vulnerability: young adults (ages 20–29) and older adults (60-69). 
+                                            Supplementing these numbers with oral histories, these numbers become more than demographics — they become 
+                                            entry points into understanding how ghost forests are affecting real lives . Younger residents, especially 
+                                            those employed in industries like fishing, may face increasing economic displacement due to sea level rise 
+                                            and saltwater intrusion. Older residents, many of whom have a deep connection to their environment, may be
+                                            less likely to relocate despite environmental risks. 
+
+                                        </p>
+                                          <p className="mb-4">
+                                            Rather than flattening these experiences into data points, our visualization together with
+                                              oral histories aims to highlight the people behind the numbers, displaying how ghost forests 
+                                              affect not only ecosystems but also the lives and histories of those who inhabit them.
+
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
