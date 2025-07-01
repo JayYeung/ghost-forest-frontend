@@ -230,13 +230,25 @@ export default function Narrative1() {
                                 stretches to environmental permit approvals, law
                                 reforms, and political donations, much of which
                                 pass under the radar but are deeply impactful.
-                            </p>
-                            <p className="mb-4">
                                 These ghost forests are an accumulation of
                                 consequences of the policies that consistently
                                 favored profit over ecological strength and
                                 marginalized the voices of communities most
                                 affected by land loss.
+                            </p>
+                            <p className="mb-4">
+                                While existing scientific research has documented 
+                                the ecological spread of ghost forests using tools 
+                                like remote sensing, our project attempts to fill 
+                                an interpretive gap of politics. We shift the focus 
+                                from ghost forests as natural climate change phenomena 
+                                to ghost forests as visible, tangible outcomes of policy 
+                                choices and powerful influence. By integrating satellite 
+                                imagery, wetland maps, and policy timelines, our project 
+                                reframes ghost forests as an accumulation of consequences 
+                                of the policies that consistently favored profit over 
+                                ecological strength and marginalized the voices of 
+                                communities most affected by land loss.
                             </p>
                         </div>
                         {/* Thesis */}
