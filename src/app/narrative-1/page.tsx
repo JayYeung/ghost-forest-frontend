@@ -493,6 +493,49 @@ export default function Narrative1() {
                                 by future researchers when tools evolve.
                             </p>
                             <p className="mb-4">
+                                Lastly, to strengthen the oral history with factual 
+                                statistics, we created an interactive visualization 
+                                of the total population composition by age groups 
+                                across coastal counties in North Carolina from 2001 
+                                to 2024. We retrieved and cleaned the public dataset 
+                                of &quot;Population by Age, Race, Sex&quot; produced by the State 
+                                Demographer of North Carolina (North Carolina Office 
+                                of State Budget and Management, State Demographer). 
+                                Data cleaning is performed in three steps. Firstly, 
+                                we filtered the data to only include years between 
+                                2001 and 2024. The time frame is the same as the one 
+                                in our map about forest loss in eastern North Carolina 
+                                to effectively reflect how the recent rise of ghost 
+                                forests has impacted certain communities in North Carolina. 
+                                Secondly, we selected only the counties in the outer 
+                                coastal plain of North Carolina: Bertie, Beaufort, 
+                                Brunswick, Camden, Carteret, Chowan, Craven, Currituck, 
+                                Dare, Gates, Hertford, Hyde, New Hanover, Onslow, Pamlico, 
+                                Pasquotank, Pender, Perquimans, Tyrrell, and Washington 
+                                (North Carolina Office of State Archaeology). This step 
+                                allows us to effectively visualize the population composition 
+                                over time as a pie chart in the region where the forest 
+                                loss is most severe. Thirdly, after examining the labels 
+                                in the &quot;race&quot; and &quot;age groups&quot; categories, we chose to 
+                                visualize the population composition by age groups as it 
+                                pertains to the framework of ethical data visualization 
+                                by containing all possible ages in the dataset. An unethical 
+                                visualization would otherwise be created as the original 
+                                dataset only includes a &quot;White&quot; and &quot;Other&quot; label for the 
+                                racial composition in North Carolina, despite the region&apos;s 
+                                significant number of African American and Hispanic residents 
+                                (Data USA). The interactive pie chart is created using the 
+                                Graph_objects module from the Plotly package. We additionally 
+                                combined the unevenly defined, small age groups (each age group 
+                                only has one or five years) into larger, evenly binned age groups 
+                                (each age group has a ten-year range) that span across 0 years 
+                                old to 80 and above, simplifying the interpretability of the 
+                                interactive pie chart. By automatically sorting the nine pie 
+                                chart slices from the largest composition to the smallest 
+                                composition, the audience can see a clear trend in the shifts 
+                                in age groups over time in relation to the rise of ghost forests.
+                            </p>
+                            <p className="mb-4">
                                 Our methodology directly supports the
                                 project&apos;s central thesis: that the rise of
                                 ghost forests in North Carolina is not simply an
@@ -504,8 +547,8 @@ export default function Narrative1() {
                                 Python, and satellite imagery, we aim to make
                                 visible the corrupt policy decisions and power
                                 structures that have allowed wetland destruction
-                                to accelerate. Analyzing zoning laws, permitting
-                                records, and key legislation such as the Sackett
+                                to accelerate. Analyzing political events, and 
+                                key legislation such as the Sackett
                                 v. EPA helps us trace how deregulation,
                                 lobbying, and development priorities contribute
                                 to forest loss. At the same time, our
