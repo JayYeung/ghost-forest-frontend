@@ -144,16 +144,15 @@ export default function Narrative() {
                             </h2>
                             <p className="mb-4">
                                 The emergence of ghost forests along North
-                                Carolina&rsquo;s coast isn&rsquo;t just the
-                                result of sea-level rise or natural climate
-                                shifts, but it is the result of decades of
-                                political and economic decisions that
-                                prioritized short-term developments over
-                                long-term ecological health. Starting from the
-                                early to mid-20th century, a number of
-                                state-funded projects and policies transformed
-                                multitudes of acres of wetlands into farmland
-                                and real estate, mostly to benefit
+                                Carolina&apos;s coast isn&apos;t just the result
+                                of sea-level rise or natural climate shifts, but
+                                it is the result of decades of political and
+                                economic decisions that prioritized short-term
+                                developments over long-term ecological health.
+                                Starting from the early to mid-20th century, a
+                                number of state-funded projects and policies
+                                transformed multitudes of acres of wetlands into
+                                farmland and real estate, mostly to benefit
                                 industrial-scale agriculture and land
                                 development. These modifications completely
                                 changed the region&rsquo;s ecology, making it
@@ -245,21 +244,22 @@ export default function Narrative() {
                             </div>
 
                             <p className="mb-4 text-[14px] text-gray-500">
-                                This interactive graph compares North Carolina's
-                                environmental spending with forest loss from
-                                2003 to 2023. The blue line represents annual
-                                spending on environmental programs, which peaked
-                                around 2013 before dropping sharply. Meanwhile,
-                                the green line shows forest loss steadily
-                                rising, especially after 2015. Key policy
-                                changes—such as the 2011 Regulatory Reform Act,
-                                the 2013 Stormwater Rule Repeal, and the 2023 NC
-                                Farm Act— reduced protections for wetlands and
-                                forests, making land development easier. Natural
-                                disasters and court decisions like Sackett v.
-                                EPA also contributed to accelerating forest
-                                loss. The graph highlights how weakened policies
-                                and decreased funding are closely linked to
+                                This interactive graph compares North
+                                Carolina&apos;s environmental spending with
+                                forest loss from 2003 to 2023. The blue line
+                                represents annual spending on environmental
+                                programs, which peaked around 2013 before
+                                dropping sharply. Meanwhile, the green line
+                                shows forest loss steadily rising, especially
+                                after 2015. Key policy changes—such as the 2011
+                                Regulatory Reform Act, the 2013 Stormwater Rule
+                                Repeal, and the 2023 NC Farm Act— reduced
+                                protections for wetlands and forests, making
+                                land development easier. Natural disasters and
+                                court decisions like Sackett v. EPA also
+                                contributed to accelerating forest loss. The
+                                graph highlights how weakened policies and
+                                decreased funding are closely linked to
                                 increased deforestation in North Carolina.
                             </p>
 
@@ -278,8 +278,8 @@ export default function Narrative() {
 
                             <p className="mb-4 text-[14px] text-gray-500">
                                 This visualization shows the demographic
-                                distribution of North Carolina's population by
-                                age groups over time. Understanding the
+                                distribution of North Carolina&apos;s population
+                                by age groups over time. Understanding the
                                 demographic context is crucial for analyzing how
                                 different age groups may be affected by
                                 environmental changes and policy decisions
@@ -295,7 +295,7 @@ export default function Narrative() {
                                 not neutral, which reflects on political,
                                 economic, and social value. The view is shaped
                                 by a theoretical framework from critical data
-                                studies. In Hepworth and Church&rsquo;s article,
+                                studies. In Hepworth and Church&apos;s article,
                                 they mentioned how data/tools reveal the
                                 structural inequality. And this view guides us
                                 to reveal the real fact of ghost forests, and to
@@ -335,7 +335,7 @@ export default function Narrative() {
                                 and visualize ghost forest data in ways that
                                 reveal environmental inequality and ensure the
                                 project remains accessible and reproducible. We
-                                use satellite imagery from Hansen et al.&rsquo;s
+                                use satellite imagery from Hansen et al.&apos;s
                                 Global Forest Change dataset to track the
                                 expansion of ghost forests, particularly in
                                 vulnerable areas of the Albemarle-Pamlico region
@@ -427,7 +427,7 @@ export default function Narrative() {
                                 study, future work could also incorporate
                                 broader datasets available through platforms
                                 like Google Earth Engine. Building on methods
-                                demonstrated in Peck&rsquo;s thesis on ghost
+                                demonstrated in Peck&apos;s thesis on ghost
                                 forests in Down East, North Carolina, combining
                                 local NDVI analysis with large-scale satellite
                                 data can offer deeper context for understanding
@@ -435,7 +435,7 @@ export default function Narrative() {
                                 Integrating these global datasets with
                                 site-specific measurements would allow for
                                 comparison between changes observed in North
-                                Carolina&rsquo;s coastal forests and broader
+                                Carolina&apos;s coastal forests and broader
                                 regional or global trends. It could also provide
                                 more insight into how human-driven factors—such
                                 as drainage systems and land-use
@@ -444,7 +444,7 @@ export default function Narrative() {
                                 Together, these combined approaches would
                                 strengthen understanding of how ghost forests
                                 are forming and expanding across North
-                                Carolina&rsquo;s vulnerable coastal landscapes.
+                                Carolina&apos;s vulnerable coastal landscapes.
                             </p>
                             <p className="mb-4">
                                 The methodology and theoretical framework we
@@ -490,7 +490,7 @@ export default function Narrative() {
                                 blind safe. GeoPandas also allows us to create
                                 map visualizations with different spatial
                                 textures (in addition to color) (GeoPandas).
-                                We&rsquo;ll also store any of our intermediate
+                                We&apos;ll also store any of our intermediate
                                 outputs as GeoPackage layers or in GeoPandas
                                 Dataframes on a public GitHub Repository so that
                                 our work can be reproduced, modified, and rerun
@@ -498,7 +498,7 @@ export default function Narrative() {
                             </p>
                             <p className="mb-4">
                                 Our methodology directly supports the
-                                project&rsquo;s central thesis: that the rise of
+                                project&apos;s central thesis: that the rise of
                                 ghost forests in North Carolina is not simply an
                                 ecological consequence, but is shaped by
                                 political and corporate corruption that drives

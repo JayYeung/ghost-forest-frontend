@@ -145,11 +145,17 @@ export default function About() {
                                                     Visualization, Narrative
                                                 </p>
                                                 <p className="text-sm text-gray-600 mb-2">
-                                                    <strong>Why this is meaningful to me</strong>{" "}
-                                                    Ghost forests are meaningful to me because they make the impacts of 
-                                                    climate change and policy failure visible, turning abstract data into 
-                                                    a powerful, real-world warning of environmental loss.
-                                                    
+                                                    <strong>
+                                                        Why this is meaningful
+                                                        to me
+                                                    </strong>{" "}
+                                                    Ghost forests are meaningful
+                                                    to me because they make the
+                                                    impacts of climate change
+                                                    and policy failure visible,
+                                                    turning abstract data into a
+                                                    powerful, real-world warning
+                                                    of environmental loss.
                                                 </p>
                                                 <p className="text-sm">
                                                     <strong>
@@ -219,16 +225,17 @@ export default function About() {
                                                         Responsibilities:
                                                     </strong>{" "}
                                                     Hi! My name is Hailey
-                                                    Tsuchiya, and I'm a rising
-                                                    junior studying Economics
-                                                    and Data Science! Fun fact:
-                                                    I had a brief stint as a
-                                                    Sustainable Environmental
-                                                    Design major, so the topic
-                                                    of environmental
-                                                    policymaking is super
-                                                    interesting and close to me.
-                                                    On this project, I worked on
+                                                    Tsuchiya, and I&apos;m a
+                                                    rising junior studying
+                                                    Economics and Data Science!
+                                                    Fun fact: I had a brief
+                                                    stint as a Sustainable
+                                                    Environmental Design major,
+                                                    so the topic of
+                                                    environmental policymaking
+                                                    is super interesting and
+                                                    close to me. On this
+                                                    project, I worked on
                                                     building our narrative —
                                                     focusing on introducing the
                                                     topic, research question,
