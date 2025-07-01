@@ -31,7 +31,19 @@ export default function Narrative2() {
                             <h2 className="text-2xl font-bold mb-2 text-blue-800">
                                 Oral History
                             </h2>
-                            <p className="mb-4">(To be added)</p>
+                            <p className="mb-4">We provide this section in order to illuminate the stories 
+                                and acts of action to address ghost forest emergence in North Carolina. 
+                                We aim to discuss ghost forest emergence and policymaking and its effects
+                                on the larger scale, but include this section to highlight the actions made
+                                by local communities and to share their stories and acknowledge their voices 
+                                as a result of this phenomenon. To explore not only the stories and accounts
+                                of those experiencing these ghost forests, but also to discuss what the community
+                                is doing to address the topic. 
+                            </p>
+                             <p className="mb-4">
+                                
+                            </p>
+                            
                         </div>
                         {/* Conclusion */}
                         <div>
