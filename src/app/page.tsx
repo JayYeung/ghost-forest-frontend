@@ -11,6 +11,48 @@ export default function Home() {
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
+                <section className="w-full max-w-6xl mx-auto mb-16">
+                    {/* Hero Section */}
+                    <div 
+                        ref={contentRef}
+                        className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100"
+                    >
+                        <div className="w-full flex justify-start mb-4">
+                            <ReadAloudControls
+                                getText={() =>
+                                    contentRef.current?.innerText || ""
+                                }
+                            />
+                        </div>
+                        <h1
+                            className="text-4xl sm:text-5xl font-extrabold mb-4 text-center tracking-tight text-blue-900 drop-shadow-lg"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            Ghost Forests and Policies in North Carolina
+                        </h1>
+                        <p
+                            className="text-lg sm:text-xl text-gray-700 mb-6 font-medium max-w-4xl"
+                            style={{ fontFamily: "var(--font-geist-sans)" }}
+                        >
+                            <br />
+                            Ghost forests, once lush and vibrant, have
+                            transformed into haunting landscapes of dead trees
+                            and flooded land. This phenomenon, driven by rising
+                            sea levels and extreme weather, has left a profound
+                            impact on the environment and local communities in
+                            North Carolina. Through visualizing forest loss from 
+                            satellite imagery, analyzing government spending and 
+                            legislation, and exploring the demographics of affected 
+                            areas, our project explores the intricate
+                            relationship between ghost forests and government
+                            policies, aiming to shed light on how these policies
+                            have influenced the emergence and management of ghost
+                            forests over time.
+
+                        </p>
+                    </div>
+                </section>
+                
                 {/* Annotated Video Block */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div
