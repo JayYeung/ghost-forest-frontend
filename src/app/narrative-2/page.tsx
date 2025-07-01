@@ -42,7 +42,7 @@ export default function Narrative2() {
                             </p>
                             <div className="mb-4">
                               <div className="person flex gap-4 items-start">
-                                <img src="/human1.png" alt="Ryan Emanuel" className="w-36 h-auto rounded" />
+                                <img src="/images/human1.png" alt="Ryan Emanuel" className="w-36 h-auto rounded" />
                                 <div>
                                   <h2 className="text-lg font-semibold">Ryan Emanuel</h2>
                                   <p className="italic">
