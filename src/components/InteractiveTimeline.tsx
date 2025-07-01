@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function InteractiveTimeline() {
     const years = [1973, 1995, 2011, 2014, 2023, 2025];
@@ -44,17 +45,72 @@ export default function InteractiveTimeline() {
                         that restrict state agencies from establishing environmental regulations stricter than federal regulations.
                         It disabled North Carolina from independently setting stricter pollution standards
                         or environmental protections than those mandated by the federal government.
+                        
+                        <div className="w-full flex justify-center mt-4">
+                            <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                <Image
+                                    src="/images/hardison.jpg"
+                                    alt="Hardison Amendment"
+                                    width={200}
+                                    height={200}
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
                         </>
-                        )}
-                    {selected === 1995 &&
-                        "The democratically controlled legislatures repealed the Hardison amendments, \
-                        allowing North Carolina to enact more stringent regulations than the federal governments."}
-                    {selected === 2011 &&
-                        "With the return of a Republican majority to both legislative chambers for the first time since 1870, \
-                        the legislature reinstated the Hardison amendments."}
-                    {selected === 2014 &&
-                        "The legislature expanded the Hardison amendments to enforce \
-                        all rules stricter than the federal minimum standards to automatically fall under legislative review."}
+                    )}
+                    {selected === 1995 && (
+                        <>
+                            The democratically controlled legislatures repealed the Hardison amendments, 
+                            allowing North Carolina to enact more stringent regulations than the federal governments.
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                    src="/images/lobbying.png"
+                                    alt="Lobbying"
+                                    width={200}
+                                    height={200}
+                                    className="object-cover w-full h-full"
+                                />
+                                </div>
+                            </div>
+                        </>
+                    )}
+                    {selected === 2011 && (
+                        <>
+                            With the return of a Republican majority to both legislative chambers for the first time since 1870, 
+                            the legislature reinstated the Hardison amendments.
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-50 h-50 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                    src="/images/Republican_takeover.webp"
+                                    alt="Republican Takeover"
+                                    width={50}
+                                    height={50}
+                                    className="object-cover w-full h-full"
+                                />
+                                </div>
+                            </div>
+                        </>
+                    )}
+                       {selected === 2014 && (
+                        <>
+                            The legislature expanded the Hardison amendments to enforce 
+                            all rules stricter than the federal minimum standards to automatically fall under legislative review.
+                            <div className="w-full flex justify-center mt-4">
+                                <div className="w-200 h-100 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                    <Image
+                                        src="/images/stricter_ruls.jpg"
+                                        alt="Stricter Environmental Rules"
+                                        width={200}
+                                        height={200}
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+                            </div>
+                            Source: General Assembly, UNC School of Government, Campbell University School of Law
+                        </>
+                    )}
                     {selected === 2023 && (
                     <>
                         In May, the waters of the United States under the Clean Water Act were defined to
@@ -65,6 +121,17 @@ export default function InteractiveTimeline() {
                         North Carolina, as much as 2.5 million acres, are no longer under the protection of the Clean Water Act.
                         The devastating impacts of flooding, without the natural protection from wetlands,
                         will be multiplied for communities of color and lower wealth in rural North Carolina.
+                        <div className="w-full flex justify-center mt-4">
+                            <div className="w-200 h-100 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                <Image
+                                    src="/images/wetland_loss.jpeg"
+                                    alt="Loss of Wetlands"
+                                    width={200}
+                                    height={200}
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
                     </>
                     )}
                     {selected === 2025 && (
@@ -76,6 +143,17 @@ export default function InteractiveTimeline() {
                         At the National Oceanic and Atmospheric Administration (NOAA),
                         it is cutting at least $1.5 billion, with $1.31 billion of that reduction coming from
                         &quot;climate-dominated research, data, and grant programs&quot;.
+                        <div className="w-full flex justify-center mt-4">
+                            <div className="w-64 h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
+                                <Image
+                                    src="/images/funding_cuts.jpg"
+                                    alt="Loss of Wetlands"
+                                    width={200}
+                                    height={200}
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
                         </>
                     )}
                 </p>
