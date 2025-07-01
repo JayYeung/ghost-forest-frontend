@@ -243,6 +243,20 @@ export default function Narrative() {
                                 ></iframe>
                             </div>
                             <p className="mb-4">
+                                This visualization shows how environmental spending in North Carolina 
+                                has changed in relation to forest loss from 2003 to 2023, highlighting 
+                                the impact of key policy decisions over time. The blue line tracks how 
+                                much the state allocated to environmental programs, peaking around 2013
+                                before dropping sharply in the years that followed. At the same time, 
+                                the green line shows forest loss steadily increasing, especially after 2015.
+                                Policies like the 2011 Regulatory Reform Act, the 2013 Stormwater Rule Repeal,
+                                and the 2023 NC Farm Act weakened protections for wetlands and forests,
+                                making it easier for land to be developed or cleared. Natural disasters
+                                and the narrowing of federal wetland protections further accelerated these
+                                trends. Overall, the graph suggests a strong connection between reduced funding,
+                                policy rollbacks, and the rising rate of forest loss in North Carolina.
+                            </p>
+                            <p className="mb-4">
                                 To produce our visualizations, our project draws
                                 from an interdisciplinary digital humanities
                                 methodology that combines environmental data
