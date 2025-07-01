@@ -41,7 +41,26 @@ export default function Narrative2() {
                                 is doing to address the topic. 
                             </p>
                              <p className="mb-4">
-                                
+                                  <div class="person">
+                                    <img src="human1.png" alt="Ryan Emanuel"> <!-- Replace with correct image path -->
+                                    <div>
+                                      <h2>Ryan Emanuel</h2>
+                                      <p><em>Citizen of the Lumbee Tribe & Professor in the Department of Forestry and Environmental Resources at NC State</em></p>
+                                      <p class="quote">
+                                        “Even though we may not speak our ancestral languages, speaking for myself and a lot of other Lumbee people, we draw comfort from the fact 
+                                        that we can go out to these places and look at the same landscapes and the same riverscapes and know that our ancestors stood in the same spot and looked at the same views.”
+                                      </p>
+                                      <p>
+                                        From his work with the Lumbee Tribe, Emanuel witnessed how climate change was not only altering the physical landscape, 
+                                        but also affecting cultural ties rooted to the land. As ghost forests began to emerge across familiar territory, the transformation 
+                                        extended beyond just biodiversity — it was also reshaping the tribe’s sense of place and belonging. In response, Emanuel has worked 
+                                        to amplify Indigenous voices in climate conversations, recognizing that protecting the land also means preserving the cultural identities 
+                                        woven into it. While developing solutions may be complex, centering the community’s stories and knowledge offers an ethical, thoughtful, 
+                                        and respectful way to move forward and drive change.
+                                      </p>
+                                    </div>
+                                  </div>
+                                                                
                             </p>
                             
                         </div>
