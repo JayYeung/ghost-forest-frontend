@@ -5,22 +5,24 @@ import { useRef } from "react";
 import ReadAloudControls from "@/components/ReadAloudControls";
 
 export default function Home() {
-    const contentRef = useRef<HTMLDivElement>(null);
+    const heroRef = useRef<HTMLDivElement>(null);
+    const videoRef = useRef<HTMLDivElement>(null);
+    const timelineRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100">
             <Navigation />
             <main className="px-4 py-8">
+                {/* Hero Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
-                    {/* Hero Section */}
                     <div
-                        ref={contentRef}
+                        ref={heroRef}
                         className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-10 flex flex-col items-center border border-gray-100"
                     >
                         <div className="w-full flex justify-start mb-4">
                             <ReadAloudControls
                                 getText={() =>
-                                    contentRef.current?.innerText || ""
+                                    heroRef.current?.innerText || ""
                                 }
                             />
                         </div>
@@ -55,13 +57,13 @@ export default function Home() {
                 {/* Annotated Video Block */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div
-                        ref={contentRef}
+                        ref={videoRef}
                         className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center"
                     >
                         <div className="w-full flex justify-start mb-4">
                             <ReadAloudControls
                                 getText={() =>
-                                    contentRef.current?.innerText || ""
+                                    videoRef.current?.innerText || ""
                                 }
                             />
                         </div>
@@ -138,13 +140,13 @@ export default function Home() {
                 {/* Interactive Timeline Section */}
                 <section className="w-full max-w-6xl mx-auto mb-16">
                     <div
-                        ref={contentRef}
+                        ref={timelineRef}
                         className="bg-white/70 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-100 flex flex-col items-center"
                     >
                         <div className="w-full flex justify-start mb-4">
                             <ReadAloudControls
                                 getText={() =>
-                                    contentRef.current?.innerText || ""
+                                    timelineRef.current?.innerText || ""
                                 }
                             />
                         </div>
