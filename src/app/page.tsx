@@ -134,6 +134,9 @@ export default function Home() {
                                 allowFullScreen
                             ></iframe>
                         </div>
+                        <p className="mb-4 text-sm text-gray-500 max-w-3xl mt-4">
+                            Source: The Weather Channel
+                        </p>
                     </div>
                 </section>
 
@@ -161,19 +164,18 @@ export default function Home() {
                             className="text-lg sm:text-xl text-gray-700 mb-6 font-medium max-w-4xl"
                             style={{ fontFamily: "var(--font-geist-sans)" }}
                         >
-                            While we do not aim to prove causation, we do hope
-                            to highlight meaningful correlations between
-                            different policy decisions and ghost forest
-                            emergence over time. This allows for us to compare
-                            differences in proposed policy, enforcement, and
-                            implementation, and we hope to identify patterns and
-                            measure the effect of policy decisions on shaping
-                            ghost forest formation.
+                            While not comprehensive, this timeline highlights
+                            moments that have significantly shaped the conditions
+                            for ghost forest formation. By including events
+                            dating as far back as the 1970s, we aim to provide
+                            historical context that helps explain the
+                            environmental and policy landscape leading up to our
+                            primary period of focus: 2000&nbsp;-&nbsp;2024.
                         </p>
-                        <p className="mb-4 text-gray-700 max-w-3xl">
-                            Click through the timeline to learn more about how
-                            each policy act affected the formation of ghost
-                            forests.
+                        <p className="mb-4 text-gray-700 max-w-3xl text-center">
+                                Click through the timeline to explore key
+                                environmental policies and extreme weather events
+                                in North Carolina from the 1970s to 2025.
                             <br />
                             <br />
                         </p>
